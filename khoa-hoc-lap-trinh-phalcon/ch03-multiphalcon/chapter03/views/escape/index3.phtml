@@ -1,0 +1,14 @@
+<?php 
+    $e = new \Phalcon\Escaper();
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="${encoding}">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Escape - css</h1>
+    <a style="color: <?php echo $e->escapeCss('"><script>alert(1)</script><a href="#'); ?>">escape css</a>
+</body>
+</html>

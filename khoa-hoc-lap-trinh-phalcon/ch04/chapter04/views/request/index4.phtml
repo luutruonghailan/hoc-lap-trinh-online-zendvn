@@ -1,0 +1,56 @@
+<form action="" method="get" name="test-form">
+    <div>
+        Username:
+        <input type="text" name="username">
+    </div>
+    
+    <div>
+        City:
+        <input type="text" name="city">
+    </div>
+    
+    <div>
+       
+        <input type="submit" value="submit">
+    </div>
+</form>
+
+<?php 
+
+
+    //$params     =   $this->request->get($name, $filter, $default, $notAllowEmpty);
+
+    $request  = new \Phalcon\Http\Request();
+    $di       = new \Phalcon\Di\FactoryDefault();
+    $request->setDI($di);
+    $params   = $request->get();
+    $username = $request->get('username','float', 'username default', true);
+    $city     = $request->get('city', 'lower', 'city default', false);
+    echo '<pre>';
+    print_r($params);
+    echo '</pre>';
+    echo '<h3 style="color:red">Username  : '.$username.'</h3>';
+    echo '<h3 style="color:red">City : '.$city.'</h3>';
+    
+    if($request->has('city'))
+    {
+        echo 'yes';
+    }
+    else
+    {
+        echo "no";
+    }
+
+
+
+        
+
+       
+
+
+
+
+
+
+
+?>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="${encoding}">
+<title>Insert title here</title>
+</head>
+<body>
+    <b>Filter striptags : </b>
+    {{ '<div><b><i>This is filter striptags</i></b></div>' | striptags }}   {# This is filter striptags #}
+    <hr>
+    
+    <b>Filter slashes : </b>
+    {{ " this 'is fi'lter sl\ashes " | slashes}}                    {# this \'is fi\'lter sl\\ashes #}
+    <hr>
+    
+    <b>Filter stripslashes : </b>
+        {{ " this 'is fi'lter sl\ashes " | slashes | stripslashes }}          {# this 'is fi'lter sl\ashes #}
+    <hr>
+    
+    <b>Filter capitalize : </b>
+        {{ " this is filter capitalize " | capitalize  }}         {# This Is Filter Capitalize #}
+    <hr>
+    
+     <b>Filter lower : </b>
+        {{ "thIs is fiLTEr lowEr" | lower  }}         {# this is filter lower #}
+    <hr>
+    
+    <b>Filter upper : </b>
+        {{ "thIs is fiLTEr UppEr" | upper  }}         {# THIS IS FILTER UPPER #}
+    <hr>
+    
+    <b>Filter length : </b>
+        {{ "this is filter length"  | length }}         {# 21 #}
+    <hr>
+    
+    <b>Filter abs : </b>
+        {{ (-123) | abs }}                           {# 123 #}
+    <hr>
+    
+    <b>Filter trim : </b><br>
+        input :  {{ "   hello   " }}   -- length : {{ "   hello   " | length }}<br> 
+        output : {{ "   hello   " }}   -- length : {{ "   hello   " | trim | length }}      
+    <hr>
+    
+    <b>Filter left_trim : </b><br>
+        input :  {{ "   hello   " }}   -- length : {{ "   hello   " | length }}<br> 
+        output : {{ "   hello   " }}   -- length : {{ "   hello   " | left_trim | length }}      
+    <hr>
+    
+    <b>Filter right_trim : </b><br>
+        input :  {{ "   hello   " }}   -- length : {{ "   hello   " | length }}<br> 
+        output : {{ "   hello   " }}   -- length : {{ "   hello   " | right_trim | length }}      
+    <hr>
+    
+    <b>Filter convert_encoding : </b><br>
+        input  :  {{ "xin chào " }}<br> 
+        output :  {{ "xin chào " | convert_encoding('bakfal','utf8') }}<br>       
+    <hr>
+    
+    
+    
+    
+    
+</body>
+</html>

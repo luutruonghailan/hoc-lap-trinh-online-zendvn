@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="${encoding}">
+<title>Insert title here</title>
+</head>
+<body>
+        <h1>index6.phtml</h1>
+        {%  set colors = ['red':'màu đỏ', 'green':'màu xanh lá', 'blue': 'màu xanh dương', 'yellow':'màu vàng'] %}
+        
+        <div>
+            {% for key,value in  colors %}
+                {% if loop.first == 1%}
+                    {{key}} -- {{ value }}<br>
+                {% endif %}
+                
+                {% if loop.last == 1%}
+                    {{key}} -- {{ value }}<br>
+                {% endif %}
+            {% endfor %}
+        </div>
+        
+        
+</body>
+</html>

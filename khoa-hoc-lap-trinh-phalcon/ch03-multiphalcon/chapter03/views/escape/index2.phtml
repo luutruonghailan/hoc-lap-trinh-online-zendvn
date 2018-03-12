@@ -1,0 +1,14 @@
+<?php 
+    $e = new \Phalcon\Escaper();
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="${encoding}">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Escape - url</h1>
+    <a href="<?php echo $e->escapeUrl('"><script>alert(1)</script><a href="zendvn.com'); ?>">Click here</a>
+</body>
+</html>

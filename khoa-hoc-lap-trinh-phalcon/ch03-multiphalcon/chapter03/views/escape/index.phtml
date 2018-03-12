@@ -1,0 +1,16 @@
+<?php 
+    $e = new \Phalcon\Escaper();
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="${encoding}">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Escape - html</h1>
+<div class="comment">
+    <?php echo $e->escapeHtml('></div><h1>myattack</h1>');?>
+</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<?php
+    //create custom filter
+    $filter = new Phalcon\Filter();
+    $filter->add('standardstring', function ($input){
+        //trim space
+        $input = trim($input);
+        
+        //ucfirst
+        $input = ucfirst($input);
+        
+        //delete space
+        $input = preg_replace('#\s+#', ' ', $input);
+        
+        //remove dot
+        $input = rtrim($input,'.');
+        
+        //add dot
+        $input = $input.'.';
+        
+        return $input;
+    });    
+    
+    //  phalcon      is         cool      =>   Phalcon is cool.
+
+    //use custom filter
+    $input  = "      phalcon      is         cool.   ";
+    $output = $filter->sanitize($input, 'standardstring');
+    
+    echo 'Input :'.$input.' - length: '.strlen($input);
+    echo '<hr>';
+    echo 'Output: '.$output.' - length: '.strlen($output);

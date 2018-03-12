@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="${encoding}">
+<title>Insert title here</title>
+</head>
+<body>
+    <h1>index5.phtml</h1>
+    
+    <div>
+       {% set x = 20 %}
+       {% set y = 15 %}
+       input : x = {{ x }} ||| y = {{ y }}
+       
+    </div>
+    
+   
+    
+    <hr>
+    <div>
+        (x > 1 and y > 5) : {{ x > 1 and y > 5 }}<br>        {# true #}
+        (x > 1 or y < 5)  : {{ x > 1 or y > 5 }}<br>         {# true #}
+        (not 0)           : {{ not 0 }}<br>                 {# true #}
+       
+       
+       
+    </div>
+    
+</body>
+</html>

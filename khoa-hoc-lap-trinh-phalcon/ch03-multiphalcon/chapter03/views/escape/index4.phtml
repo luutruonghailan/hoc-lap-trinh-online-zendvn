@@ -1,0 +1,14 @@
+<?php 
+    $e = new \Phalcon\Escaper();
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="${encoding}">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Escape - js</h1>
+    <script>document.title =  '<?php echo $e->escapeJs("'; alert(100); var x='") ; ?>'</script>  
+</body>
+</html>

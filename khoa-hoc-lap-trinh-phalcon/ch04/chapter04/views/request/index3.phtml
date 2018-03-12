@@ -1,0 +1,56 @@
+<form action="" method="get" name="test-form">
+    <div>
+        Username:
+        <input type="text" name="username">
+    </div>
+    
+    <div>
+        City:
+        <input type="text" name="city">
+    </div>
+    
+    <div>
+       
+        <input type="submit" value="submit">
+    </div>
+</form>
+
+<?php 
+        //c1
+        //$params     =   $this->request->getQuery();
+        
+        //c2
+        //$params     =   $this->request->getQuery($name, $filter, $default, $notAllowEmpty);
+        
+        $request  = new \Phalcon\Http\Request();
+        $di       = new \Phalcon\Di\FactoryDefault();
+        $request->setDI($di);
+        $params   = $request->getQuery();
+        $username = $request->getQuery('username','float', 'username default', true);
+        $city     = $request->getQuery('city', 'lower', 'city default', false);
+        $method   = $request->getMethod();
+        
+//         echo '<pre>';
+//                 print_r($params);
+//         echo '</pre>';
+        
+//         echo '<h3 style="color:red">Username  : '.$username.'</h3>';
+//         echo '<h3 style="color:red">City : '.$city.'</h3>';
+//         echo '<h3 style="color:red">Method : '.$method.'</h3>';
+
+        if($request->hasQuery('username'))
+        {
+            echo 'yes';
+        }
+        else
+        {
+            echo "no";
+        }
+        
+        
+        
+        
+        
+        
+        
+?>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="${encoding}">
+<title>Insert title here</title>
+</head>
+<body>
+   {% set arr_example   = ['peter':30, 'nam':20, 'mary':10, 'luna': 60] %}
+   {% set str_json      = arr_example | json_encode %}
+   {% set arr_json      = str_json | json_decode %}
+   
+  
+   
+    
+   <b>arr_example</b><br> 
+   {% for key, value in arr_example %}
+        {{ key }} -- {{ value }}<br>
+   {% endfor %}
+   <hr>
+   
+   {{ str_json }}
+   <hr>
+   
+    <b>arr_json</b><br> 
+   {% for key, value in arr_json %}
+        {{ key }} -- {{ value }}<br>
+   {% endfor %}
+   <hr>
+   
+  
+   
+   
+   
+  
+    
+    
+    
+    
+    
+</body>
+</html>

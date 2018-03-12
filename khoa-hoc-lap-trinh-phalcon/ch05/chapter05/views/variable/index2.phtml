@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="${encoding}">
+<title>Insert title here</title>
+</head>
+<body>
+    <h1>index2.phtml</h1>
+    
+    <div>
+        {% set num1 = 100 %}
+        {% set num2 = 20 %}
+    </div>
+    
+    <div>
+       số 1 = {{ num1 }}<br>
+       số 2 = {{ num2 }}
+    </div>
+    
+    <hr>
+    <div>
+       cộng =  {{ num1 + num2 }}<br> {# 120 #}
+       trừ  =  {{ num1 - num2 }}<br> {# 80 #}
+       nhân =  {{ num1 * num2 }}<br> {# 2000 #}
+       chia =  {{ num1 / num2 }}<br> {# 5 #}
+       dư   =  {{ num1 % num2 }}<br> {# 0 #}
+    </div>
+    
+</body>
+</html>

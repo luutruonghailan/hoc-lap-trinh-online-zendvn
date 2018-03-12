@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="${encoding}">
+<title>Insert title here</title>
+</head>
+<body>
+        <h1>index2.phtml</h1>
+        {%  set colors   = ['red':'màu đỏ', 'green':'màu xanh lá', 'blue': 'màu xanh dương'] %}
+        {%  set numbers  = ['one':1, 'two':2, 'three': 3, 'four':4] %}
+        {%  set emptyarr = [] %}
+        
+        <div>
+            {% for key, value in colors %}
+                {{ key }} -- {{ value }}<br>
+            {% endfor %}
+        </div>
+        <hr>
+        <div>
+            {% for key, value in numbers if value > 2 %}
+                {{ key }} -- {{ value }}<br>
+            {% endfor %}
+        </div>
+        
+        <hr>
+        <div>
+            {% for key, value in numbers  %}
+                {{ key }} -- {{ value }}<br>
+            {% elsefor %} 
+                không có dữ liệu để hiển thị
+            {% endfor %}
+        </div>
+        
+        
+        
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="${encoding}">
+<title>Insert title here</title>
+<style type="text/css">
+.sc
+{
+	background-color:green;
+	color:white;
+	margin:0px auto;
+	margin-bottom:25px;
+	width:250px;
+}
+.er
+{
+	background-color:red;
+	color:white;
+	margin:0px auto;
+	margin-bottom:25px;
+	width:250px;
+}
+.nt
+{
+	background-color:blue;
+	color:white;
+	margin:0px auto;
+	margin-bottom:25px;
+	width:250px;
+}
+
+.wn
+{
+	background-color:orange;
+	color:white;
+	margin:0px auto;
+	margin-bottom:25px;
+	width:250px;
+}
+
+.abc
+{
+	background-color:black;
+	color:white;
+	margin:0px auto;
+	margin-bottom:25px;
+	width:250px;
+}
+</style>
+</head>
+<body>
+    <h1>Direct 4</h1>
+    
+    <?php 
+        $direct = new \Phalcon\Flash\Direct();
+        $direct->setCssClasses([
+            'success'   =>  'sc',
+            'error'     =>  'er',
+            'notice'    =>  'nt',
+            'warning'   =>  'wn',
+            'abc'       =>  'abc'
+        ]);
+        
+        
+        
+        $direct->success('this is success message');    //<div class="sc">.....</div>
+        $direct->error('this is error message');
+        $direct->notice('this is notice message');
+        $direct->warning('this is warning message');
+        $direct->outputMessage('abc', 'this is abc message');//<div class="abc">.....</div>
+       
+    ?>
+</body>
+</html>

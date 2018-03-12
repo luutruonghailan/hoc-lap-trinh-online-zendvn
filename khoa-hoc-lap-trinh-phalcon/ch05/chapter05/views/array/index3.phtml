@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="${encoding}">
+<title>Insert title here</title>
+</head>
+<body>
+        <h1>index3.phtml</h1>
+        {%  set arr = 0..100 %}
+        
+        <div>
+             {%  for key, value in arr %}
+                 {% if key > 10 %}
+                    {% break %}
+                 {% endif %}
+                 
+                 {% if key % 2 != 0 %}
+                    {% continue %}
+                 {% endif %}
+                 
+                 
+                    {{ key }}   --  {{ value }}<br>
+             {%  endfor %}
+        </div>
+        
+        
+        
+</body>
+</html>

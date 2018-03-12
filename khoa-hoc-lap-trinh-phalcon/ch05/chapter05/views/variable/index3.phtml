@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="${encoding}">
+<title>Insert title here</title>
+</head>
+<body>
+    <h1>index3.phtml</h1>
+    
+    <div>
+        {% set x = 5 %}
+        {% set x += 5 %} 
+        
+        {% set y = 25 %}
+        {% set y -= 10 %} 
+        
+        {% set z = 20 %}
+        {% set z *= 10 %} 
+        
+        {% set t = 100 %}
+        {% set t /= 10 %} 
+        
+        {% set w = 5 %}
+        {% set w = w % 2 %} 
+    </div>
+    
+   
+    
+    <hr>
+    <div>
+        x = {{ x }}<br> 
+        y = {{ y }}<br> 
+        z = {{ z }}<br> 
+        t = {{ t }}<br> 
+        w = {{ w }}<br> 
+    </div>
+    
+</body>
+</html>

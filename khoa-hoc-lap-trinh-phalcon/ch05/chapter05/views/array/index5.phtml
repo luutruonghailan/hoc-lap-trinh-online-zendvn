@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="${encoding}">
+<title>Insert title here</title>
+</head>
+<body>
+        <h1>index5.phtml</h1>
+        {%  set number = 1..2 %}
+        
+        <div>
+            {% for key,value in  number %}
+                {% if loop.length > 3 %}
+                    {{key}}--{{value}} <br>
+                {% else %}    
+                    mảng có ít hơn 3 phần tử
+                    {% break %}
+                {% endif %}    
+                    
+                
+            {% endfor %}
+        </div>
+       
+        
+</body>
+</html>

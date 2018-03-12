@@ -1,0 +1,31 @@
+
+    Content : 
+    {{ content() }}
+    <hr>
+    
+    Get_content :
+    {{ get_content() }}
+    <hr>
+    
+    Time :
+    {{ time() }}
+    <hr>
+    
+    date :
+    {{ date('d-m-y', time()) }}
+    <hr>
+    
+    Version: 
+    {{ version() }}
+    <hr>
+    
+    Constant: <br>
+    APPLICATION_PATH : {{ constant('APPLICATION_PATH') }}
+    <hr>
+    
+    {% set var = 'vardump' %}
+    Dump: {{ dump(var) }}
+    <hr>
+    
+    Url:
+    <a href="{{ url('chapter05/function/index2') }}">url-function</a>

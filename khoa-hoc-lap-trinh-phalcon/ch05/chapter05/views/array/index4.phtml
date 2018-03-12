@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="${encoding}">
+<title>Insert title here</title>
+</head>
+<body>
+        <h1>index4.phtml</h1>
+        {%  set colors = ['red':'màu đỏ', 'green':'màu xanh lá', 'blue': 'màu xanh dương', 'yellow':'màu vàng'] %}
+        
+        <div>
+            {% for key,value in  colors %}
+                {{key}} -- {{ value }}<br>
+            {% endfor %}
+        </div>
+        <hr>
+        
+         <div>
+            {% for key,value in  colors %}
+                {{loop.index}} -- {{ loop.index0 }} -- {{loop.revindex}} -- {{ loop.revindex0 }}<br>
+            {% endfor %}
+        </div>
+        <hr>
+        <div>
+            {% for key,value in  colors %}
+                {% if loop.index == 2 %}
+                    {{key}} -- {{ value }}<br>
+                {% endif %}
+            {% endfor %}
+        </div>
+        
+</body>
+</html>

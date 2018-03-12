@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="${encoding}">
+<title>Insert title here</title>
+</head>
+<body>
+    <b>Filter default : </b>
+        {% set var_default = 'abc' | default('default value') %}
+        var_default : {{ var_default }}
+    <hr>
+    
+     <b>Filter format : </b>
+       {{ "his name is %s, he is %d years old" | format("peter", 20) }}     
+       {# his name is peter, he is 20 years old #}
+    <hr>
+    
+    <b>Filter url_encode : </b>
+       {{ "điện thoại di động" | url_encode }}     
+       
+    <hr>
+    
+   
+    
+    
+    
+    
+    
+</body>
+</html>

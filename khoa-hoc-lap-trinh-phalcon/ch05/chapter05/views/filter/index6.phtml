@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="${encoding}">
+<title>Insert title here</title>
+</head>
+<body>
+   {% set arr_join   = ['peter':30, 'nam':20, 'mary':10, 'luna': 60] %}
+   {% set str_join   = arr_join | join(' ') %}
+   {# 30 20 10 60 #}
+  
+   
+    
+   <b>Before filter join</b><br> 
+   {% for key, value in arr_join %}
+        {{ key }} -- {{ value }}<br>
+   {% endfor %}
+   <hr>
+   
+   {{ str_join }}
+   
+   
+   
+  
+    
+    
+    
+    
+    
+</body>
+</html>

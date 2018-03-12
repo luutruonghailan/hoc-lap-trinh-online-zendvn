@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="${encoding}">
+<title>Insert title here</title>
+<style type="text/css">
+.successMessage
+{
+	background-color:green;
+	color:white;
+	margin:0px auto;
+	margin-bottom:25px;
+	width:250px;
+}
+.errorMessage
+{
+	background-color:red;
+	color:white;
+	margin:0px auto;
+	margin-bottom:25px;
+	width:250px;
+}
+.noticeMessage
+{
+	background-color:blue;
+	color:white;
+	margin:0px auto;
+	margin-bottom:25px;
+	width:250px;
+}
+
+.warningMessage
+{
+	background-color:orange;
+	color:white;
+	margin:0px auto;
+	margin-bottom:25px;
+	width:250px;
+}
+</style>
+</head>
+<body>
+    <h1>Direct 3</h1>
+    
+    <?php 
+        $direct = new \Phalcon\Flash\Direct();
+        
+        $direct->message('success', 'this is success message 3');
+        $direct->message('error', 'this is error message 3');
+        $direct->message('notice', 'this is notice message 3');
+        $direct->message('warning', 'this is warning message 3');
+        $direct->message('abc', 'complex message 3');
+        
+        
+        
+        
+       
+    ?>
+</body>
+</html>

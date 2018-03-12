@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="${encoding}">
+<title>Insert title here</title>
+</head>
+<body>
+    <h1>index.phtml</h1>
+    
+    <div>
+        {# Tạo biến #}
+        {% set firstName = '<b>peter</b>' %}
+        {% set lastName  = '<b>brown</b>' %}
+        {% set fullName  = firstName ~ ' ' ~lastName %}
+    </div>
+    
+    <div>
+        First_Name : {{ firstName }}<br>
+        Last_Name :  {{ lastName }}<br>
+        Full_Name :  {{ fullName }}<br>
+    </div>
+</body>
+</html>

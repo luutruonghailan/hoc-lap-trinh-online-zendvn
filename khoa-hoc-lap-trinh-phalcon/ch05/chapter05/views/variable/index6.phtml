@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="${encoding}">
+<title>Insert title here</title>
+</head>
+<body>
+    <h1>index6.phtml</h1>
+    
+    <div>
+       {% set number = 10 %}
+       
+       number = {{ number }}
+       
+    </div>
+    
+   
+    
+    <hr>
+    <div>
+            {% if number % 2 == 0 %}
+                đây là số chẳn
+            {% else %}
+                đây là số lẽ
+            {% endif %}
+       
+    </div>
+    
+     <hr>
+    <div>
+            {{ (number >= 0) ? 'đây là số dương' : 'đây là số âm' }}
+       
+    </div>
+    
+    <hr>
+    <div>
+            {% if number > 10  %}
+                đây là số lớn hơn 10
+            {% elseif number < 10 %}
+                đây là số nhỏ hơn 10
+            {% else %}  
+                đây là số 10  
+            {% endif %}
+       
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="${encoding}">
+<title>Insert title here</title>
+<style type="text/css">
+.successMessage
+{
+	background-color:green;
+	color:white;
+	margin:0px auto;
+	margin-bottom:25px;
+	width:250px;
+}
+.errorMessage
+{
+	background-color:red;
+	color:white;
+	margin:0px auto;
+	margin-bottom:25px;
+	width:250px;
+}
+.noticeMessage
+{
+	background-color:blue;
+	color:white;
+	margin:0px auto;
+	margin-bottom:25px;
+	width:250px;
+}
+
+.warningMessage
+{
+	background-color:orange;
+	color:white;
+	margin:0px auto;
+	margin-bottom:25px;
+	width:250px;
+}
+</style>
+</head>
+<body>
+    <h1>FlashSession Message show2.phtml</h1>
+    
+    <?php 
+            $this->flashSession->output(); //remove true false
+            
+            echo '<pre>';
+                    print_r($_SESSION);
+            echo '</pre>';
+           
+       
+    ?>
+</body>
+</html>

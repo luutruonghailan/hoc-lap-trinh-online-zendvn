@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="${encoding}">
+<title>Insert title here</title>
+</head>
+<body>
+
+     {% macro sum(value1, value2) %}
+        {% set result = value1 + value2 %}
+        {%  return result %}
+     {% endmacro %}
+     
+     {% macro multi(value1, value2) %}
+        {% set result = value1 * value2 %}
+        {%  return result %}
+     {% endmacro %}
+     
+     <div>
+        Sum   : {{ sum(6, 4)   }}<br>
+        Multi : {{ multi(6, 4) }}<br>
+     </div>
+     
+     
+     
+    
+
+
+</body>
+</html>

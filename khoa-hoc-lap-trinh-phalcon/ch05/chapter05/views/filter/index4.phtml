@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="${encoding}">
+<title>Insert title here</title>
+</head>
+<body>
+   {% set arr_sort  = ['peter':30, 'nam':20, 'mary':10, 'luna': 60] %}
+   {% set arr_sort2 = arr_sort | sort  %}
+    
+   <b>Before sort</b><br> 
+   {% for key, value in arr_sort %}
+        {{ key }} -- {{ value }}<br>
+   {% endfor %}
+   <hr>
+   
+   <b>After sort</b><br> 
+   {% for key, value in arr_sort2 %}
+        {{ key }} -- {{ value }}<br>
+   {% endfor %}
+    
+    
+    
+    
+    
+</body>
+</html>

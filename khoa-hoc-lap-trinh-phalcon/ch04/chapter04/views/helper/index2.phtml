@@ -1,0 +1,40 @@
+
+<html>
+<head>
+<meta charset="${encoding}">
+<title>Insert title here</title>
+<style type="text/css">
+    .link
+    {
+    	background-color:green;
+    	color:white;
+    }
+</style>
+</head>
+<body>
+    <h1>view helper linkTo</h1>
+    <?php 
+        //echo $this->tag->linkTo('chapter04/helper/goal','move-goal');
+        //<a href="chapter04/helper/goal">move-goal</a>
+        
+//         echo $this->tag->linkTo([
+//             'chapter04/helper/goal',
+//             'move-goal-2',
+//             'title'     =>  'link2',
+//             'class'     =>  'link'
+            
+//         ]);
+        //<a href="chapter04/helper/goal" title="link2" class="link">move-goal-2</a>
+        
+    
+        echo $this->tag->linkTo([
+            [
+                'for'       =>      'linkhelper'
+            ],
+            'move-goal-2',
+            'title'     =>  'link2',
+            'class'     =>  'link'
+        ]);
+    ?>
+</body>
+</html>

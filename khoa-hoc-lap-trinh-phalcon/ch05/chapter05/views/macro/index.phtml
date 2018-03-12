@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="${encoding}">
+<title>Insert title here</title>
+</head>
+<body>
+
+     {% macro function1() %}
+        <div>Hello macro function1</div>
+     {% endmacro %}
+     
+     {% macro function2() %}
+         {% return '<div>Hello macro function2</div>' %}
+     {% endmacro %}
+     
+     
+     <div>
+        {{ function1() }}
+        {{ function1() }}
+        
+     </div>
+     
+     
+     <div>
+        {{ function2() }}
+     </div>
+
+
+</body>
+</html>

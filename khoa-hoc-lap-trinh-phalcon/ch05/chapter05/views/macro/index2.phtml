@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="${encoding}">
+<title>Insert title here</title>
+</head>
+<body>
+
+     {% macro param(name, age, color) %}
+        <div><b>Name  :</b> {{ name}}</div>
+        <div><b>Age   :</b> {{ age }}</div>
+        <div><b>Color :</b> {{ color}}</div>
+     {% endmacro %}
+     
+     
+     <div>
+            Gọi theo cách 1 : <br>
+            {{ param('nobita', 8, 'black') }}
+     </div>
+     
+     <hr>
+     
+     <div>
+            Gọi theo cách 2 : <br>
+            {{ param('color':'green', 'name':'doremon', 'age':10) }}
+     </div>
+     
+    
+
+
+</body>
+</html>

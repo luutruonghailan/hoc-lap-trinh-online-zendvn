@@ -1,0 +1,18 @@
+<?php 
+    $e = new \Phalcon\Escaper();
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="${encoding}">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Escape - html - attribute</h1>
+    <table width="<?php echo $e->escapeHtmlAttr('"><h1>Attack attribute html</table>')?>">
+        <tr>
+            <td>Attack attribute html</td>
+        </tr>
+    </table>
+</body>
+</html>

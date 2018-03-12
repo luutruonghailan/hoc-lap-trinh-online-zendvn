@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="${encoding}">
+<title>Insert title here</title>
+</head>
+<body>
+    <h1>index7.phtml</h1>
+    
+    <div>
+        {% set var1 = 0 %}
+        var1 = {{ var1 }}<br>
+        <b>Check empty: </b>
+        {% if var1 is empty %}
+            đây là một biến rỗng
+        {% else %}    
+            đây không là một biến rỗng
+        {% endif %} 
+            
+            
+    </div>
+    <hr>
+    <div>
+        {% set var2 = 'abc' %}
+        var2 = {{ var2 }}<br>
+        <b>Check defined: </b>
+        {% if var22 is defined %}
+            variable is defined
+        {% else %}    
+            not defined
+        {% endif %} 
+            
+            
+    </div>
+    
+    <hr>
+    <div>
+        {% set var3 = 10 %}
+        var3 = {{ var3 }}<br>
+        <b>Check even - odd: </b>
+        {% if var3 is even %}
+            đây là số chẵn
+        {% elseif var3 is odd %}    
+           đây là số lẻ
+        {% endif %} 
+            
+            
+    </div>
+    
+    <hr>
+    <div>
+        {% set var4 = 'abc10' %}
+        var4 = {{ var4 }}<br>
+        <b>Check numeric </b>
+        {% if var4 is numeric %}
+            đây là một số
+        {% else %}    
+           đây không là một số
+        {% endif %} 
+            
+            
+    </div>
+    
+     <hr>
+    <div>
+        {% set var5 = 'hellos' %}
+        var5 = {{ var5 }}<br>
+        <b>Check sameas </b>
+        {% if var5 is sameas('hello') %}
+            same value
+        {% else %}    
+           not same value
+        {% endif %} 
+            
+            
+    </div>
+    
+     <hr>
+    <div>
+        {% set var6 = true %}
+        var6 = {{ var6 }}<br>
+        <b>Check type </b>
+        {% if var6 is type('string') %}
+            đây là định dạng kiểu chuỗi
+        {% elseif var6 is type('boolean') %}    
+           đây là định dạng kiểu logic
+        {% elseif var6 is type('integer') %}    
+           đây là định dạng kiểu số nguyên
+        {% endif %} 
+            
+            
+    </div>
+    
+     <hr>
+    <div>
+        {% set var7 = [] %}
+        var7 = {{ var7 }}<br>
+        <b>Check scalar </b>
+        {% if var7 is scalar %}
+            đây là định dạng thuộc về tập hợp kiểu chuỗi, kiểu số nguyên, kiểu số thập phân, kiểu logic
+        {% else %}    
+           đây không là định dạng kiểu scalar
+        
+        {% endif %} 
+            
+            
+    </div>
+    
+   
+    
+</body>
+</html>

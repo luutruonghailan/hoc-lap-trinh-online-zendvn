@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="${encoding}">
+<title>Insert title here</title>
+</head>
+<body>
+    <b>Filter length array : </b>
+        {% set var_length = 1..10 %}
+        
+    <hr>
+    
+    {% for key, value in var_length %}
+        {{ key }} -- {{ value }}<br>
+    {% endfor %}
+    
+    <hr>
+    Số phần tử : {{ var_length | length }}
+    
+   
+    
+    
+    
+    
+    
+</body>
+</html>
