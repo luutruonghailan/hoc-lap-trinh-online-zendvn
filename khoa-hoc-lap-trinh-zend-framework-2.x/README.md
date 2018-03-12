@@ -6,7 +6,7 @@ Tại sao chúng ta nên chọn Zend Framework? Zend Framework là một thư vi
 
 Link Tham gia khóa học lập trình Zend Framework 2.x https://zendvn.com/khoa-hoc-lap-trinh-zend-framework-2-x/
 
-===========================================
+======================================
 - Website: https://zendvn.com/
 - Website học lập trình miễn phí: http://free.zendvn.com/
 - Youtube Học Lập Trình: https://www.youtube.com/user/luutruonghailan/
@@ -17,4 +17,3 @@ Link Tham gia khóa học lập trình Zend Framework 2.x https://zendvn.com/kho
 - Facebook: https://www.fb.com/zendvngroup
 - Facebook trao đổi lập trình: https://www.fb.com/groups/ZendVN.Group/
 - Hỗ trợ học viên: https://www.facebook.com/luutruonghailan
-===========================================
