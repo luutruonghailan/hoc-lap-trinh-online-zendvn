@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Example 04</title>
+<style type="text/css">
+	* {
+		margin: 0px;
+		padding: 0px;
+	}
+	
+	.block {
+		width: 400px;
+		height: 250px;
+		margin: 50px auto;
+		border: 2px solid #F00;
+		position: relative;
+	}
+	
+	.box {
+		width: 100px;
+		height: 100px;
+		text-align: center;
+		line-height: 100px;
+	}
+	
+	.boxA {
+		background-color: #9F6;
+		position: absolute;
+		left: 40px;
+		top: 100px;
+		z-index: 1002;
+	}
+	
+	.boxB {
+		background-color: #FF0;
+		position: absolute;
+		left: 100px;
+		top: 125px;
+		z-index: 999;
+	}
+	
+	.boxC {
+		background-color: #39F;
+		position: absolute;
+		left: 160px;
+		top: 55px;
+		z-index: 1001;
+	}
+	
+	.boxD {
+		background-color: #C9C;
+		position: absolute;
+		left: 130px;
+		top: 65px;
+		z-index: 1000;
+
+	}
+</style>
+</head>
+
+<body>
+	<div class="block">
+    	<div class="box boxA">Box A</div>
+        <div class="box boxB">Box B</div>
+        
+        <div class="box boxC">Box C</div>
+        <div class="box boxD">Box D</div>
+    </div>
+</body>
+</html>

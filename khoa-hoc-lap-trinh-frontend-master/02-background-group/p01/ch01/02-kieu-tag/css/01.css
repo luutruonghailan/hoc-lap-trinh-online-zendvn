@@ -1,0 +1,13 @@
+/* CSS Document */
+
+.div{
+	border: 1px solid #000;
+	padding: 3px;
+	display: inline;
+}
+
+.span{
+	border: 1px solid #000;
+	padding: 3px;
+	display: block;
+}
