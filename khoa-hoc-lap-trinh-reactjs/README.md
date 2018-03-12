@@ -1,4 +1,4 @@
-Mã Nguồn Khóa học Lập trình ReactJS với các ứng dụng thực tế
+<h2>Mã Nguồn Khóa học Lập trình ReactJS với các ứng dụng thực tế</h2>
 
 Khóa học lập trình ReactJS cung cấp các kiến thức trọng tâm về ReactJS cũng như cách áp dụng ReactJS trong việc xây dựng các project chúng ta thường gặp trong thực tế.
 
@@ -6,7 +6,7 @@ Khóa học ReactJS tại ZendVN là khóa học có nội dung mới nhất và
 
 Link Tham gia Khóa học lập trình ReactJS: https://zendvn.com/khoa-hoc-lap-trinh-reactjs/
 
-===========================================
+==================================
 - Website: https://zendvn.com/
 - Website học lập trình miễn phí: http://free.zendvn.com/
 - Youtube Học Lập Trình: https://www.youtube.com/user/luutruonghailan/
@@ -17,4 +17,3 @@ Link Tham gia Khóa học lập trình ReactJS: https://zendvn.com/khoa-hoc-lap-
 - Facebook: https://www.fb.com/zendvngroup
 - Facebook trao đổi lập trình: https://www.fb.com/groups/ZendVN.Group/
 - Hỗ trợ học viên: https://www.facebook.com/luutruonghailan
-===========================================
