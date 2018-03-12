@@ -4,7 +4,7 @@ Xin chào mừng các bạn đến với khóa học lập trình Phalcon tại 
 
 Link Tham gia Khóa học lập trình Phalcon: https://zendvn.com/khoa-hoc-lap-trinh-phalcon/
 
-===========================================
+==================================
 - Website: https://zendvn.com/
 - Website học lập trình miễn phí: http://free.zendvn.com/
 - Youtube Học Lập Trình: https://www.youtube.com/user/luutruonghailan/
@@ -15,4 +15,3 @@ Link Tham gia Khóa học lập trình Phalcon: https://zendvn.com/khoa-hoc-lap-
 - Facebook: https://www.fb.com/zendvngroup
 - Facebook trao đổi lập trình: https://www.fb.com/groups/ZendVN.Group/
 - Hỗ trợ học viên: https://www.facebook.com/luutruonghailan
-===========================================
