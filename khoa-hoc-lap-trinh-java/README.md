@@ -8,7 +8,7 @@ Java cũng là một bộ môn được đưa vào giảng đường và đượ
 
 Link Tham gia Khóa học Lập trình Java cơ bản: https://zendvn.com/khoa-hoc-lap-trinh-java-co-ban/
 
-===========================================
+=====================================
 - Website: https://zendvn.com/
 - Website học lập trình miễn phí: http://free.zendvn.com/
 - Youtube Học Lập Trình: https://www.youtube.com/user/luutruonghailan/
@@ -19,4 +19,3 @@ Link Tham gia Khóa học Lập trình Java cơ bản: https://zendvn.com/khoa-h
 - Facebook: https://www.fb.com/zendvngroup
 - Facebook trao đổi lập trình: https://www.fb.com/groups/ZendVN.Group/
 - Hỗ trợ học viên: https://www.facebook.com/luutruonghailan
-===========================================
