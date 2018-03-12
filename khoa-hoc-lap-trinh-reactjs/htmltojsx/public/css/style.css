@@ -1,0 +1,11 @@
+div.row {
+	margin: 20px 0px;
+}
+
+textarea, pre {
+	resize: none;
+	max-height: 300px;
+	min-height: 300px;
+	/*background-color: #272822 !important;*/
+	/*color: #FFFFFF !important;*/
+}

@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+	
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<!--
+		Notice the use of %PUBLIC_URL% in the tags above.
+		It will be replaced with the URL of the `public` folder during the build.
+		Only files inside the `public` folder can be referenced from the HTML.
+
+		Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+		work correctly both with client-side routing and a non-root public URL.
+		Learn how to configure a non-root public URL by running `npm run build`.
+	-->
+	<title>Training React App</title>
+</head>
+<body>
+	<div class="container">
+
+		<!-- TITLE : START -->
+		<div class="page-header">
+		  <h1>Project 01 - ToDo List <small>ReactJS</small></h1>
+		</div>
+		<!-- TITLE : END -->
+
+		<!-- CONTROL (SEARCH + SORT + ADD) : START -->
+		<div class="row">
+			<!-- SEARCH : START -->
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<div class="input-group">
+					<input type="text" class="form-control" ref="search" placeholder="Search for..." />
+					<span class="input-group-btn">
+						<button  class="btn btn-info" type="button">Go!</button>
+					</span>
+				</div>
+			</div>
+			<!-- SEARCH : END -->
+
+			<!-- SORT : START -->
+			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+				<div class="dropdown">
+					<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+						Sort by <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+						<li><a role="button">Name ASC</a></li>
+						<li><a role="button">Name DESC</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a role="button">Level ASC</a></li>
+						<li><a role="button">Level DESC</a></li>
+					</ul>
+					<span class="label label-success label-medium">NAME - DESC</span>
+				</div>
+			</div>
+			<!-- SORT : END -->
+
+			<!-- ADD : START -->
+			<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+				<button type="button" class="btn btn-info btn-block">Add Task</button>
+			</div>
+			<!-- ADD : END -->
+
+		</div>
+		<!-- CONTROL (SEARCH + SORT + ADD) : END -->
+		
+		<!-- FORM : START -->
+		<div class="row">
+			<div class="col-md-offset-7 col-md-5">
+				<form action="" method="POST" class="form-inline"  >
+					<div class="form-group">
+						<label class="sr-only" for="">label</label>
+						<input type="text" class="form-control" placeholder="Task Name" ref="task_name" />
+					</div>
+					<div class="form-group">
+						<label class="sr-only" for="">label</label>
+						<select name="ds" id="inputDs" class="form-control" required="required" ref="task_level">
+							<opti value="0" >Small</option>
+							<option value="1">Medium</option>
+							<option value="2">High</option>
+						</select>
+					</div>
+
+					<button type="button" class="btn btn-primary">Submit</button>
+					<button type="button" class="btn btn-default">Cancel</button>
+				</form>
+			</div>
+		</div>
+		<!-- FORM : END -->
+
+		<!-- LIST : START -->
+
+		<div class="panel panel-success" >
+			<div class="panel-heading">List Task</div>
+			<table class="table table-hover ">
+				<thead>
+					<tr>
+						<th style="width: 10%" class="text-center">#</th>
+						<th>Task</th>
+						<th style="width: 20%" class="text-center">Level</th>
+						<th style="width: 20%">Action</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td class="text-center">1</td>
+						<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ea c</td>
+						<td class="text-center"><span class="label label-danger">High</span></td>
+						<td>
+							<button type="button" class="btn btn-warning">Edit</button>
+							<button type="button" class="btn btn-danger">Delete</button>
+						</td>
+					</tr>
+					<tr>
+						<td class="text-center">2</td>
+						<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ea c</td>
+						<td class="text-center"><span class="label label-default">Small</span></td>
+						<td>
+							<button type="button" class="btn btn-warning">Edit</button>
+							<button type="button" class="btn btn-danger">Delete</button>
+						</td>
+					</tr>
+					<tr>
+						<td class="text-center">3</td>
+						<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ea c</td>
+						<td class="text-center"><span class="label label-info">Medium</span></td>
+						<td>
+							<button type="button" class="btn btn-warning">Edit</button>
+							<button type="button" class="btn btn-danger">Delete</button>
+						</td>
+					</tr>
+				</tbody>
+
+			</table>
+		</div>
+	</div>
+
+	
+	<!--
+		This HTML file is a template.
+		If you open it directly in the browser, you will see an empty page.
+
+		You can add webfonts, meta tags, or analytics to this file.
+		The build step will place the bundled scripts into the <body> tag.
+
+		To begin the development, run `npm start` or `yarn start`.
+		To create a production bundle, use `npm run build` or `yarn build`.
+	-->
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="js/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+

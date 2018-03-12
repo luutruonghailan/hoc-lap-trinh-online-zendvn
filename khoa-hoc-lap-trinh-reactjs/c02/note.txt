@@ -1,0 +1,10 @@
+App		strSearch
+
+
+		Button Go		->  strSearch (App) = X			-> App.handleSearh()
+		Button Clear	-> 	strSearch (App) = ''
+
+
+App 	>>>>>>>>>>>>>>>> 						Control 			>>>>>>>>>>>>>> 						Search
+		onClickSearchGo={this.handleSearh}						onClickGo={Control.onClickSearchGo}
+																onClickGo={App.handleSearh}

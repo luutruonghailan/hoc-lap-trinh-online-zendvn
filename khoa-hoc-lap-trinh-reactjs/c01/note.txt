@@ -1,0 +1,8 @@
+JSX — Javascript Syntax Extension
+JSX - Javascript + XML cú pháp để thay thế Javascript, cách viết gần giống XML 
+thay thế React.createElement() 
+JSX không phải là HTML
+
+<JSXElementName JSXAttributesopt>...</JSXElementName>
+
+<a />
