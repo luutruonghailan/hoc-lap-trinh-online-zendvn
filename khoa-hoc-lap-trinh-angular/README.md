@@ -1,4 +1,4 @@
-Mã Nguồn Khóa học lập trình Android căn bản
+<h2>Mã Nguồn Khóa học lập trình Android căn bản</h2>
 
 Khóa học lập trình Android căn bản là khóa học lập trình mobile đầu tiên do ZendVN biên soạn,Sau khi hoàn tất khóa học lập trình Android căn bản, bạn sẽ có được một nền tảng kiến thức vững chắc về lập trình Android cũng như các kiến thức chuyên sâu và thủ thuật lập trình trong việc xây dựng các ứng dụng Android thực tế, đủ khả năng nghiên cứu các thủ thuật lập trình Android nâng cao và chuyên sâu hơn.
 
@@ -6,7 +6,7 @@ Lập trình Android được dựa trên ngôn ngữ lập trình Java, để h
 
 Link Tham gia Khóa học lập trình Android căn bản: https://zendvn.com/khoa-hoc-lap-trinh-android-can-ban/
 
-===========================================
+===================================
 - Website: https://zendvn.com/
 - Website học lập trình miễn phí: http://free.zendvn.com/
 - Youtube Học Lập Trình: https://www.youtube.com/user/luutruonghailan/
@@ -17,4 +17,3 @@ Link Tham gia Khóa học lập trình Android căn bản: https://zendvn.com/kh
 - Facebook: https://www.fb.com/zendvngroup
 - Facebook trao đổi lập trình: https://www.fb.com/groups/ZendVN.Group/
 - Hỗ trợ học viên: https://www.facebook.com/luutruonghailan
-===========================================
