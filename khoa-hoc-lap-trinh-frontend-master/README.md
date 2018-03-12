@@ -1,4 +1,4 @@
-Mã Nguồn Khóa học lập trình Frontend Master
+<h2>Mã Nguồn Khóa học lập trình Frontend Master</h2>
 
 Khóa học lập trình Frontend Master của ZendVN là một khóa học được nâng cấp từ khóa học thiết kế Web. Khóa học Frontend master này đem đến cho các bạn toàn bộ kiến thức nền tảng của lập trình website như HTML, CSS, javascript, jQuery framework, Bootstrap framework, NodeJS… ZendVN đảm bảo khóa học này sẽ đem lại cho các bạn kiến thức rộng nhất và toàn diện nhất của lĩnh vực thiết kế web hiện đại.
 
@@ -6,7 +6,7 @@ Khi nghĩ đến lập trình web ai cũng nghĩ đến lập trình PHP, điề
 
 Link Tham gia Khóa học lập trình Frontend Master: https://zendvn.com/khoa-hoc-lap-trinh-frontend-master/
 
-===========================================
+=================================
 - Website: https://zendvn.com/
 - Website học lập trình miễn phí: http://free.zendvn.com/
 - Youtube Học Lập Trình: https://www.youtube.com/user/luutruonghailan/
@@ -17,4 +17,3 @@ Link Tham gia Khóa học lập trình Frontend Master: https://zendvn.com/khoa-
 - Facebook: https://www.fb.com/zendvngroup
 - Facebook trao đổi lập trình: https://www.fb.com/groups/ZendVN.Group/
 - Hỗ trợ học viên: https://www.facebook.com/luutruonghailan
-===========================================
