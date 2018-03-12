@@ -1,0 +1,25 @@
+
+<?php 
+
+	$courses	= array(
+		array(
+				'name'			=> 'Khóa học lập trình Joomla! 2.5',
+				'description'	=> 'Joomla CMS là một hệ thống quản lý dữ liệu được đánh giá rất cao hiện nay, Joomla rất dễ sử dụng để xây dựng một website và rất thân thiện với người sử dụng. Nhưng để lập trình tạo ra các thành phần mở rộng như Component, Module, Plugin, Template...',
+				'style'			=> array(
+						'color'				=> 'red',
+						'text-decoration'	=> 'underline',
+						'font-weight'		=> 'bold'
+				)
+		),
+		array(
+				'name'			=> 'Khóa học lập trình jQuery',
+				'description'	=> 'Nếu nói đến lập trình web, chúng ta nghĩ ngay đến một ngôn ngữ lập trình không thể thiếu trong một website đó là Javascript. Javascript giúp chúng ta thực hiện nhưng thao tác, hiệu ứng mà các ngôn ngữ lập web như PHP, ASP, JSP… khó mà thực hiện được. ',
+				'style'			=> array(
+						'color'				=> 'red',
+				)
+		)
+	);
+
+	echo $this->partialLoop('course.phtml', $courses);
+
+?>

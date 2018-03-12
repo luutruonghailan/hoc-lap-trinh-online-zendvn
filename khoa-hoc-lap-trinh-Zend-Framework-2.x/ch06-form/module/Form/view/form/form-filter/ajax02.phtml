@@ -1,0 +1,50 @@
+<?php 
+	$myForm	= $this->myForm;
+	
+	$myForm->prepare();
+	
+	$elmType	= $myForm->get('my-type');
+	$elmCourse	= $myForm->get('my-course');
+	$elmSubmit	= $myForm->get('my-button-submit');
+	
+	$url	= $this->url('formRoute/default', array(
+			'controller'	=> 'form-filter',
+			'action'		=> 'load-course',
+	));
+?>
+
+<div class="ajax-tut">
+	<?php 
+		echo $this->form()->openTag($myForm);
+	?>
+		<p><?php echo $this->formLabel($elmType);?></p>
+		<p><?php echo $this->formElement($elmType);?></p>
+		<p><?php echo $this->formLabel($elmCourse);?></p>
+		<p><?php echo $this->formElement($elmCourse);?></p>
+		<p><?php echo $this->formElement($elmSubmit);?></p>
+	<?php 
+		echo $this->form()->closeTag();
+	?>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		loadCourse($('#my-type option:selected').val());
+		$('#my-type').change(function(){
+			var courseType	= $('#my-type option:selected').val();
+			loadCourse(courseType);
+		});
+	})
+	
+	function loadCourse(courseType){
+		$.ajax({
+			url		: '<?php echo $url;?>',
+			type	: 'GET',
+			data	: {type: courseType},
+			success	: function(data) {
+					$('#my-course').html(data);
+			}
+		});
+	}
+</script>

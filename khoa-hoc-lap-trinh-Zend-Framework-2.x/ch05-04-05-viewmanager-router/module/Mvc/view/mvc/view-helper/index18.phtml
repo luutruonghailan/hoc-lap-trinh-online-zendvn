@@ -1,0 +1,48 @@
+
+<?php 
+	
+	// Lưu trữ giá trị vào placeholder
+	// $this->placeholder('fooOne')->set('Value One');
+	// $this->placeholder('fooTwo')->set('Value Two');
+	
+	// Lấy giá trị trong placeholder
+	// echo $this->placeholder('fooOne');
+	// echo '<br />' . $this->placeholder('dsd');
+	
+	$this->placeholder('fooOne')->set('Value One')
+								->setPrefix('----------')
+							    ->setPostfix('++++++++')
+								->setSeparator('xxxxxxx');
+	
+	$arrCourse	= array(
+			'Khóa học lập trình PHP',
+			'Khóa học lập trình Zend Framework',
+			'Khóa học lập trình Joomla',
+	);
+	
+	$this->placeholder('fooTwo')->exchangeArray($arrCourse);
+	$this->placeholder('fooTwo')->setPrefix('<ul><li>')
+								->setPostfix('</li></ul>')
+								->setSeparator('</li><li>');
+	echo $this->placeholder('fooTwo');
+?>
+
+<?php 
+	$this->placeholder('fooThree')->captureStart();
+?>
+
+<div>
+	<h3 style="color:blue">Khóa học lập trình PHP</h3>
+	<p>PHP đã và đang trở thành một ngôn ngữ lập trình phổ biến trong các ứng dụng web ngày nay</p>
+</div>
+
+<?php 
+	$this->placeholder('fooThree')->captureEnd();
+?>
+
+<?php 
+	echo $this->placeholder('fooThree');
+?>
+
+
+

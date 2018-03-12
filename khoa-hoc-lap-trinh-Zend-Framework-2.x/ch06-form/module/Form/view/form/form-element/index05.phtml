@@ -1,0 +1,46 @@
+<style>
+	h5 {color:blue}
+</style>
+
+<?php 
+	// FormRow 		= FormLabel + FormInput (FormElement) + FormElementErrors
+	// FormText		= FormInput (FormElement)
+	// FormElement	= FormInput FormText FormNumber FormPassword FormX
+	// FormInput	= input type="*"
+	// FormLabel	= input type="*"
+	
+	$myForm	= $this->myForm;
+	echo $this->form()->openTag($this->myForm);
+	
+	echo '<h5>Zend\Form\Element\Text</h5>';
+	
+	echo $this->formLabel($myForm->get('my-textbox'));
+	echo $this->formInput($myForm->get('my-textbox'));
+	
+	echo '<h5>Zend\Form\Element\Text</h5>';
+	echo $this->formLabel($myForm->get('my-textbox'), $this->formText($myForm->get('my-textbox')), 'prepend');
+	
+	echo '<h5>Zend\Form\Element\Text</h5>';
+	echo $this->formLabel()->openTag($myForm->get('my-textbox'));
+		echo '<h3>Label</h3>';
+		echo $this->formInput($myForm->get('my-textbox'));
+	echo $this->formLabel()->closeTag();
+	
+// 	echo '<h5>Zend\Form\Element\Button</h5>';
+// 	echo $this->formInput($myForm->get('my-button'));
+	
+// 	echo '<h5>Zend\Form\Element\Number</h5>';
+// 	echo $this->formElement($myForm->get('my-number'));
+	
+// 	echo '<h5>Zend\Form\Element\Password</h5>';
+// 	echo $this->formElement($myForm->get('my-password'));
+	
+// 	foreach($myForm as $element){
+// 		echo $this->formElement($element);
+// 	}
+ 	
+	
+	echo $this->form()->closeTag();
+?>
+
+

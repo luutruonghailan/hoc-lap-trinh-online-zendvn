@@ -1,0 +1,22 @@
+<?php
+$input = <<<INPUT
+bar&quot;; alert(&quot;Meow!&quot;); var xss=&quot;true
+INPUT;
+$escaper	= new \Zend\Escaper\Escaper('utf-8');
+$output		= $escaper->escapeJs($input);
+?>
+
+<!DOCTYPE html>
+<?php header('Content-Type: application/xhtml+xml; charset=UTF-8'); ?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Unescaped Entities</title>
+    <meta charset="UTF-8"/>
+    <script type="text/javascript">
+        var foo = <?php echo $output ?>;
+    </script>
+</head>
+<body>
+    <p>json_encode() is not good for escaping javascript!</p>
+</body>
+</html>

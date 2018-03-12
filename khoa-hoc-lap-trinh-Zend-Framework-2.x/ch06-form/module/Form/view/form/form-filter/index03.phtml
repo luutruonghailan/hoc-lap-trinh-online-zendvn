@@ -1,0 +1,57 @@
+<?php 
+	$myForm			= $this->myForm;
+	$elementCHN		= $myForm->get('card-holder-name');
+	$elementEmail	= $myForm->get('user')->get('my-email');
+	$elementPassword= $myForm->get('user')->get('my-password');
+	$elementCN		= $myForm->get('card-number');
+	$elementMonth	= $myForm->get('expiry-month');
+	$elementYear	= $myForm->get('expiry-year');
+	$elementCode	= $myForm->get('cvv');
+	$elementPayNow	= $myForm->get('pay-now');
+	
+	$elements		= array(
+			array(
+					'label'	=> $this->formLabel($elementEmail),
+					'input'	=> $this->formInput($elementEmail),
+					'class'	=> 'col-sm-9',
+			),
+			array(
+					'label'	=> $this->formLabel($elementPassword),
+					'input'	=> $this->formInput($elementPassword),
+					'class'	=> 'col-sm-9',
+			),
+			array(
+					'label'	=> $this->formLabel($elementCHN),
+					'input'	=> $this->formInput($elementCHN),
+					'class'	=> 'col-sm-9',
+			),
+			array(
+					'label'	=> $this->formLabel($elementCN),
+					'input'	=> $this->formInput($elementCN),
+					'class'	=> 'col-sm-9',
+			),
+			array(
+					'label'	=> $this->formLabel($elementMonth),
+					'input'	=> '<div class="row"><div class="col-xs-3">'.$this->formSelect($elementMonth).'</div><div class="col-xs-3">'.$this->formSelect($elementYear).'</div></div>',
+					'class'	=> 'col-sm-9',
+			),
+			array(
+					'label'	=> $this->formLabel($elementCode),
+					'input'	=> $this->formInput($elementCode),
+					'class'	=> 'col-sm-3',
+			),
+			array(
+					'label'	=> null,
+					'input'	=> $this->formButton($elementPayNow),
+					'class'	=> 'col-sm-offset-3 col-sm-9',
+			),
+
+	);
+?>
+
+<?php 
+	echo $this->form()->openTag($myForm);
+		echo $this->partialLoop('form-group.phtml', $elements);
+	echo $this->form()->closeTag();
+	echo '<hr />';
+?>

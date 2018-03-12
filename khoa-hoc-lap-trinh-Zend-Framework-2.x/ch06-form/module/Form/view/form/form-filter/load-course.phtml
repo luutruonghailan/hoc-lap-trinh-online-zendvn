@@ -1,0 +1,14 @@
+<?php 
+	$isXmlHttpRequest	= $this->isXmlHttpRequest;
+	$data				= $this->data;
+	$xhtml				= '<h3 style="color:red;">Access is denied!</h3>';
+	
+	if($isXmlHttpRequest == true) {
+		$xhtml		= '<option value="0">Chọn khóa học muốn đăng ký!</option>';
+		foreach($data as $key=> $value){
+			$xhtml .= sprintf('<option value="%s">%s</option>', $value['id'], $value['name']); 
+		}
+	}
+	
+	echo $xhtml;
+?>

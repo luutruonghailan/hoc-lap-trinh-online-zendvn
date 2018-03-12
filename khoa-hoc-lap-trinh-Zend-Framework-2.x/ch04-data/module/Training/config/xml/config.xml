@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zend_config>
+	<website>www.zend.vn</website>
+	<account>
+		<email>zend2@zend.vn</email>
+		<password>123456</password>
+		<title>Zend Config</title>
+		<content>Training Zend Config</content>
+		<port>465</port>
+	</account>
+</zend_config>

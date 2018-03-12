@@ -1,0 +1,30 @@
+<style>
+h5 {
+	color: blue
+}
+</style>
+
+<?php 
+	// FormRow 		= FormLabel + FormInput (FormElement) + FormElementErrors
+	// FormText		= FormInput (FormElement)
+	// FormElement	= FormInput FormText FormNumber FormPassword FormX
+	// FormInput	= input type="*"
+	// FormLabel	= input type="*"
+	
+	$myForm	= $this->myForm;
+	$elementTextbox	= $myForm->get('my-textbox');
+	$elementNumber	= $myForm->get('my-number');
+	$elementSubmit	= $myForm->get('my-submit');
+	
+	echo $this->form()->openTag($this->myForm);
+	
+	echo $this->myFormRow($elementTextbox);
+	echo $this->myFormRow($elementNumber);
+	echo $this->myFormRow($elementSubmit);
+	
+	
+	
+	echo $this->form()->closeTag();
+?>
+
+

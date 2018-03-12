@@ -1,0 +1,18 @@
+<?php
+
+	$labelValue	= $element->getLabel();
+	
+	$strLabelAttrs	= $this->joinKeyValue($element->getLabelAttributes());
+	$strInputAttrs	= $this->joinKeyValue($element->getAttributes());
+
+?>
+
+<div class="abc">
+	<?php if($labelValue != null) {?>
+		<label <?php echo $strLabelAttrs;?>>
+			<?php echo $labelValue;?>
+		</label>
+	<?php }?>
+	<input <?php echo $strInputAttrs;?>>
+</div>
+

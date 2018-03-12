@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zend-config>
+    <production>
+        <website>www.zend.vn</website>
+        <account>
+            <email>zend2@zend.vn</email>
+            <port>465</port>
+        </account>
+    </production>
+</zend-config>
