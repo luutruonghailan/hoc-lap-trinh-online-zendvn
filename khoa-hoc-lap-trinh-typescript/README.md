@@ -1,4 +1,4 @@
-Mã Nguồn Khóa học Lập trình TypeScript với dự án Shopping Cart
+<h2>Mã Nguồn Khóa học Lập trình TypeScript với dự án Shopping Cart</h2>
 
 Khóa học lập trình TypeScript cung cấp các kiến thức trọng tâm về TypeScript cũng như cách áp dụng và kết hợp TypeScript với jQuery, các thư viện jQuery, thư viện Javascript mở rộng trong việc xây dựng hoàn chỉnh Project Shopping Cart.
 
@@ -6,7 +6,7 @@ TypeScript là một ngôn ngữ mã nguồn mở miễn phí hiện đang đư�
 
 Link Tham gia Khóa học lập trình TypeScrip: https://zendvn.com/khoa-hoc-lap-trinh-typescript/
 
-===========================================
+====================================
 - Website: https://zendvn.com/
 - Website học lập trình miễn phí: http://free.zendvn.com/
 - Youtube Học Lập Trình: https://www.youtube.com/user/luutruonghailan/
@@ -17,4 +17,3 @@ Link Tham gia Khóa học lập trình TypeScrip: https://zendvn.com/khoa-hoc-la
 - Facebook: https://www.fb.com/zendvngroup
 - Facebook trao đổi lập trình: https://www.fb.com/groups/ZendVN.Group/
 - Hỗ trợ học viên: https://www.facebook.com/luutruonghailan
-===========================================
