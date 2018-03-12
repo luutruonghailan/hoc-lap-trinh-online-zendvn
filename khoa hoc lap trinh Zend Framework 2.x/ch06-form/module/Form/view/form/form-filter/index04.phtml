@@ -1,0 +1,14 @@
+
+<?php 
+	$myForm	= $this->myForm;
+	$myForm->prepare();
+	echo $this->form()->openTag($myForm);
+		
+		echo $this->formRow($myForm->get('user')->get('my-email'));	
+		echo '<br /><br />' . $this->formRow($myForm->get('user')->get('my-password'));
+		
+		echo '<br /><br />' . $this->formRow($myForm->get('my-submit'));
+	
+	echo $this->form()->closeTag();
+?>
+

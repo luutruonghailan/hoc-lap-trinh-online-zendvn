@@ -1,0 +1,18 @@
+<?php header('Content-Type: application/xhtml+xml; charset=UTF-8'); ?>
+<!DOCTYPE html>
+<?php
+$input = <<<INPUT
+" onmouseover="alert('zf2')
+INPUT;
+$escaper = new Zend\Escaper\Escaper('utf-8');
+$output = $escaper->escapeUrl($input);
+?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Unescaped URL data</title>
+    <meta charset="UTF-8"/>
+</head>
+<body>
+    <a href="http://example.com/?name=<?php echo $output; ?>">Click here!</a>
+</body>
+</html>

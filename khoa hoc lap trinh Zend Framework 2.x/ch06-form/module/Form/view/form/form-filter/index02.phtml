@@ -1,0 +1,28 @@
+<style>h5 {color:blue}</style>
+
+<?php 
+	$myForm	= $this->myForm;
+	echo $this->form()->openTag($myForm);
+		
+		// formRow	= formLabel + formElement + formElementError
+		echo $this->formRow($myForm->get('my-email'));	
+		echo '<br /><br />' . $this->formRow($myForm->get('my-password'));
+		
+		
+		
+		echo '<br /><br />' . $this->formRow($myForm->get('my-submit'));
+	
+	echo $this->form()->closeTag();
+?>
+
+<div style="background: blue; color: white">
+<?php echo $this->formElementErrors($myForm->get('my-email'), array('class' => 'abcdef'));?>
+<?php 
+	echo $this->formElementErrors()
+			  ->setMessageOpenFormat('<div class="abc"><p>')
+			  ->setMessageCloseString('</p></div>')
+			  ->setMessageSeparatorString('</p><p>')
+			  ->render($myForm->get('my-email'));
+
+?>
+</div>

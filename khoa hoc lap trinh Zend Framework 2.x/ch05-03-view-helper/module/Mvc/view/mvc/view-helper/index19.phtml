@@ -1,0 +1,38 @@
+<?php 
+	echo '<h3 style="color:red;font-weight:bold">currencyFormat</h3>';
+	
+	$currency	= 12345.6789;
+	$this->plugin('currencyformat')->setCurrencyCode('VND')->setLocale('vi-VI');
+	
+	// http://www.science.co.il/International/Currency-codes.asp
+	// http://www.science.co.il/Language/Codes.asp
+	echo '<br />' . $this->currencyFormat($currency);
+?>
+<?php 
+	echo '<h3 style="color:red;font-weight:bold">dateFormat</h3>';
+	
+	// http://php.net/manual/en/timezones.asia.php
+	$this->plugin('dateformat')->setLocale('vi-VI')->setTimezone('Asia/Ho_Chi_Minh');
+	echo '<br />' . $this->dateFormat(
+		new DateTime(),
+		IntlDateFormatter::NONE,	// NONE SHORT MEDIUM LONG FULL
+		IntlDateFormatter::MEDIUM	// NONE SHORT MEDIUM LONG FULL
+	);
+?>
+
+<?php 
+	echo '<h3 style="color:red;font-weight:bold">numberFormat</h3>';
+	
+	// http://php.net/manual/en/class.numberformatter.php#intl.numberformatter-constants.unumberformatstyle
+	// http://php.net/manual/en/class.numberformatter.php#intl.numberformatter-constants.types
+	
+	echo '<br />' .   $this->numberFormat(
+			1234567.8901234567,	
+			NumberFormatter::PERCENT,		// PERCENT
+			NumberFormatter::TYPE_INT64,	// TYPE_DEFAULT
+			"vi_VI"
+	); 
+
+	$this->plugin("numberFormat")->setLocale("vi_VN");
+?>
+

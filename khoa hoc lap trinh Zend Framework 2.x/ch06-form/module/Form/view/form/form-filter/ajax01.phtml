@@ -1,0 +1,62 @@
+<?php 
+	$url	= $this->url('formRoute/default', array(
+			'controller'	=> 'form-filter',		
+			'action'		=> 'load-content',		
+	));
+?>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		var hash		= window.location.hash.slice(1);
+		var arrElement	= ['php', 'zend', 'jquery'];
+		var courseType	= ($.inArray(hash, arrElement) > -1) ? hash : 'php';
+			
+		loadContent(courseType);
+		
+		$('.nav-tabs a').click(function(){
+			var courseType	= $(this).data('content');
+			loadContent(courseType);
+		})
+	});
+
+	function loadContent(courseType){
+		$.ajax({
+			url		: '<?php echo $url;?>',
+			type	: 'GET',
+			data	: {type: courseType},
+			success	: function(data) {
+					$('div.tab-content').html(data);
+			},
+			complete: function(){
+					$('.nav-tabs li').removeClass('active');
+					$('a[data-content="'+ courseType +'"]').parent().addClass('active');
+					window.location.hash	= courseType;
+			}
+		});
+	}
+	
+</script>
+
+<div class="ajax-tut">
+	<ul class="nav nav-tabs">
+		<li >
+			<a data-content="php" href="#">php</a>
+		</li>
+		<li>
+			<a data-content="zend" href="#">zend</a>
+		</li>
+		<li>
+			<a data-content="jquery" href="#">jquery</a>
+		</li>
+	</ul>
+	<div class="tab-content">
+		<!-- CONTENT --> 
+	</div>
+</div>
+
+<?php 
+	// Tab Active - Load content
+	// Click
+	// Giữ tab được chọn khi refresh
+	// data : php , zend, jquery
+?>

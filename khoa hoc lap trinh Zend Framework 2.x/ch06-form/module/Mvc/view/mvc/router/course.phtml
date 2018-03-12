@@ -1,0 +1,20 @@
+<?php 
+	$urlPHP	= $this->url('regexRoute', array(
+		'name'		=> 'lap-trinh-php',
+		'id'		=> '123456',
+		'extension'	=> 'html',
+	));
+	
+	echo $urlLogin	= $this->url('literalRoute');
+	
+	// /account/admin/user/edit/2
+	echo $urlEditUser	= $this->url('routeOne/manager_user', array(
+			'action'	=> 'edit',
+			'id'		=> 2
+	));
+?>
+<ul>
+	<li><a href="<?php echo $urlPHP; ?>">PHP</a></li>
+	<li><a href="<?php echo $urlLogin; ?>">Login</a></li>
+	<li><a href="<?php echo $urlEditUser; ?>">Edit User</a></li>
+</ul>

@@ -1,0 +1,47 @@
+<!-- 
+	autofocus		Thiết lập focus nằm ở input nào
+	form			Thiết lập vùng thuộc về của một input
+	formaction		Thiết lập lại thuộc tính action cho form và submit form
+	formenctype 	Thiết lập lại thuộc tính enctype cho form và submit form
+	formmethod		Thiết lập lại thuộc tính method cho form và submit form
+	formnovalidate 	Thiết lập lại thuộc tính novalidate cho form và submit form
+	formtarget 		Thiết lập chuyển trang sau khi submit form
+	pattern 		Thiết lập mẫu chuỗi dùng cho input
+	placeholder 	Thiết lập giá trị nền cho input
+	required		Thiết lập giá trị của input bắt buộc phải có
+-->
+
+
+<style type="text/css">
+	h5 {color:blue}	
+</style>
+
+<form name="main-form" id="main-form" action="#" method="post" style="margin-left: 20px;" autocomplete="on" novalidate>
+	<!-- XXXXX-XX -->
+	<h5>USERNAME</h5>
+	<input type="text" name="username" required pattern="[a-zA-Z]{5}-[0-9]{2}" title="XXXXX-XX">
+	
+	<h5>EMAIL</h5>
+	<input type="email" name="email" autocomplete="off" required autofocus placeholder="Email: lthlan54@gmail.com">
+	
+	<h5>FILE</h5>
+	<input type="file" name="my-file[]" multiple>
+	
+	<h5>SUBMIT FORM</h5>
+	<input type="submit" value="Submit form">
+	<input type="submit" value="Submit form - Action" formaction="login.html">
+	<input type="submit" value="Submit form - Enctype" formenctype="multipart/form-data">
+	<input type="submit" value="Submit form - Method" formmethod="get">
+	<input type="submit" value="Submit form - NoValidate" formnovalidate>
+	<input type="submit" value="Submit form - Target" formtarget="_blank">
+</form>
+
+<h5>WEBSITE</h5>
+<input type="text" name="website" required form="main-form">
+
+
+
+
+
+
+

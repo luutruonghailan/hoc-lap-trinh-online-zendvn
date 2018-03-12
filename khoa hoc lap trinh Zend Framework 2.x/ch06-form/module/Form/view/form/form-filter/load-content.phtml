@@ -1,0 +1,10 @@
+<?php 
+	$isXmlHttpRequest	= $this->isXmlHttpRequest;
+	$data				= $this->data;
+	
+	if($isXmlHttpRequest == true) {
+		echo $data;
+	}else{
+		echo '<h3 style="color:red;">Access is denied!</h3>';
+	}
+?>

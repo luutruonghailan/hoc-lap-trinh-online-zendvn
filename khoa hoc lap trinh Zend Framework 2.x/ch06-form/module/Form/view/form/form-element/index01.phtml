@@ -1,0 +1,36 @@
+<style>
+	h5 {color:blue}
+</style>
+
+<?php 
+	echo $this->form()->openTag($this->form);
+	
+	echo '<h5>Zend\Form\Element\Text</h5>';
+	echo $this->formRow($this->form->get('my-textbox'));
+	
+	echo '<h5>Zend\Form\Element\Number</h5>';
+	echo $this->formRow($this->form->get('my-number'));
+	
+	echo '<h5>Zend\Form\Element\Password</h5>';
+	echo $this->formRow($this->form->get('my-password'));
+	
+	echo '<h5>Zend\Form\Element\Textarea</h5>';
+	echo $this->formRow($this->form->get('my-textarea'));
+	
+	echo '<h5>Zend\Form\Element\Button</h5>';
+	echo $this->formRow($this->form->get('my-button'));
+	
+	echo '<h5>Zend\Form\Element\File</h5>';
+	echo $this->formRow($this->form->get('my-file'));
+	
+	echo '<h5>Zend\Form\Element\Checkbox</h5>';
+	echo $this->formRow($this->form->get('my-checkbox'));
+	
+	echo '<h5>Zend\Form\Element\MultiCheckbox</h5>';
+	echo $this->formRow($this->form->get('my-multicheckbox'));
+	
+	echo '<h5>Zend\Form\Element\Submit</h5>';
+	echo $this->formRow($this->form->get('my-submit'));
+	
+	echo $this->form()->closeTag();
+?>

@@ -1,0 +1,13 @@
+<?php 
+	$params	= array(
+			'param1' 	=> 'param_one',
+			'param2' 	=> 'param_two',
+	);
+	
+	$strJson =  $this->json($params);
+	
+	$result = \Zend\Json\Json::decode($strJson);
+	echo '<pre style="color:red;font-weight:bold">';
+	print_r($result);
+	echo '</pre>';
+?>

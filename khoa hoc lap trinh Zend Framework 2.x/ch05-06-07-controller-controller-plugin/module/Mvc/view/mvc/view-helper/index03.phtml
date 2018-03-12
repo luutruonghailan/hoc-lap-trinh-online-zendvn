@@ -1,0 +1,20 @@
+<?php 
+	$arrayNumber	= array(1,2,3,4,5);
+// 	echo '<br />' . $this->cycle($arrayNumber);
+// 	echo '<br />' . $this->cycle($arrayNumber)->next();
+// 	echo '<br />' . $this->cycle($arrayNumber)->next();
+// 	echo '<br />' . $this->cycle($arrayNumber)->next();
+// 	echo '<br />' . $this->cycle($arrayNumber);
+// 	echo '<br />' . $this->cycle($arrayNumber)->prev();
+	
+	for($i = 0; $i <5; $i++){
+		echo '<br />' . $this->cycle($arrayNumber)->prev();
+	}
+	
+	if(!empty($this->courses)){
+		foreach($this->courses as $value){
+			$color	= $this->cycle(array('red','yellow'))->next();
+			echo '<li style="background-color:'.$color.'">'.$value['name'].'</li>';
+		}
+	}
+?>

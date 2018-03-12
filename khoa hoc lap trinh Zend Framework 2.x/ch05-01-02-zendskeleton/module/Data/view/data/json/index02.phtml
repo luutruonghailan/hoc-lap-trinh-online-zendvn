@@ -1,0 +1,26 @@
+<?php 
+	$xhtml	= '<?xml version="1.0" encoding="UTF-8"?>
+					<zendvn_course>
+					    <course>
+					        <id>abc</id>
+					        <name>Zend Framework 2.x</name>
+					    </course>
+			
+					    <course>
+					        <id>def</id>
+					        <name>Jquery Master</name>
+					    </course>
+			
+					    <course>
+					        <id>dohi</id>
+					        <name>Joomla</name>
+					    </course>
+					</zendvn_course>';
+	
+	echo $output	= \Zend\Json\Json::fromXml($xhtml);
+?>
+<script type="text/javascript">
+	var str	= '<?php echo $output;?>';
+	var obj	= JSON.parse(str);
+	console.log(obj.zendvn_course.course[1].name);
+</script>

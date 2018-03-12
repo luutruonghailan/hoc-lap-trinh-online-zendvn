@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zend_config>
+	<router>
+		<routes>
+			<home>
+				<type>Zend\Mvc\Router\Http\Literal</type>
+				<options>
+					<route>/</route>
+					<defaults>
+						<controller>Training\Controller\Index</controller>
+						<action>index</action>
+					</defaults>
+				</options>
+			</home>
+			
+			<training>
+				<type>Literal</type>
+				<options>
+					<route>/training</route>
+					<defaults>
+						<__NAMESPACE__>Training\Controller</__NAMESPACE__>
+						<controller>Index</controller>
+						<action>index</action>
+					</defaults>
+				</options>
+				<may_terminate>true</may_terminate>
+				<child_routes>
+					<default>
+						<type>Segment</type>
+						<options>
+							<route>/[:controller[/:action]]</route>
+							<constraints>
+								<controller>[a-zA-Z][a-zA-Z0-9_-]*</controller>
+								<action>[a-zA-Z][a-zA-Z0-9_-]*</action>
+							</constraints>
+							<defaults/>
+						</options>
+					</default>
+				</child_routes>
+			</training>
+		</routes>
+	</router>
+	
+	<controllers>
+		<invokables>
+			<IndexController>Training\Controller\IndexController</IndexController>
+			<ConfigController>Training\Controller\ConfigController</ConfigController>
+		</invokables>
+	</controllers>
+
+
+</zend_config>
+
+
+
+

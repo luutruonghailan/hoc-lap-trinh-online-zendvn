@@ -1,0 +1,16 @@
+<div>
+	<h3 style="color:red; text-decoration: underline;">Khóa học lập trình Joomla! 2.5</h3>
+	<p>Joomla CMS là một hệ thống quản lý dữ liệu được đánh giá rất cao hiện nay, Joomla rất dễ sử dụng để xây dựng một website và rất thân thiện với người sử dụng. Nhưng để lập trình tạo ra các thành phần mở rộng như Component, Module, Plugin, Template...</p>
+</div>
+<?php 
+	echo $this->partial('course.phtml', array(
+		'name'			=> 'Khóa học lập trình Joomla! 2.5',
+		'description'	=> 'Joomla CMS là một hệ thống quản lý dữ liệu được đánh giá rất cao hiện nay, Joomla rất dễ sử dụng để xây dựng một website và rất thân thiện với người sử dụng. Nhưng để lập trình tạo ra các thành phần mở rộng như Component, Module, Plugin, Template...',
+		'style'			=> array(
+			'color'				=> 'red',
+			'text-decoration'	=> 'underline',
+			'font-weight'		=> 'bold'
+		)
+	));
+
+?>

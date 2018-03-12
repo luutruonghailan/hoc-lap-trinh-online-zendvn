@@ -1,0 +1,21 @@
+<style>
+	h5 {color:blue}
+</style>
+
+<?php 
+	echo $this->form()->openTag($this->form);
+	
+	echo '<h5>Zend\Form\Element\Hidden</h5>';
+	echo $this->formRow($this->form->get('my-hidden'));
+	
+	echo '<h5>Zend\Form\Element\Radio</h5>';
+	echo $this->formRow($this->form->get('my-radio'));
+	
+	echo '<h5>Zend\Form\Element\Select</h5>';
+	echo $this->formRow($this->form->get('my-select'));
+	
+	echo '<h5>Zend\Form\Element\Submit</h5>';
+	echo $this->formRow($this->form->get('my-submit'));
+	
+	echo $this->form()->closeTag();
+?>

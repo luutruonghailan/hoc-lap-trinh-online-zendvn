@@ -1,0 +1,17 @@
+
+<?php 
+	$name			= $this->escapeHtml($this->name);
+	$description	= $this->escapeHtml($this->description);
+	$style			= $this->style;
+	
+	$strStyle	= '';
+	foreach($style as $key => $value){
+		$strStyle	.= $key . ':' . $value . '; ';
+	}
+	
+	$xhtml = '<div>
+				<h2 style="'.$strStyle.'">'.$name.'</h2>
+				<span>'.$description.'</span>
+			</div>';
+	echo $xhtml;
+?>

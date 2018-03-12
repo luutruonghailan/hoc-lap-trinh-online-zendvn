@@ -1,0 +1,28 @@
+<?php 
+	$items = array(
+		'Zend Framework',
+		array(
+				'Zend Framework 1.x',
+				'Zend Framework 2.x',
+				array(
+						'Filter',
+						'MVC',
+				),
+				'Zend Framework Document',
+		),
+		'Joomla 2.5',		
+	);
+	
+	echo '<pre style="color:red;font-weight:bold">';
+	print_r($items);
+	echo '</pre>';
+	
+	// Ul li
+	// echo $this->htmlList($items);
+	
+	// Ul li
+	// echo $this->htmlList($items, true);
+	
+	// Attribute
+	echo $this->htmlList($items, true, array('class' => 'abc', 'id' => 'def', 'style' => 'color:red'), true);
+?>

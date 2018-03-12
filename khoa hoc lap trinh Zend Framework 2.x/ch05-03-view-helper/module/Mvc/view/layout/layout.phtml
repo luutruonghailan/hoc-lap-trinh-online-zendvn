@@ -1,0 +1,29 @@
+<?php echo $this->doctype();?>
+<html>
+	<head>
+		<?php 
+			// Title
+			echo $this->headTitle('Zend 2 Training');
+			
+			// Meta
+			echo $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0')
+								  ->appendName('description', 'Khóa học Zend 2 tại ZendVN')
+								  ->appendHttpEquiv('Refresh', '6000')
+								  ->setCharset('utf-8');
+			// CSS
+			echo $this->headLink()->appendStylesheet(PUBLIC_URL . '/css/style.css')
+								  ->appendStylesheet(PUBLIC_URL . '/css/bootstrap.min.css')
+								  ->appendStylesheet(PUBLIC_URL . '/css/bootstrap-theme.min.css');
+			
+			// JS
+			echo $this->headScript()->appendFile(PUBLIC_URL . '/js/jquery.min.js')
+									->appendFile(PUBLIC_URL . '/js/bootstrap.min.js');
+		?>
+	</head>
+	<body>
+		<div class="my-content">
+			<?php echo $this->content; ?>
+		</div>
+		<?php echo $this->inlineScript();?>
+	</body>
+</html>

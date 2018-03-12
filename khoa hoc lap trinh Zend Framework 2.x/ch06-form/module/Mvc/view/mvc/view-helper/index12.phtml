@@ -1,0 +1,15 @@
+<?php 
+	
+	$data		= PUBLIC_URL . '/files/ch05-oop-08.swf';
+	$attribs	= array(
+		'width' 	=> 1200,
+		'height' 	=> 650,
+	);
+	
+	$params	= array(
+			'param1' 	=> 'param_one',
+			'param2' 	=> 'param_two',
+	);
+	
+	echo $this->htmlFlash($data, $attribs, $params);
+?>
