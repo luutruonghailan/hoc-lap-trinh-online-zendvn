@@ -1,0 +1,27 @@
+div.row {
+	margin: 20px 0px;
+}
+
+div.panel-body h4 {
+	margin-top: 20px;
+}
+
+div.panel-body ol {
+	padding-left: 20px;
+}
+
+#mContent {
+	margin-top: 20px;
+}
+#mContent > p {
+	height: 60px;
+	width: 60px;
+	background-color: #accbe0;
+	display: inline-block;
+	margin: 3px;
+	cursor: pointer;
+	line-height: 60px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+}
