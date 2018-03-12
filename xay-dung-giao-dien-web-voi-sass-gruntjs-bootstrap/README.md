@@ -1,4 +1,4 @@
-Mã Nguồn Xây dựng giao diện web với SASS, GruntJS và Bootstrap
+<h2>Mã Nguồn Xây dựng giao diện web với SASS, GruntJS và Bootstrap</h2>
 
 Xây dựng giao diện web với SASS, GruntJS và Bootstrap là khóa học được xây dựng bởi chính những kinh nghiệm xây dựng giao diện web của ZendVN với các project thực tế.
 
@@ -6,7 +6,7 @@ Bạn sẽ không gặp quá nhiều khó khăn khi tìm kiếm các tài liệu
 
 Link Tham gia Khóa học Xây dựng giao diện web với SASS, GruntJS và Bootstrap: https://zendvn.com/xay-dung-giao-dien-web-voi-sass-gruntjs-va-bootstrap/
 
-===========================================
+======================================
 - Website: https://zendvn.com/
 - Website học lập trình miễn phí: http://free.zendvn.com/
 - Youtube Học Lập Trình: https://www.youtube.com/user/luutruonghailan/
@@ -17,4 +17,3 @@ Link Tham gia Khóa học Xây dựng giao diện web với SASS, GruntJS và Bo
 - Facebook: https://www.fb.com/zendvngroup
 - Facebook trao đổi lập trình: https://www.fb.com/groups/ZendVN.Group/
 - Hỗ trợ học viên: https://www.facebook.com/luutruonghailan
-===========================================
