@@ -1,0 +1,6 @@
+$name: foo123;
+$attr: border123;
+
+p.#{$name} {
+  #{$attr}-color: blue;
+}

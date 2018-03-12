@@ -1,0 +1,7 @@
+$icons: puma, sea-slug, egret, salamander;
+
+@each $icon in $icons {
+  .#{$icon}-icon {
+    background-image: url('/images/#{$icon}.png');
+  }
+}

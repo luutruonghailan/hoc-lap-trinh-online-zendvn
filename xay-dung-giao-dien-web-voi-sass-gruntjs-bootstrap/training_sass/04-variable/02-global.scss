@@ -1,0 +1,21 @@
+$text-size: 30px;
+
+
+h3 {
+	
+	$h3-text-size: 10px !global;
+
+	font: {
+		size: $text-size;
+	}
+
+	p {
+		font-size: $h3-text-size;
+	}
+
+
+}
+
+div.abc {
+	font-size: $h3-text-size;
+}

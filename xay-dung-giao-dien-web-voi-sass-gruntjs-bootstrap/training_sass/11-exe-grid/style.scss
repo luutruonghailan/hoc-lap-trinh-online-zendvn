@@ -1,0 +1,33 @@
+@import "reset";
+@import "variable";
+@import "mixin";
+
+#grid {
+    margin: 40px;
+    border: 2px solid $color-border;
+    > div {
+        height: 40px;
+        background-color: #F2FA05;
+        border: 1px solid #FF5733;
+        box-sizing: border-box;
+        float: left;
+    }
+    @include clearfix;
+}
+
+@for $i from 1 through $maxColumn {
+    #grid.cell-#{$i} > div {
+        width: 100% / $i;
+    }
+}
+
+@each $maxSize, $maxColumn in $mapSize {
+    @media screen and (max-width: #{ $maxSize}px){
+        @for $i from 1 through $maxColumn {
+            #grid.cell-#{$maxSize}-#{$i} > div {
+                width: 100% / $i;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,31 @@
+.btn-red, .btn-blue, .btn-yellow {
+  padding: 12px 16px;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-red {
+  background-color: #ECB0AD;
+}
+
+.btn-red:hover {
+  background-color: #F16F69;
+}
+
+.btn-blue {
+  background-color: #A9E8F3;
+}
+
+.btn-blue:hover {
+  background-color: #4EDAF3;
+}
+
+.btn-yellow {
+  background-color: #F6F7B0;
+}
+
+.btn-yellow:hover {
+  background-color: #F6F868;
+}

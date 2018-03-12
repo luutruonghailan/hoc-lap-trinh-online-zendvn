@@ -1,0 +1,7 @@
+div.abc div.abc-child a {
+  font-size: 30em;
+  font-weight: bold;
+}
+div.abc p {
+  color: blue;
+}

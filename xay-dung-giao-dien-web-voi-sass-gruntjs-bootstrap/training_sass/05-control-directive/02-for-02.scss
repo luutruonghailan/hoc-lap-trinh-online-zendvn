@@ -1,0 +1,10 @@
+$headerElement	: h1, h2, h3, p, h5;
+$fontSize		: 55px, 50px, 40px, 20px, 10px;
+
+$len			: length($headerElement);		// 5
+
+@for $i from 1 through $len {
+	#{ nth($headerElement, $i) } {
+		font-size: #{ nth($fontSize, $i) };
+	}
+}

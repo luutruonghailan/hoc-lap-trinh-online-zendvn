@@ -1,0 +1,47 @@
+// @mixin sexy-border($color, $width: 5px) {
+//   border: {
+//     color: $color;
+//     width: $width;
+//     style: dashed;
+//   }
+// }
+
+// p { @include sexy-border(blue, 1in); }
+// h3 { @include sexy-border(red, 2px); }
+// h5 { @include sexy-border(yellow); }
+
+@mixin sexy-border($color, $width, $style: solid) {
+  border: {
+    color: $color;
+    width: $width;
+    style: $style;
+  }
+}
+p {
+  @include sexy-border(blue, 5px, dashed);
+}
+
+h3 {
+ @include sexy-border(red, 3px);
+}
+
+/*
+p {
+  border-color: blue;
+  border-width: 1in;
+  border-style: dashed;
+}
+
+h3 {
+  border-color: red;
+  border-width: 2px;
+  border-style: dashed;
+}
+
+h5 {
+  border-color: yellow;
+  border-width: 5px;
+  border-style: dashed;
+}
+
+*/

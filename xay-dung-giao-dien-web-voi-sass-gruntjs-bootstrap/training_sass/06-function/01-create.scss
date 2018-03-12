@@ -1,0 +1,12 @@
+$column			: 3;
+$columnWidth	: 40px;
+$columnMargin	: 0px;
+
+@function setWidth($pColumn, $pColumnWith, $pColumnMargin) {
+	
+	@return $pColumnWith*$pColumn + ($pColumn + 1)*$pColumnMargin;
+}
+
+div {
+	width: setWidth($column, $columnWidth, $columnMargin);
+}

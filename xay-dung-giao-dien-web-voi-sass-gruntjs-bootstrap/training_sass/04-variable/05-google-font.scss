@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Barrio|Pangolin');
+
+/*
+font-family: 'Pangolin', cursive;
+font-family: 'Barrio', cursive;
+*/
+$font-text: 'Pangolin', cursive;
+$font-title: 'Barrio', cursive;
+
+
+body {
+	font-family: $font-text;
+}
+
+h1 {
+	font-family: $font-text;
+}
+
+h3 {
+	font-family: $font-title;
+}

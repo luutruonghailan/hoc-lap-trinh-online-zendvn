@@ -1,0 +1,19 @@
+.btn {
+  padding: 12px 16px;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-red {
+  background-color: #F0682D;
+}
+
+.btn-blue {
+  background-color: #62B0F1;
+}
+
+.btn-yellow {
+  background-color: #F4EE29;
+}

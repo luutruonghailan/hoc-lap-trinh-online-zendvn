@@ -1,0 +1,154 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+#grid {
+  margin: 40px;
+  border: 2px solid #38B809;
+}
+#grid > div {
+  height: 40px;
+  background-color: #F2FA05;
+  border: 1px solid #FF5733;
+  box-sizing: border-box;
+  float: left;
+}
+#grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#grid.cell-1 > div {
+  width: 100%;
+}
+
+#grid.cell-2 > div {
+  width: 50%;
+}
+
+#grid.cell-3 > div {
+  width: 33.33333%;
+}
+
+#grid.cell-4 > div {
+  width: 25%;
+}
+
+#grid.cell-5 > div {
+  width: 20%;
+}
+
+#grid.cell-6 > div {
+  width: 16.66667%;
+}
+
+#grid.cell-7 > div {
+  width: 14.28571%;
+}
+
+#grid.cell-8 > div {
+  width: 12.5%;
+}
+
+#grid.cell-9 > div {
+  width: 11.11111%;
+}
+
+#grid.cell-10 > div {
+  width: 10%;
+}
+
+#grid.cell-11 > div {
+  width: 9.09091%;
+}
+
+#grid.cell-12 > div {
+  width: 8.33333%;
+}
+
+#grid.cell-13 > div {
+  width: 7.69231%;
+}
+
+#grid.cell-14 > div {
+  width: 7.14286%;
+}
+
+#grid.cell-15 > div {
+  width: 6.66667%;
+}
+
+#grid.cell-16 > div {
+  width: 6.25%;
+}
+
+@media screen and (max-width: 1000px) {
+  #grid.cell-1000-1 > div {
+    width: 100%;
+  }
+
+  #grid.cell-1000-2 > div {
+    width: 50%;
+  }
+
+  #grid.cell-1000-3 > div {
+    width: 33.33333%;
+  }
+
+  #grid.cell-1000-4 > div {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 850px) {
+  #grid.cell-850-1 > div {
+    width: 100%;
+  }
+
+  #grid.cell-850-2 > div {
+    width: 50%;
+  }
+
+  #grid.cell-850-3 > div {
+    width: 33.33333%;
+  }
+
+  #grid.cell-850-4 > div {
+    width: 25%;
+  }
+
+  #grid.cell-850-5 > div {
+    width: 20%;
+  }
+
+  #grid.cell-850-6 > div {
+    width: 16.66667%;
+  }
+}
+@media screen and (max-width: 450px) {
+  #grid.cell-450-1 > div {
+    width: 100%;
+  }
+
+  #grid.cell-450-2 > div {
+    width: 50%;
+  }
+
+  #grid.cell-450-3 > div {
+    width: 33.33333%;
+  }
+
+  #grid.cell-450-4 > div {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 380px) {
+  #grid.cell-380-1 > div {
+    width: 100%;
+  }
+
+  #grid.cell-380-2 > div {
+    width: 50%;
+  }
+}

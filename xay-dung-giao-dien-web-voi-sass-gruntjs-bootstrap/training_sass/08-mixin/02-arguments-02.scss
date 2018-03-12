@@ -1,0 +1,16 @@
+@mixin colors($text, $background, $border) {
+  color: $text;
+  background-color: $background;
+  border-color: $border;
+}
+
+$values: #ff0000, #00ff00, #0000ff;
+
+.primary {
+  @include colors($values...);
+}
+
+$value-map: (text: #00ff00, background: #0000ff, border: #ff0000);
+.secondary {
+  @include colors($value-map...);
+}

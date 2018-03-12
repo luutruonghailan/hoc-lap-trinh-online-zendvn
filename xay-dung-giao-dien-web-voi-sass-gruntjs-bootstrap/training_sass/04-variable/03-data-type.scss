@@ -1,0 +1,32 @@
+/*
+	numbers (e.g. 1.2, 13, 10px)
+	strings of text, with and without quotes (e.g. "foo", 'bar', baz)
+	colors (e.g. blue, #04a3f9, rgba(255, 0, 0, 0.5))
+	booleans (e.g. true, false)
+	nulls (e.g. null)
+	lists of values, separated by spaces or commas (e.g. 1.5em 1em 0 2em, Helvetica, Arial, sans-serif)
+	maps from one value to another (e.g. (key1: value1, key2: value2))
+*/
+p {
+	font: 10px/8px;             // Plain CSS, no division
+	$width: 1000px;
+	width: $width/2;            // Uses a variable, does division
+	width: round(1.5)/2;        // Uses a function, does division
+	height: (500px/2);          // Uses parentheses, does division
+	margin-left: 5px + 8px/2px; // Uses +, does division
+	font: (italic bold 10px/8px); // In a list, parentheses don't count
+}
+
+
+
+$image-url: "../../images-abc/";
+
+
+h3 {
+	background-url: $image-url + "background.png";
+}
+
+div {
+	background-url:  $image-url + "acd.png";
+}
+

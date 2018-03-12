@@ -1,0 +1,16 @@
+// $headerMap: (
+// 	h1: 55px, 
+// 	h2: 50px, 
+$map: (
+	h1: 55px, 
+	h2: 50px, 
+	h3: 40px, 
+	p: 20px, 
+	h5: 10px
+);
+
+@each $key, $value in $map {
+	#{$key} {
+		font-size: #{$value};
+	}
+}

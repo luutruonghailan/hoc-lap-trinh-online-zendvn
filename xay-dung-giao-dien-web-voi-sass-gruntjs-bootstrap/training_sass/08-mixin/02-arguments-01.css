@@ -1,0 +1,32 @@
+p {
+  border-color: blue;
+  border-width: 5px;
+  border-style: dashed;
+}
+
+h3 {
+  border-color: red;
+  border-width: 3px;
+  border-style: solid;
+}
+
+/*
+p {
+  border-color: blue;
+  border-width: 1in;
+  border-style: dashed;
+}
+
+h3 {
+  border-color: red;
+  border-width: 2px;
+  border-style: dashed;
+}
+
+h5 {
+  border-color: yellow;
+  border-width: 5px;
+  border-style: dashed;
+}
+
+*/

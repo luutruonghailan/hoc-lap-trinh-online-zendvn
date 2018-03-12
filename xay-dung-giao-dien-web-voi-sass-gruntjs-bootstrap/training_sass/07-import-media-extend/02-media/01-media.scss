@@ -1,0 +1,27 @@
+// 0 - 1000
+@media all and (min-width: 1000px) {
+	body {
+		background-color: red;	
+	}
+}
+
+// 800px - 1000
+@media all and (min-width: 800px) and (max-width: 1000px) {
+	body {
+		background-color: yellow;	
+	}
+}
+
+// 500px - 800px
+@media all and (min-width: 500px) and (max-width: 800px)  {
+	body {
+		background-color: blue ;	
+	}
+}
+
+// ngang
+@media all and (orientation: landscape) {
+	body {
+		//background-color: pink;	
+	}
+}
