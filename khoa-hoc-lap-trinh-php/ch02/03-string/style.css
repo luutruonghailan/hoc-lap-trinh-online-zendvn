@@ -1,0 +1,39 @@
+@CHARSET "UTF-8";
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+.content1 {
+	margin:  20px auto;
+	width:  450px;
+	border: 1px solid #999;
+	padding: 10px;
+}
+
+.content1 h1{
+	text-align: center;
+	color: red;
+}
+
+.content1 ul.function{
+	margin-top: 20px;
+	list-style: inside;
+	text-align: justify;
+}
+
+.content1 ul.function li{
+	line-height: 30px;
+}
+
+.content1 ul.function li span{
+	display: inline-block;
+	width: 150px;
+	font-weight: bold;
+}
+
+.item {
+	height: 400px;
+	border: 1px solid red;
+}

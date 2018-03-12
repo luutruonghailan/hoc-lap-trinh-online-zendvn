@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>AJAX POST</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			$('#process').click(function(){
+				$.ajax({
+					url			: 'files/02.php',
+					type		: 'GET',
+					data		: {id : 2, name: 'PHP'},
+					timeout		: 3000,							// 1s
+					cache		: false,
+					dataType	: 'html',
+					success		: function(data, status){
+										console.log('success');	
+										$('#content-load').html(data);
+									},
+					beforeSend	: function(jqXHR, setting){
+										console.log('beforeSend');
+										setting.url = 'files/01.php';	
+									},
+					complete	: function(jqXHR, textStatus){
+										console.log('complete');
+									},
+					dataFilter	: function(data, type){
+										console.log('dataFilter');
+										console.log(data);
+										console.log(type);
+									}
+				})
+			
+			});
+		});
+	
+	</script>
+</head>
+<body>
+	<div id="wrapper">
+		<div class="title">Ajax - AJAX</div>
+		<div class="list">  
+			<div id="content-load">Reponse</div>
+     		<div class="row">
+				<input type="button" class="button" name="process" id="process" value="Submit">		
+			</div>		
+		</div>
+    </div>
+</body>
+</html>

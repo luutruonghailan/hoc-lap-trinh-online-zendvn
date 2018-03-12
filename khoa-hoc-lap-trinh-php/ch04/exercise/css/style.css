@@ -1,0 +1,32 @@
+	* {
+		margin: 0px;
+		padding: 0px;
+	}
+	
+	.clr {
+		clear: both;
+	}
+	.content{
+		margin: 30px auto;
+		width: 800px;
+	}
+	
+	div.news{
+		margin-bottom: 10px;
+		border-bottom: 1px solid #6bb5ef;
+		padding-bottom: 10px;
+	}
+	
+	div.news img{
+		margin-right: 10px;
+		float: left;
+	}
+	
+	div.news h3{
+		margin-bottom: 10px;
+	}
+	
+	div.news p{
+		text-align: justify;
+		line-height: 24px;
+	}

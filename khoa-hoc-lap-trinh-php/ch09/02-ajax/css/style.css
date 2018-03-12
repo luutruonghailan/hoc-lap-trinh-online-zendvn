@@ -1,0 +1,82 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+#wrapper{
+	width: 90%;
+	margin: 20px auto;
+}
+
+#wrapper .title {
+	font: bold 24px Arial, Helvetica, sans-serif;
+	color: #00C;
+	text-align: center;
+}
+
+#wrapper .list {
+	margin-top: 30px;
+	border: 1px solid #afcfa2;
+	min-height: 100px;
+	padding: 15px;
+}
+
+
+#wrapper .list h3{
+	margin-bottom: 15px;
+}
+
+
+#wrapper .list input[type=button]{
+	padding: 5px 8px;
+	display: block;
+	margin: 20px auto;
+}
+
+#content-load{
+	margin: 15px 0px;
+	border: 1px solid #afcfa2;
+	padding: 5px;
+}
+
+div.row{
+	margin-bottom: 15px;
+	text-align: justify;
+}
+
+div.row label{
+	margin-bottom: 5px;
+	font-weight: bold;
+	display: block;
+}
+
+div.row textarea{
+	resize:none;
+	padding: 3px;
+}
+
+div.row input[type=text], div.row input[type=password]{
+	padding: 3px;
+	width: 425px;
+}
+
+div.row input[type=button], div.row input[type=submit]{
+	padding: 5px 10px;
+}
+
+.success{
+	background: #cfffcf;
+}
+
+.error {
+	background: #ffdddd;
+}
+
+.input-error {
+	border: 1px solid #ae5710;
+}
+.txtError {
+	color: red;
+	font-style: italic;
+	margin-left: 10px;
+}

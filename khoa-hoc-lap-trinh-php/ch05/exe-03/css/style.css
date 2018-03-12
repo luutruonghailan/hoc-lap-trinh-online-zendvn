@@ -1,0 +1,21 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+.content {
+	border: 2px solid #c67373;
+	margin: 20px auto;
+	text-align: center;
+	width: 800px;
+	padding: 10px;
+}
+
+.content h1{
+	margin-bottom: 25px;
+	color: red;
+}
+
+#main-form input[type=submit]{
+	padding: 3px 5px;
+}

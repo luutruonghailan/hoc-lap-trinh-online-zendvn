@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<book_shop>
+<book>
+	<title>Lập trình PHP</title>
+	<author>ZendVN</author>
+	<pages>500</pages>
+	<weight units="gram">400</weight>
+</book>
+
+<book>
+	<title>Lập trình PHP &amp; MySQL</title>
+	<author>ZendVN</author>
+	<pages>500</pages>
+	<weight units="gram">400</weight>
+</book>
+</book_shop>

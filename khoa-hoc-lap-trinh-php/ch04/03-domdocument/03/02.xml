@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<book>
+	<title>Lập trình PHP</title>
+	<weight units="gram">100</weight>
+	<author>ZendVN</author>
+	<pages>500</pages>
+</book>

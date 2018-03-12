@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<book>
+  <title>Lập trình PHP</title>
+  <author>ZendVN</author>
+  <pages>500</pages>
+  <weight units="gram">400</weight>
+  <price>
+    <real>35.5</real>
+    <saleoff>35.5</saleoff>
+  </price>
+</book>

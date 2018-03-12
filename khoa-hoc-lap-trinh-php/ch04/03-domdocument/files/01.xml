@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="07.xsl"?>
+<book_shop>
+
+	<book id="11" tag="php">
+		<title>Lập trình PHP</title>
+		<author>ZendVN</author>
+		<pages>500</pages>
+		<weight units="gram">400</weight>
+		<price>
+			<real>35.50</real>
+			<saleoff>35.50</saleoff>
+		</price>
+		<shipping>
+			<US>1.3</US>
+			<EU>2.3</EU>
+			<VN>1</VN>
+		</shipping>
+	</book>
+	
+	<book id="22" tag="joomla">
+		<title>Lập trình Joomla</title>
+		<author>ZendVN</author>
+		<pages>300</pages>
+		<weight units="gram">250</weight>
+		<price>
+			<real>75.50</real>
+			<saleoff>25.00</saleoff>
+		</price>
+		<shipping>
+			<US>2.3</US>
+			<EU>3.3</EU>
+			<VN>1</VN>
+		</shipping>
+	</book>
+
+	<book>
+		<title>Lập trình Zend</title>
+		<author>ZendVN</author>
+		<pages>500</pages>
+		<weight units="gram">1200</weight>
+		<price>
+			<real>55.50</real>
+			<saleoff>45.00</saleoff>
+		</price>
+		<shipping>
+			<US>1.3</US>
+			<EU>2.3</EU>
+			<VN>0.5</VN>
+		</shipping>
+	</book>
+</book_shop>

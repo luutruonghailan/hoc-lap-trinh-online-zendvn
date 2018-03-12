@@ -1,0 +1,234 @@
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+/*
+================================ CONTENT 1 ================================ */
+
+.content1 {
+	margin: 20px auto;
+	width:  600px;
+	border: 1px solid #999;
+	padding: 10px;
+	background: url("images/notebook_background.jpg") no-repeat;
+	min-height: 200px;
+}
+
+.content1 h1 {
+	color: red;
+	text-align: center;
+}
+
+.content1 ul {
+	margin: 23px 0px 0px 100px;
+}
+
+.content1 ul li{
+	margin-top: 5px;
+	list-style: decimal inside;
+}
+
+/*
+================================ CONTENT 2 ================================ */
+
+.content2 {
+	margin: 20px auto;
+	width:  800px;
+	border: 1px solid #999;
+	padding: 10px;
+}
+
+.content2 h1 {
+	color: red;
+	text-align: center;
+}
+
+.content2 ul {
+	margin: 23px;
+}
+
+.content2 ul li{
+	display: inline-block;
+	list-style: none;
+	margin-left: 30px;
+}
+
+.content2 ul li a{
+	display: block
+	width: 210px;
+	height: 188px;
+}
+
+/*
+================================ CONTENT 3 ================================ */
+
+.content3 {
+	margin: 20px auto;
+	width:  300px;
+	border: 1px solid #999;
+	padding: 10px;
+}
+
+.content3 h1 {
+	color: red;
+	text-align: center;
+}
+
+.content3 div.image{
+	margin: 20px 0px;
+	text-align: center;
+}
+
+.content3 div.image img{
+	margin: 10px 0px;
+}
+
+.content3 div.image a{
+	display: inline-block;
+	background-color: #686f97;
+	padding:  3px 10px;
+	text-decoration: none;
+	color: #fff;
+}
+
+.content3 div.image a:hover{
+	color: #f6f312;
+}
+
+
+/*
+================================ CONTENT 4 ================================ */
+
+.content4 {
+	margin: 20px auto;
+	width:  600px;
+	border: 1px solid #999;
+	padding: 10px;
+}
+
+.content4 h1 {
+	color: red;
+	text-align: center;
+}
+
+.content4 div.result{
+	margin-left:  320px;
+}
+
+.content4 div.question{
+	margin-top: 20px;
+	text-align: center;
+}
+
+.content4 div.question p{
+	margin-top: 5px;
+}
+
+.content4 div.question p:last-child{
+	text-align: right;
+	font-style: italic;
+	margin-top: 20px;
+}
+
+.content4 div.answer p{
+	font-weight: bold;
+}
+
+.content4 div.answer ul{
+	margin: 15px 0 0 10px;
+	list-style: decimal inside;
+}
+
+.content4 div.answer ul li{
+	line-height: 22px;
+}
+
+/*
+================================ CONTENT 5 ================================ */
+
+.clr {
+	clear: both;
+}
+.content5 {
+	margin: 20px auto;
+	width:  500px;
+	border: 1px solid #999;
+	padding: 10px;
+}
+
+
+.content5 div.info img{
+	float: left;
+	margin-right: 20px;
+}
+
+.content5 div.info h1 {
+	color: red;
+	text-align: center;
+	font-size: 25px;
+	margin-bottom: 10px;
+}
+
+.content5 div.info form p{
+	margin-bottom: 10px;
+	text-align: justify;
+}
+
+.content5 div.info input[type=text] {
+	width: 244px;
+	height: 25px;
+}
+
+.content5 div.info input[type=submit] {
+	padding: 5px 14px;
+}
+
+.content5 div.result {
+	margin-top: 10px;
+}
+
+.content5 div.result div.normal{
+	margin-top: 6px
+}
+
+.content5 div.result div.normal p{
+	float: left;
+}
+
+.content5 div.result div.normal:first-child{
+	font-weight: bold;
+}
+
+
+.content5 div.result div.normal p.col1{
+	width: 50%;
+}
+
+.content5 div.result div.normal p.col2{
+	width: 25%;
+	text-align: center;
+}
+
+.content5 div.result div.normal p.col3{
+	width: 25%;
+	text-align: right;
+}
+
+
+.content5 div.result p.total{
+	border-top: 1px solid #DDDDFF;
+    margin-top: 10px;
+    padding-top: 10px;
+    text-align: right;
+	color: blue;
+	font-weight: bold;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,40 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>AJAX</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript">
+		// Start: 2 item
+		// Click load more: 1 item
+		var position = 2;
+		
+		$(document).ready(function(){
+			$('div.list').load('data.php?position=0&item=2');
+			$('a.load-more').click(function(){
+				position += 1;
+				$.get('data.php', {position: position, item : 1}, function(data){
+					
+					if(data.length > 0){
+						$('div.list .item:last').after(data);
+					}else{
+						$('a.load-more').remove();
+					}
+				})
+				return false;
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="wrapper">
+		<div class="title">Ajax - Load</div>
+		<div class="list">  
+			
+		</div>
+		<a class="load-more" href="#">Load more</a>
+    </div>
+</body>
+</html>

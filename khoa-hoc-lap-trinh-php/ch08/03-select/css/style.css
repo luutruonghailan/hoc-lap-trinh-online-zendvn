@@ -1,0 +1,94 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+#wrapper{
+	width: 60%;
+	margin: 20px auto;
+}
+
+#wrapper .title {
+	font: bold 24px Arial, Helvetica, sans-serif;
+	color: #00C;
+	text-align: center;
+}
+
+#wrapper .list {
+	margin-top: 30px;
+}
+
+#wrapper .list .row{
+	display: table;
+	width: 100%;
+	margin: 15px 0px;
+	border: 1px solid #CCC;
+	font: 13px Tahoma, Geneva, sans-serif;
+}
+
+
+
+
+#wrapper .list .even {
+	background-color: #f4f3f3;
+}
+
+#wrapper .list .odd {
+	background-color: #fff;
+}
+
+#wrapper .list .row .no{
+	width: 5%;
+	text-align: center;	
+}
+
+#wrapper .list .row .name{
+	padding: 10px;
+	text-align: left;
+	font-weight: bold;
+}
+
+#wrapper .list .header .name{
+	text-align: center;
+}
+
+#wrapper .list .header {
+	font-weight: bold;
+}
+#wrapper .list .row .id{
+	width: 8%;
+	border-right: none;
+}
+
+#wrapper .list .row .status{
+	width: 18%;
+}
+
+#wrapper .list .row .ordering{
+	width: 13%;
+	
+}
+
+#wrapper .list .row .action a{
+	text-decoration: none;
+	color: #000;
+}
+
+#wrapper .list .row .action a:hover{
+	text-decoration: underline;
+}
+
+#wrapper .list .row > p{
+	display: table-cell;
+	vertical-align: middle;
+	border-right: 1px solid #CCC;
+	text-align: center;
+}
+
+
+
+#area-button a:hover{
+	background: #a7e7df;
+}
+
+

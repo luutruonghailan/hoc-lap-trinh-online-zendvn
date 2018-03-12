@@ -1,0 +1,105 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+#wrapper{
+	width: 90%;
+	margin: 20px auto;
+}
+
+#wrapper .title {
+	font: bold 24px Arial, Helvetica, sans-serif;
+	color: #00C;
+	text-align: center;
+}
+
+#wrapper .list {
+	margin-top: 30px;
+}
+
+#wrapper .list .row{
+	display: table;
+	width: 100%;
+	margin: 15px 0px;
+	border: 1px solid #CCC;
+	font: 13px Tahoma, Geneva, sans-serif;
+	height: 30px;
+}
+
+#wrapper .list .head{
+	text-align: center;
+	font-weight: bold;
+	background-color: #cbebcb;
+}
+
+#wrapper .list .row > p{
+	display: table-cell;
+	vertical-align: middle;
+	border-right: 1px solid #CCC;
+	text-align: center;
+}
+
+#wrapper .list .even {
+	background-color: #f4f3f3;
+}
+
+#wrapper .list .odd {
+	background-color: #fff;
+}
+
+#wrapper .list .row .id{
+	width: 5%;
+}
+
+#wrapper .list .row .username{
+	width: 10%;
+}
+
+
+#wrapper .list .row .email{
+	width: 20%;
+}
+
+#wrapper .list .row .birthday{
+	width: 15%;
+}
+
+#wrapper .list .row .status{
+	width: 8%;
+}
+
+#wrapper .list .row .ordering{
+	width: 8%;
+	border-right: none;
+}
+
+div#pagination {
+	text-align: center;
+	margin-top: 30px;
+}
+
+
+ul.pagination {
+	list-style: none;
+	display: inline-block;
+}
+
+ul.pagination li{
+	float:left;
+	margin-right: 3px;
+	background: #8e9f98;
+	color: #fff;
+	padding: 4px 8px;
+}
+
+ul.pagination li a{
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	
+}
+
+ul.pagination li a:hover, ul.pagination li.active, ul.pagination li.active a{
+	color: #e2dd55;
+}

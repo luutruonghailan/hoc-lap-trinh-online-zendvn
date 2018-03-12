@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Case 01</title>
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+	function loadPage(keySend){
+		$.ajax({
+			url		: 'data.php',
+			type	: 'GET',
+			data	: {key : keySend},
+			success : function(data, status){
+						$('.tab-box').html(data);
+					},
+			complete: function(jqXHR, textStatus){
+						window.location.hash = keySend;
+						$('.tabs *').removeClass('current');
+						$('.' + keySend).addClass('current');
+					}
+		})
+	}
+	
+	$(document).ready(function(){
+		var keySend = (window.location.hash == '' ) ? '#php' : window.location.hash;
+		keySend = keySend.slice(1);
+		loadPage(keySend);
+		$('.tabs a').click(function(){
+			var className 	= $(this).attr('class');
+			loadPage(className);
+		});
+	});
+</script>
+
+</head>
+
+<body>
+	<div id="tab-B">
+    	<ul class="tabs">
+        	<li><a class="php current" href="#">PHP Script</a></li>
+            <li><a class="asp" href="#">ASP Script</a></li>
+            <li><a class="jsp" href="#">JSP Script</a></li>
+        </ul>
+        <div class="box-wrapper">
+        	<div class="tab-box current">
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

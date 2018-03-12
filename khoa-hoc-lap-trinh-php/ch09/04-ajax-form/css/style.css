@@ -1,0 +1,65 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+#wrapper{
+	width: 70%;
+	margin: 20px auto;
+}
+
+#wrapper h1.title {
+	font: bold 24px Arial, Helvetica, sans-serif;
+	color: #00C;
+	text-align: center;
+	margin-bottom: 15px; 
+}
+
+#wrapper div.form {
+	padding: 20px;
+	border: 2px solid #81a281;
+}
+
+
+div.row{
+	margin-bottom: 15px;
+	text-align: justify;
+}
+
+div.row label{
+	margin-bottom: 5px;
+	font-weight: bold;
+	display: block;
+}
+
+div.row textarea{
+	resize:none;
+	padding: 3px;
+}
+
+div.row input[type=text]{
+	padding: 3px;
+	width: 425px;
+}
+
+div.row input[type=button], div.row input[type=submit]{
+	padding: 5px 10px;
+}
+
+.showInfo, .loading, .success, .error{
+	padding: 6px;
+	border: solid  1px #ccc;
+	margin-bottom: 10px;
+}
+
+.loading {
+	background: #ffdddd;
+}
+
+.success{
+	background: #cfffcf;
+}
+
+.error {
+	background: #ffdddd;
+}

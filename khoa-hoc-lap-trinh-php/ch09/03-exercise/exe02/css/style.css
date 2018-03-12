@@ -1,0 +1,40 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+#wrapper{
+	width: 90%;
+	margin: 20px auto;
+}
+
+#wrapper .title {
+	font: bold 24px Arial, Helvetica, sans-serif;
+	color: #00C;
+	text-align: center;
+}
+
+#wrapper .list {
+	margin-top: 30px;
+	border: 1px solid #afcfa2;
+	min-height: 100px;
+	padding: 15px;
+}
+
+
+#wrapper .list h3{
+	margin-bottom: 15px;
+}
+
+#wrapper .list > div{
+	margin-bottom: 25px;
+}
+
+#wrapper .list > div p{
+	margin-bottom: 5px;
+}
+
+#wrapper .list select{
+	width: 200px;
+	padding: 3px;
+}

@@ -1,0 +1,46 @@
+question_id|option_id|option|point
+11|a|Vào buổi sáng|2
+11|b|Vào buổi chiều và chớm tối|4
+11|c|Vào đêm muộn|6
+12|a|Khá nhanh với bước chân dài|6
+12|b|Khá nhanh với bước chân ngắn|4
+12|c|Không nhanh lắm, đầu ngẩng cao, hướng mặt ra cả thế giới|7
+12|d|Không nhanh lắm, đầu cúi xuống|2
+12|e|Rất chậm|1
+31|a|Đứng, khoanh tay|4
+31|b|Siết chặt hai bàn tay|2
+31|c|Đặt một hoặc cả hai tay lên hông|5
+31|d|Chạm hoặc đẩy người đối thoại|7
+31|e|Sờ tai, xoa cằm hoặc nghịch tóc|6
+43|a|Đầu gối cong, hai chân khép sát vào nhau|4
+43|b|Hai chân bắt chéo nhau|6
+43|c|Hai chân duỗi thẳng|2
+43|d|Khoanh chân|1
+15|a|Cười lớn|5
+15|b|Cười, nhưng không cười lớn|4
+15|c|Cười lặng lẽ|3
+15|d|Cười bẽn lẽn, ngượng ngùng|5
+26|a|Gây ồn ào khi đến để mọi người chú ý|6
+26|b|Đến lặng lẽ, và tìm người bạn quen biết|4
+26|c|Bước vào một cách lặng lẽ nhất, cố gắng không bị chú ý|2
+17|a|Chào đón "kẻ phá đám"|6
+17|b|Cảm thấy thực sự khó chịu|2
+17|c|Mơ hồ giữa hai thái cực |4
+38|a|Đỏ hoặc da cam|6
+38|b|Đen|7
+38|c|Vàng hoặc xanh nhạt|5
+38|d|Xanh lá cây|4
+38|e|Xanh thẫm hoặc tím|3
+38|f|Trắng|2
+38|g|Nâu hoặc xám|1
+19|a|Nằm ngửa, duỗi thẳng lưng|7
+19|b|Nằm úp, duỗi thẳng|6
+19|c|Nằm nghiêng, hơi cong người|4
+19|d|Gối đầu lên cánh tay|2
+19|e|Vùi đầu vào chăn, gối|1
+18|a|Đang rơi|4
+18|b|Đang đánh nhau hoặc chiến đấu|2
+18|c|Đang tìm kiếm ai đó hoặc thứ gì đó|3
+18|d|Đang bơi hoặc đang trôi|5
+18|e|Bạn hầu như không mơ|6
+18|f|Những giấc mơ của bạn luôn luôn thú vị|1

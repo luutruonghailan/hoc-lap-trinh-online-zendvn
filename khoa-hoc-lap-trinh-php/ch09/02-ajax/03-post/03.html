@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>AJAX POST</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			$('#process').click(function(){
+				var url 		= 'files/03.php?t=' + Math.random();
+				var dataSend 	= {
+										'username' : $('#login-form [name="username"]').val(),
+										'password' : $('#login-form [name="password"]').val(),
+									};
+				$.post(url, dataSend, function(data, status){
+					
+					if(status == 'success'){
+						$('#login-form *').remove('.txtError').removeClass('input-error');
+						if(data.status == 'error'){
+							$('#content-load').addClass('error').text('Cõ lối xảy ra');
+							$.each(data.message, function(i, value){
+								var element = '#login-form [name="'+i+'"]';
+								$(element).addClass('input-error').after('<span class="txtError">'+value+'</span>');
+							})
+						}else{
+							$('#content-load').removeClass('error').addClass('success').text('Đăng nhập thành công');
+							$('#login-form').remove();
+						}
+					}
+				},'json');
+			
+			});
+		});
+	
+	</script>
+</head>
+<body>
+	<div id="wrapper">
+		<div class="title">Ajax - POST</div>
+		<div class="list">  
+			<div id="content-load">Reponse</div>
+        	<form action="#" method="post" name="login-form" id="login-form">
+				<div class="row">
+					<label>Username</label>
+					<input type="text" name="username" value="">
+				</div>
+				<div class="row">
+					<label>Password</label>
+					<input type="password" name="password" value="">		
+				</div>
+				<div class="row">
+					<input type="button" class="button" name="process" id="process" value="Submit">		
+				</div>				
+			</form>    
+		</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.form.min.js"></script>
+	<script type="text/javascript" src="js/my-js.js"></script>
+<title>jQuery Form Plugin</title>
+</head>
+<body>
+	<div id="wrapper">
+    	<h1 class="title">jQuery Form Plugin</h1>
+        <div class="form">   
+        	<div id="content-load">Load ... </div>
+        	<form action="process.php" method="post" name="contact-form" id="contact-form">
+				<div class="row">
+					<label>Name</label>
+					<input type="text" name="name" value="">
+				</div>
+				<div class="row">
+					<label>Email</label>
+					<input type="text" name="email" value="">		
+				</div>		
+				<div class="row">
+					<label>Message:</label>
+					<textarea rows="4" cols="50" name="message"></textarea>
+				</div>	
+				<div class="row">
+					<label>Attach:</label>
+					<input type="file" name="attach"></input>
+				</div>					
+				<div class="row">
+					<input type="submit" value="Save" name="submit">
+				</div>										
+			</form>    
+        </div>
+    </div>
+</body>
+</html>

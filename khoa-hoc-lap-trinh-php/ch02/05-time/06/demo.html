@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>jQuery UI Datepicker - Default functionality</title>
+  <link rel="stylesheet" href="../css/jquery-ui.css" />
+  <script src="../js/jquery-1.9.1.js"></script>
+  <script src="../js/jquery-ui.js"></script>
+  <script>
+  $(function() {
+    $( "#datepicker" ).datepicker({
+    	dateFormat: "dd/mm/yy",
+    	defaultDate: "+3d",
+    	changeYear: true,
+    	changeMonth: true,
+    	yearRange: "2000:2015"
+    });
+  });
+  </script>
+</head>
+<body>
+ 
+<p>Date: <input type="text" id="datepicker" /></p>
+ 
+ 
+</body>
+</html>
