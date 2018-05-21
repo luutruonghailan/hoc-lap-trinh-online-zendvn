@@ -1,0 +1,11 @@
+HTTrack3.46+htsswf+htsjava launched on Wed, 27 Mar 2013 23:28:26 at http://krook.org/jsdom/ +*.png +*.gif +*.jpg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2010], %s -->" -%l "en, en, *" http://krook.org/jsdom/ -O1 "D:\JavaScript DOM\JavaScript DOM" +*.png +*.gif +*.jpg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+
+HTTrack Website Copier/3.46 mirror complete in 41 seconds : 91 links scanned, 90 files written (851404 bytes overall) [879452 bytes received at 21450 bytes/sec], 22.7 requests per connection
+(No errors, 0 warnings, 0 messages)
