@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <link type="text/css" rel="stylesheet" href="style-dice.css">
+        
+        <title>Dice Game</title>
+    </head>
+<!-- 
+isPlaying: true
+score -> Có 2 điểm chính thức hành cho 2 người chơi
+currentStore
+dice1 - dice2
+Làm sao để nhận diện được ai là người đang chơi?? -> Chỉ có 2 người
+    -> Tạo biến để lưu
+    activePlayer: 1 -> Người thứ nhất đang chơi
+    activePlayer: 2 -> Người thứ hai đang chơi
+
+NewGame
+    1. Show Popup
+    2. Reset Data
+    3. Xay dựng Popup
+
+Roll Dice
+    1. Random dư liệu 2 con xúc xắc
+    2. Kiểm tra xem người dùng có xuay đúng con số 1 không?
+        2.1. Nếu xoay trúng số 1 -> Đổi lượt chơi -> Reset điểm tạm thời
+        2.2. Nếu xoay ok -> Cộng dồn vào điểm tạm thời cho người chơi đó.
+
+Hold -> Lấy điểm
+    1. So sánh xem điểm cuối cùng lớn hơn FinalScore???
+    2. Chưa đủ điểm -> Cộng dồn 'ĐIỂM CHÍNH THỨC' => Đổi lượt chơi
+
+ -->
+    <body>
+        <div class="wrapper clearfix">
+            <div class="player-panel winner">
+                <div class="player-name">Winner</div>
+                <div class="player-score">43</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score">11</div>
+                </div>
+            </div>
+            
+            <div class="player-panel">
+                <div class="player-name">Player 2</div>
+                <div class="player-score">72</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score">0</div>
+                </div>
+            </div>
+            
+            <button class="control btn-new"><i class="ion-ios-plus-outline"></i>New game</button>
+            <button class="control btn-roll"><i class="ion-ios-loop"></i>Roll dice</button>
+            <button class="control btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
+            
+            <input type="number" placeholder="Final score" class="final-score">
+            
+            <div id="dice-1" class="dice">
+                <div class="spinner dice-3">
+                    <div class="face1">1</div>
+                    <div class="face2">2</div>
+                    <div class="face3">3</div>
+                    <div class="face4">4</div>
+                    <div class="face5">5</div>
+                    <div class="face6">6</div>
+                </div>
+            </div>
+            <div id="dice-2" class="dice">
+                <div class="spinner dice-6">
+                    <div class="face1">1</div>
+                    <div class="face2">2</div>
+                    <div class="face3">3</div>
+                    <div class="face4">4</div>
+                    <div class="face5">5</div>
+                    <div class="face6">6</div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VueJS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+    <div class="container">
+        <div class="list-blog">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi sunt eveniet maxime magni in, nostrum
+                facilis, temporibus, quam facere sint est blanditiis harum dicta. Tempore suscipit ut hic. Deleniti,
+                qui.</p>
+        </div>
+        <div id="app">
+            <div class="cart">Giỏ hàng ({{ cardNumber }})</div>
+            <div class="product">
+                <div class="product-image">
+                    <div class="image">
+                        <img v-bind:src="getProduct.image" alt="">
+                    </div>
+                </div>
+                <div class="product-content">
+                    <h3 class="title">
+                    <a v-bind:href="url" v-bind:target="target">{{ title }}</a>
+                    </h3>
+                    <p class="brand">Thương hiệu: No brand</p>
+                    <p class="quantity" v-if="getProduct.quantity > 0">Còn lại: {{ getProduct.quantity }} Sản phẩm</p>
+                    <p class="quantity" v-if="getProduct.quantity <= 0">Sản phẩm đã hết hàng</p>
+
+                    <div class="wrapper-price">
+                        <div class="final-price">{{ formatFinalPrice }}</div>
+                        <div class="origin-price">{{ formatOriginalPrice }}</div>
+                        <div class="sale-price">-{{sale * 100}}%</div>
+                    </div>
+                    <div class="wrapper-color">
+                        <div class="text">Màu sắc</div>
+                        <div class="list-color">
+                            <p class="color-text">{{ getProduct.textColor }}</p>
+                            <ul>
+                                <li 
+                                    v-for="(item, index) in listProductDetail"
+                                    v-bind:class="classActive(index)"
+                                    v-bind:key="index"
+                                    v-on:click="handleClickColor($event, index)">
+                                    <img v-bind:src="item.image" v-bind:alt="item.textColor">
+                                </li>
+                                <!-- <li><img src="./images/blue.jpg" alt="color"></li> -->
+                                <!-- <li><img src="./images/red.jpg" alt="color"></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                    <button 
+                        v-on:click="handleAddToCart"
+                        class="add-to-cart">Add to cart</button>
+                </div>
+                
+            </div>
+            <div class="description">
+                <ul class="extra-info">
+                    <li v-for="item in listDesc">{{ item }}</li>
+                    <!-- <li>Thoát mồ hôi tốt</li>
+                    <li>Áo thun cổ tròn thể thao Hiye chuyên được may từ chất liệu nilon thoáng mát</li>
+                    <li>Kết hợp thêm sợi thun tạo độ co giãn giúp người tiêu dùng thoải mái khi mặc</li>
+                    <li>Chất liệu: polyester và thun</li> -->
+                </ul>
+                <h2>Chất liệu bền chặt&nbsp;</h2>
+                <!-- v-html -->
+                {{ testDescription }}
+                <div v-html="description"></div>
+            </div>
+                
+        </div>
+    </div>
+    <footer>
+        <h1>Footer</h1>
+    </footer>
+</body>
+<script src="main.js"></script>
+
+</html>

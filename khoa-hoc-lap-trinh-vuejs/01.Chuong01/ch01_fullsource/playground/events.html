@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Events VueJS</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            position: relative;
+            background-color: aqua;
+        }
+        .box-2 {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+       <h1>Count: {{ counter }}</h1>
+       <button v-on:click="handleClick(5, $event)">Click Me</button>
+        <div class="box" v-on:mousemove="handleMouseMove">
+                <p>ClientX: {{ clientX }}</p>
+                <p>ClientY: {{ clientY }}</p>
+            <div class="box-2" v-on:mousemove.stop="handleMouseMoveChild"></div>
+        </div>
+        <form action="./server.php" v-on:submit.prevent="handleSubmitForm">
+            <label>Nhap firstName</label>
+            <input type="text" name="firstName"> <br>
+            <label>Nhap email</label>
+            <input type="email" name="email"> <br>
+            <input type="submit" value="Dang nhap">
+        </form>
+    </div>
+</body>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                counter: 0,
+                clientX: 0,
+                clientY: 0
+            },
+            methods: {
+                handleClick(number, event) {
+                    console.log('click', event.target);
+                    this.counter += number;
+                },
+                handleMouseMove(e) {
+                    console.log(e);
+                    this.clientX = e.clientX;
+                    this.clientY = e.clientY;
+                },
+                handleSubmitForm(e) {
+                    console.log(e);
+                },
+                handleMouseMoveChild(e) {
+                    console.log('handleMouseMoveChild', e.target);
+                }
+            }
+        })
+    </script>
+</html>

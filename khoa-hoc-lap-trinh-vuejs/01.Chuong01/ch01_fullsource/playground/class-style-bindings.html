@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Two Way Bindings and Class and Style</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <style>
+        .demo {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+        }
+        .demo.active {
+            background-color: blue;
+        }
+        .demo.error {
+            background-color: red;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- v-model -->
+    <div id="app">
+        <div v-bind:style="objectStyle">
+            <h1>FirstName = {{ firstName }}</h1>
+            <p>{{ about }}</p>
+            <input v-model="firstName" type="text" placeholder="Nhap firstName"> <br>
+            <textarea v-model="about" cols="30" rows="10"></textarea>
+            <button v-on:click="changeActive">Change Active</button>
+            <button v-on:click="changeError">Change Err0r</button>
+            <div class="demo" v-bind:class="objClass"></div>
+    
+            <hr>
+    
+            <div v-bind:style="{ color: activeColor, fontSize: fontSize + 'px', marginTop: '20px' }">
+                Test Style Bindings
+            </div>
+        </div>
+
+    </div>
+</body>
+    <script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            firstName: 'Nguyen',
+            about: '',
+            textClass: 'active',
+            isActive: false,
+            isError: true,
+
+            activeColor: '#000',
+            fontSize: 20,
+
+            bg: 'https://google.com'
+        }, 
+        methods: {
+            changeActive() {
+                // true -> false
+                // false -> true
+                this.isActive = !this.isActive;
+            },
+            changeError() {
+                this.isError = !this.isError;
+            }
+        },
+        computed: {
+            objClass: function() {
+                return { 
+                    active: this.isActive, 
+                    error: this.isError 
+                }
+            },
+            // background() {
+            //     return 'url(' + this.bg + ')';
+            // },
+            objectStyle: function() {
+                return { 
+                    backgroundImage: 'url(' + this.bg + ')',
+                    margin: '10px',
+                    paddingLeft: '30px'
+                }
+            }
+        }
+    })
+    </script>
+</html>
