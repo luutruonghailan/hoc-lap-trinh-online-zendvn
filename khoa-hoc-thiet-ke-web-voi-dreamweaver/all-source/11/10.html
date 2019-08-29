@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Example 10</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript">
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+</script>
+</head>
+
+<body>
+<form action="" method="post" name="mainForm" id="mainForm">
+  <p>
+    <select name="jumpMenu" size="10" id="jumpMenu" onChange="MM_jumpMenu('parent',this,0)">
+      <option value="http://www.zend.vn">Menu 1</option>
+      <option value="1">Menu 2</option>
+    </select>
+    <br>
+    <br>
+  </p>
+</form>
+</body>
+</html>

@@ -1,0 +1,64 @@
+/* CSS Document */
+
+
+.right_content{
+	width: 196px;
+	float: left;
+	padding: 5px 0 0 0;
+}
+
+.shopping_cart {
+	width: 195px;
+	height: 84px;
+	text-align: center;
+	background: url(../images/cart_bg.gif) no-repeat center;
+}
+
+.cart_title {
+	font-size: 12px;
+	color: #847676;
+	font-weight: bold;
+	padding-top: 8px;
+}
+
+.cart_details {
+	width: 115px;
+	float: left;
+	text-align: left;
+	padding: 5px 0 0 15px;
+}
+
+.cart_icon {
+	float: left;
+	padding: 5px 0 0 15px;
+}
+
+span.border_cart {
+	width: 100px;
+	height: 1px;
+	display: block;
+	margin: 3px 0;
+	border-top: 1px #999 dashed;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

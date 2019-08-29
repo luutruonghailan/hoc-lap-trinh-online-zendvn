@@ -1,0 +1,19 @@
+.main {
+	background-color: #3FF;
+	height: 500px;
+	width: 800px;
+	border: 1px solid #000;
+	margin: 20px auto;
+}
+.logo {
+	background-color: #0C9;
+	height: 100px;
+}
+.content {
+	background-color: #FFC;
+	height: 350px;
+}
+.footer {
+	background-color: #0CF;
+	height: 50px;
+}

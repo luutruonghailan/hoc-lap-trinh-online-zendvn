@@ -1,0 +1,37 @@
+/* CSS Document */
+
+.footer {
+	width: 1000px;
+	height: 65px;
+	background: url(../images/footer_bg.gif) repeat-x top;
+}
+
+
+.left_footer {
+	float: left;
+	width: 300px;
+	padding: 5px 0 0 10px;
+}
+
+.right_footer {
+	float: right;
+	padding: 15px 30px 0 0;
+}
+
+.right_footer a{
+	text-decoration: none;
+	padding: 0 0 0 7px;
+	color: #666;
+}
+
+.right_footer a:hover{
+	text-decoration: underline;
+}
+
+.center_footer {
+	float: left;
+	width: 200px;
+	text-align: center;
+	color: #666666;
+	padding: 10px 0 0 60px;
+}

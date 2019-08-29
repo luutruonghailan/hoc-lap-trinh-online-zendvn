@@ -1,0 +1,94 @@
+/* CSS Document */
+
+.prod_box_big {
+	width: 554px;
+	height: auto;
+	float: left;
+	padding: 10px 10px 10px 15px;
+}
+
+.top_prod_box_big {
+	width: 554px;
+	height: 12px;
+	background: url(../images/details_box_top.gif) no-repeat center bottom;
+	float: left;
+	padding: 0px;
+	margin: 0px;
+}
+
+.bottom_prod_box_big {
+	width: 554px;
+	height: 12px;
+	background: url(../images/details_box_bottom.gif) no-repeat center top;
+	float: left;
+	padding: 0px;
+	margin: 0px;
+}
+
+.center_prod_box_big {
+	width: 554px;
+	height: auto;
+	background: url(../images/details_box_center.gif) repeat-y;
+	float: left;
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+}
+
+.contact_form {
+	width: 355px;
+	float: left;
+	padding: 0px 0 0 75px;
+}
+
+.form_row {
+	width: 335px;
+	clear: both;
+	padding: 10px 0 10px 0;
+	_padding: 5px 0 5px 0;
+	color: #a53d17;
+}
+
+label.contact {
+	width: 75px;
+	float: left;
+	font-size: 12px;
+	text-align: right;
+	padding: 4px 5px 0 0;
+	color: #333333;
+}
+
+input.contact_input {
+	width: 253px;
+	height: 18px;
+	background-color: #fff;
+	color: #999999;
+	border: 1px #DFDFDF solid;
+	float: left;
+}
+
+textarea.contact_textarea {
+	width: 253px;
+	height: 50px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #999999;
+	background-color: #fff;
+	border: 1px #DFDFDF solid;
+	float: left;
+	min-width: 253px;
+	max-width: 253px;
+}
+
+a.contact {
+	width: 99px;
+	height: 27px;
+	display: block;
+	float: right;
+	margin: 0 0 0 10px;
+	background: url(../images/contact_bt.gif) no-repeat left;
+	padding: 0 0 0 10px;
+	text-decoration: none;
+	line-height: 27px;
+	color: #1c4a52;
+}

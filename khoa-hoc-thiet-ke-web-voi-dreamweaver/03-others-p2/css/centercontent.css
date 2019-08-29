@@ -1,0 +1,107 @@
+/* CSS Document */
+
+.center_content {
+	width: 585px;
+	float: left;
+	padding: 5px 10px;
+}
+
+.center_title_bar{
+	width: 520px;
+	height: 33px;
+	float: left;
+	background: url(../images/bar_bg.gif) no-repeat center;
+	padding: 0 0 0 40px;
+	line-height: 33px;
+	margin: 0 0 0 12px;
+	font-weight: bold;
+	color: #847676;
+}
+
+.prod_box {
+	width: 173px;
+	height: auto;
+	float: left;
+	padding: 10px 10px 10px 11px;
+}
+
+.top_prod_box {
+	width: 173px;
+	height: 12px;
+	float: left;
+	background: url(../images/product_box_top.gif) no-repeat center bottom;
+}
+
+.bottom_prod_box {
+	width: 173px;
+	height: 10px;
+	float: left;
+	background: url(../images/product_box_bottom.gif) no-repeat center bottom;
+}
+
+.center_prod_box {
+	width: 173px;
+	height: auto;
+	float:left;
+	text-align: center;
+	background: url(../images/product_box_center.gif) repeat-y;
+}
+
+.prod_details_tab {
+	width: 173px;
+	height: 31px;
+	float: left;
+	margin: 3px 0 0 0;
+	background: url(../images/products_details_bg.gif) no-repeat center;
+}
+
+img.left_bt {
+	float: left;
+	padding: 6px 0 0 6px;
+}
+
+a.prod_details {
+	width: 25px;
+	display: block;
+	float: left;
+	padding: 0 0 0 20px;
+	background: url(../images/square-blue-add.gif) no-repeat left;
+	margin: 7px 0 0 38px;
+	text-decoration: none;
+	color: #0fa0dd;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,16 @@
+@charset "utf-8";
+.content {
+	background-color: #0F0;
+	width: 1000px;
+	color: red;
+	font-size: 20px;
+}
+
+.content2 {
+	background-color: #36F;
+	width: 900px;
+}
+#course {
+	background-color: #FFC;
+	width: 700px;
+}

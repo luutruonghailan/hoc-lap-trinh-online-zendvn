@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+.content {
+	background: #0FC url(../images/background.jpg) no-repeat fixed center center;
+	height: 1000px;
+	width: 600px;
+	margin: auto
+}
+.box {
+	height: 140px;
+	width: auto;
+	padding: 10px;
+	margin: 20px;
+	border: medium solid #006;
+}
+.picture {
+	height: 130px;
+	width: 130px;
+	float: left;
+}
+.text {
+	height: 130px;
+	width: auto;
+}
+.box .picture img {
+	margin: 10px;
+}

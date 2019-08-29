@@ -1,0 +1,22 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Example 01</title>
+<!-- TemplateEndEditable -->
+<link rel="stylesheet" type="text/css" href="../12/css/style.css">
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+
+<body>
+<div class="main">
+      <div class="logo">Thông tin về header của website (đã sửa)</div>
+      <!-- TemplateBeginEditable name="content" -->
+      <div class="content">Nội dung của trang 01.html</div>
+      <!-- TemplateEndEditable -->
+  <div class="footer">Thông tin footer</div>
+    </div>
+</body>
+</html>

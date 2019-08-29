@@ -1,0 +1,218 @@
+/* CSS Document */
+
+.left_content {
+	width: 196px;
+	float: left;
+}
+
+.title_box {
+	width: 196px;
+	height: 30px;
+	background:url(../images/menu_title_bg.gif) no-repeat center;
+	margin: 5px 0 0 0;
+	text-align: center;
+	font-size: 13px;
+	font-weight: bold;
+	color: #fff;
+	line-height: 30px;
+}
+
+ul.left_menu {
+	width: 196px;
+	list-style: none;
+}
+
+ul.left_menu li{
+	list-style: none;
+}
+
+ul.left_menu li.odd a{
+	width: 166px;
+	height: 25px;
+	display: block;
+	background: url(../images/checked.png) no-repeat left #dad0d0;
+	text-decoration: none;
+	color: #504b4b;
+	line-height: 25px;
+	background-position: 5px 5px;
+	padding: 0 0 0 30px;
+}
+
+ul.left_menu li.even a{
+	width: 166px;
+	height: 25px;
+	display: block;
+	background: url(../images/checked.png) no-repeat left #eee6e6;
+	text-decoration: none;
+	color: #504b4b;
+	line-height: 25px;
+	background-position: 5px 5px;
+	padding: 0 0 0 30px;
+}
+
+ul.left_menu li.even a:hover, ul.left_menu li.odd a:hover{
+	background: url(../images/checked.png) no-repeat left #7bbcc7;
+	color: #fff;
+	background-position: 5px 5px;
+}
+.border_box {
+	width: 194px;
+	height: auto;
+	text-align: center;
+	border: 1px solid #6da6b1;
+}
+
+.product_title {
+	color: #ea2222;
+	padding: 5px 0;
+	font-weight: bold;
+}
+
+.product_title a {
+	color: #ea2222;
+	text-decoration: none;
+	
+}
+
+.product_title a:hover {
+	color: #064E5A;
+}
+
+.product_img {
+	padding: 5px 0;
+}
+
+.product_price {
+	padding: 5px 0;
+}
+
+span.reduce{
+	text-decoration: line-through;
+	color: #999;
+}
+
+span.price{
+	color: #ea2222;
+}
+
+.newsletter_input{
+	width: 160px;
+	height: 16px;
+	border: 1ox solid #dd9d9l;
+	font-size: 12px;
+	color: #999;
+	margin: 10px 0 5px 0;
+	padding: 3px;
+}
+
+a.join {
+	width: 17px;
+	display: block;
+	margin: 5px 0 5px 140px;
+	padding: 0 0 0 20px;
+	text-decoration: none;
+	color: #1c4a52;
+	background: url(../images/blue-add.png) no-repeat left;
+}
+
+.banner_adds {
+	width: 194px;
+	text-align: center;
+	padding: 10px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

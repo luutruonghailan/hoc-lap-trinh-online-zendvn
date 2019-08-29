@@ -1,0 +1,90 @@
+/* CSS Document */
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+.clr {
+	clear:both;
+}
+
+body {
+	background: url(../images/background.jpg) center top no-repeat;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+.main {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+/* ============================= TOP ============================== */
+.top {
+	background-color: #4A4A4A;
+    height: 38px;
+    width: 1000px;
+}
+
+.languages {
+	float: right;
+	width: 150px;
+	padding-top: 8px;
+}
+
+.languages div {
+	float: left;
+	color: #b3adad;
+	padding: 0 5px 0 0;
+}
+
+.languages a {
+	display: block;
+	float: left;
+	padding: 0 5px;
+}
+
+.search {
+	width: 370px;
+	height: 32px;
+	float: right;
+	margin: 0px 20px 0 0;
+	background: url(../images/top_search_bg.gif) no-repeat center;
+}
+
+.search .search_text{
+	float: left;
+	width: 110px;
+	padding: 8px 0 0 15px;
+	color: #999999;
+}
+
+.search .search_text a {
+	text-decoration: none;
+	color: #999999;
+}
+
+.search .search_input {
+	width: 182px;
+	height: 18px;
+	float: left;
+	margin: 5px 0 0 0;
+	border: 1px solid #dbdbdb;
+	border-bottom-color: #ffffff;
+	border-right-color: #ffffff;
+}
+
+.search .search_bt {
+	float: left;
+	padding: 2px 0 0 15px;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,91 @@
+/* CSS Document */
+
+* { 
+	margin: 0px;
+	padding: 0px;
+}
+
+.clr { 
+	clear: both;
+}
+
+body{
+	background: url(../images/background.jpg) center top no-repeat;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+.main {
+	width: 1000px;
+	margin: 0px auto;
+}
+
+/* ================================== TOP ================================ */
+.top {
+	width: 1000px;
+	height: 38px;
+	background-color: #4A4A4A;
+}
+
+.languages {
+	float: right;
+	width: 150px;
+	padding-top: 8px;
+}
+
+.languages div {
+	float: left;
+	color: #B3ADAD;
+	padding: 0 5px 0 0;
+}
+
+.languages a{
+	float: left;
+	display: block;
+	padding: 0  5px;
+}
+
+.search {
+	width: 370px;
+	height: 32px;
+	float: right;
+	background:url(../images/top_search_bg.gif) no-repeat center;
+	margin-right: 20px;
+}
+
+.search .search_text {
+	padding: 8px 0 0 15px;
+	float: left;
+	width: 110px;
+	color: #999999;
+}
+
+.search .search_text a {
+	color:#999999;
+	text-decoration: none;
+}
+
+.search .search_input{
+	width: 182px;
+	height: 18px;
+	margin-top: 5px;
+	border: 1px solid #dbdbdb;
+	float: left;
+	border-bottom-color: #ffffff;
+	border-right-color: #ffffff;
+}
+
+.search .search_bt{
+	float: left;
+	padding: 2px 0 0 15px;
+}
+
+
+
+
+
+
+
+
+
+

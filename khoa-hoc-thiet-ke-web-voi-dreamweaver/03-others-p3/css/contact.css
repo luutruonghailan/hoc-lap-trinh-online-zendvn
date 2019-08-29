@@ -1,0 +1,100 @@
+/* CSS Document */
+
+.prod_box_big{
+	width: 554px;
+	height: auto;
+	float:left;
+	padding: 10px 10px 10px 15px;
+}
+
+.top_prod_box_big{
+	width: 554px;
+	height: 12px;
+	float: left;
+	background: url(../images/details_box_top.gif) no-repeat center bottom;
+}
+
+.bottom_prod_box_big{
+	width: 554px;
+	height: 12px;
+	float: left;
+	background: url(../images/details_box_bottom.gif) no-repeat center top;
+}
+
+.center_prod_box_big{
+	width: 554px;
+	height: auto;
+	float: left;
+	background: url(../images/details_box_center.gif) repeat-y;
+	text-align: center;
+}
+
+.contact_form {
+	width: 355px;
+	float: left;
+	padding: 0 0 0 75px;
+}
+
+.form_row{
+	width: 355px;
+	color: #a53d17;
+	padding: 10px 0;
+	clear: both;
+}
+
+label.contact {
+	width: 75px;
+	float: left;
+	font-size: 12px;
+	text-align: riright;
+	color: #333;
+	padding: 4px 5px 0 0;
+}
+
+input.contact_input {
+	width: 253px;
+	height: 18px;
+	background-color: #fff;
+	color: #999;
+	border: 1px #dfdfdf solid;
+	float: left;
+}
+
+textarea.contact_textarea{
+	width: 253px;
+	height: 50px;
+	font-size: 12px;
+	background-color: #fff;
+	color: #999;
+	border: 1px #dfdfdf solid;
+	float: left;
+	min-width: 253px;
+	max-width: 253px;
+}
+
+a.contact {
+	background: url(../images/contact_bt.gif) no-repeat left;
+	width: 130px;
+	height: 27px;
+	display: block;
+	float: right;
+	text-decoration: none;
+	line-height: 27px;
+	color: #1c4a52;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

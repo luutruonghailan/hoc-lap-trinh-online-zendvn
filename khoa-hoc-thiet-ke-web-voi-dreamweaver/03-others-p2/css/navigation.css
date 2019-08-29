@@ -1,0 +1,22 @@
+/* CSS Document */
+
+.navigation {
+	width: 980px;
+	height: 15px;
+	padding: 5px 10px 0 20px;
+	color: #333333;
+	background:url(../images/navbullet.png) no-repeat left;
+	background-position: 5px 6px;
+}
+
+.navigation span.current{
+	color: #0fa0dd;
+}
+
+.navigation a {
+	color: #0fa0dd;
+	text-decoration: underline;
+}
+
+
+

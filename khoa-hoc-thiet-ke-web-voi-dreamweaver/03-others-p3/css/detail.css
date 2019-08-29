@@ -1,0 +1,93 @@
+/* CSS Document */
+
+.product_img_big {
+	width: 170px;
+	padding: 5px 0 5px 10px;
+	float: left;
+}
+
+.thumbs {
+	padding: 8px 5px 8px 5px;
+	border: 1px #DFD1D1 solid;
+	margin: 3px 0 0 0;
+}
+
+.thumbs a {
+	padding: 3px;
+}
+
+.details_big_box {
+	width: 345px;
+	float: left;
+	padding: 0 0 0 15px;
+	text-align: left;
+}
+
+.product_title_big {
+	color: #ea2222;
+	padding: 5px 0 5px 0;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.specifications {
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 18px;
+}
+
+span.blue {
+	color: #5F9FAB;
+}
+
+a.addtocart {
+	width: 76px;
+	height: 27px;
+	display: block;
+	float: left;
+	background: url(../images/addtocart.gif) no-repeat left;
+	padding: 0 0 0 33px;
+	text-decoration: none;
+	line-height: 27px;
+	color: #1c4a52;
+}
+
+a.compare {
+	width: 76px;
+	height: 27px;
+	display: block;
+	float: left;
+	margin: 0 0 0 10px;
+	background: url(../images/compare.gif) no-repeat left;
+	padding: 0 0 0 33px;
+	text-decoration: none;
+	line-height: 27px;
+	color: #1c4a52;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,151 @@
+/* CSS Document */
+
+.left_content {
+	width: 196px;
+	float: left;
+}
+
+.title_box {
+	width: 196px;
+	height: 30px;
+	margin: 5px 0 0 0;
+	background: url(../images/menu_title_bg.gif) no-repeat center;
+	text-align: center;
+	font-size: 13px;
+	font-weight: bold;
+	color: #fff;
+	line-height: 30px;
+}
+
+ul.left_menu {
+	width: 196px;
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+}
+
+ul.left_menu li {
+	margin: 0px;
+	list-style: none;
+}
+
+ul.left_menu li.odd a {
+	width: 166px;
+	height: 25px;
+	display: block;
+	background: url(../images/checked.png) no-repeat left #dad0d0;
+	background-position: 5px 5px;
+	border-bottom: 1px #FFFFFF solid;
+	text-decoration: none;
+	color: #504b4b;
+	padding: 0 0 0 30px;
+	line-height: 25px;
+}
+
+ul.left_menu li.even a {
+	width: 166px;
+	height: 25px;
+	display: block;
+	background: url(../images/checked.png) no-repeat left #eee6e6;
+	background-position: 5px 5px;
+	border-bottom: 1px #FFFFFF solid;
+	text-decoration: none;
+	color: #504b4b;
+	padding: 0 0 0 30px;
+	line-height: 25px;
+}
+
+ul.left_menu li.even a:hover,ul.left_menu li.odd a:hover {
+	background: url(../images/checked.png) no-repeat left #7bbcc7;
+	color: #FFFFFF;
+	background-position: 5px 5px;
+}
+
+.border_box {
+	width: 194px;
+	height: auto;
+	text-align: center;
+	border: 1px #6da6b1 solid;
+}
+
+.product_title {
+	color: #ea2222;
+	padding: 5px 0 5px 0;
+	font-weight: bold;
+}
+
+.product_title a {
+	text-decoration: none;
+	color: #ea2222;
+	padding: 5px 0 5px 0;
+	font-weight: bold;
+}
+
+.product_title a:hover {
+	color: #064E5A;
+}
+
+.product_img {
+	padding: 5px 0 5px 0;
+}
+
+.prod_price {
+	padding: 5px 0 5px 0;
+}
+
+span.reduce {
+	color: #999999;
+	text-decoration: line-through;
+}
+
+span.price {
+	color: #ea2222;
+}
+
+input.newsletter_input {
+	width: 160px;
+	height: 16px;
+	border: 1px #ddd9d9 solid;
+	margin: 10px 0 5px 0;
+	font-size: 12px;
+	padding: 3px;
+	color: #999999;
+}
+
+a.join {
+	width: 17px;
+	display: block;
+	margin: 5px 0 5px 140px;
+	background: url(../images/blue-add.png) no-repeat left;
+	padding: 0 0 0 20px;
+	text-decoration: none;
+	color: #1c4a52;
+}
+
+.banner_adds {
+	width: 194px;
+	text-align: center;
+	padding: 10px 0 10px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

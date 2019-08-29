@@ -1,0 +1,42 @@
+@charset "utf-8";
+h1,h2,h3,h4,h5,h6 {
+	font-family: "Times New Roman", Times, serif;
+}
+h1 {
+	font-size: 36px;
+	color: #F00;
+}
+h2 {
+	font-size: 24px;
+	color: #0F0;
+}
+h3 {
+	font-size: 18px;
+	color: #00F;
+}
+h4 {
+	font-size: 16px;
+	color: #FF0;
+}
+
+blockquote {
+	font: 16px Tahoma, Geneva, sans-serif;
+	color: #F00;
+	background-color: #FF9;
+}
+.title {
+	font: italic bolder 36px Tahoma, Geneva, sans-serif;
+	text-transform: none;
+	color: #F00;
+	text-align: center;
+}
+.text {
+	font-size: 18px;
+	color: #009;
+	text-align: justify;
+}
+.author {
+	font-size: 16px;
+	color: #300;
+	text-align: right;
+}

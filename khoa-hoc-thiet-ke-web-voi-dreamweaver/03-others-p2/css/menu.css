@@ -1,0 +1,107 @@
+/* CSS Document */
+
+#menu_tab {
+	width: 1000px;
+	height: 50px;
+}
+
+.left_menu_corner {
+	width: 9px;
+	height: 50px;
+	float: left;
+	background: url(../images/menu_left.gif) no-repeat center;
+}
+
+.right_menu_corner {
+	width: 9px;
+	height: 50px;
+	float: left;
+	background: url(../images/menu_right.gif) no-repeat center;
+}
+
+ul.menu {
+	list-style-type: none;
+	float: left;
+	display: block;
+	width: 982px;
+	margin: 0px;
+	padding: 0px;
+	background: url(../images/menu_bg.gif) repeat-x;
+}
+
+ul.menu li {
+	display: inline;
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 50px;
+}
+
+ul.menu li.divider {
+	display: inline;
+	width: 2px;
+	height: 50px;
+	float: left;
+	background: url(../images/menu_divider.gif) no-repeat center;
+}
+
+ul.menu li a,ul.menu li a:visited {
+	display: block;
+	float: left;
+	padding: 0px 8px 0px 22px;
+	margin: 0 14px 0 14px;
+	height: 50px;
+	text-decoration: none;
+	color: #676d77;
+}
+
+ul.menu li a:hover{
+	color: #333333;
+}
+
+#nav_hom {
+	background: url(../images/home.png) no-repeat left;
+}
+
+#nav_pro {
+	background: url(../images/services.png) no-repeat left;
+}
+
+#nav_spe {
+	background: url(../images/favs.png) no-repeat left;
+}
+
+#nav_acc, #nav_sig  {
+	background: url(../images/user_add.png) no-repeat left;
+}
+
+#nav_shi {
+	background: url(../images/car.png) no-repeat left;
+}
+
+#nav_con {
+	background: url(../images/contact-new.png) no-repeat left;
+}
+
+li.currencies {
+	width: 180px;
+	float: left;
+	padding: 0 0 0 15px;
+	color: #676d77;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

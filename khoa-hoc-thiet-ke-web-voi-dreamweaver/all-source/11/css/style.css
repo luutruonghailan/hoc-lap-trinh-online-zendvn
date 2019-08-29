@@ -1,0 +1,10 @@
+.textbox {
+	background-color: #FFC;
+}
+#textarea {
+	/*max-width: 500px;
+	min-width: 500px;
+	min-height: 200px;
+	max-height: 200px;*/
+	resize:none;
+}
