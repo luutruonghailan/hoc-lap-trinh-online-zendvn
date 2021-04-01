@@ -1,0 +1,53 @@
+h3 {
+	font: bold 20px Arial, Helvetica, sans-serif;
+	color: #F00;
+	margin: 15px auto 0px auto;
+	border: 1px solid #CCC;
+	width: 1000px;
+	padding: 10px;
+	text-align: center;
+	background-color:#9FC;
+}
+
+.area-tree {
+	margin: -1px auto;
+	width: 1000px;
+	border: 1px solid #CCC;
+	padding: 10px;
+}
+
+.parent {
+	font: bold 14px Tahoma, Geneva, sans-serif;
+	color: #003;
+}
+
+.desc { 
+	font-style: italic;
+	font-family: "Times New Roman", Times, serif;
+	color:#999; 
+	font-size: 14px;
+}
+
+.image { 
+	float: right;
+	font-style: italic;
+	font-family: Tahoma, Geneva, sans-serif;
+	color:#999; 
+	font-size: 12px;
+	position: relative;
+}
+
+.image > span{ 
+	margin-top: 2px;
+	position: absolute;
+	top: -1px;
+	right: 110px;
+}
+
+.desc:before {
+	content: "(";
+}
+
+.desc:after {
+	content: ")";
+}

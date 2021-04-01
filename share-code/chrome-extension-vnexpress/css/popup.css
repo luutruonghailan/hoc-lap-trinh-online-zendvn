@@ -1,0 +1,52 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: #eee;
+    font-family: arial, sans-serif;
+    font-size: 13px;
+    padding: 0.75em;
+    border-radius: 6px
+}
+
+div.popup-content {
+   
+    padding: 0.75em;
+    padding-bottom: 0;
+    border-radius: 6px;
+}
+
+
+
+div.course-title {
+    width: 100%;
+}
+
+div.course-title p{
+    font-weight: bold;
+    display: inline-block;
+}
+
+p.course-item-name{
+    width: 20%;
+}
+
+p.course-item-price1, 
+p.course-item-price2, 
+p.course-item-price3, 
+p.course-item-price4 {
+    width: 12%;
+}
+
+p.course-item-sale {
+    width: 12%;
+}
+
+p.course-item-link {
+    width: 20%;
+}
+
+
+

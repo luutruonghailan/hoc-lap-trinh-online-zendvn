@@ -1,0 +1,26 @@
+{
+	"name": "GetNews",
+	"version": "1.2",
+	"description": "GetNews vnexpress",
+	"manifest_version": 2,
+
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"], 
+			"css": ["css/myStyles.css"],
+			"js": [
+				"js/libs/jquery.js"
+			]
+		}
+	],
+
+
+	
+	"browser_action": {
+		"default_icon": {                    
+            "16": "images/icon_16.png"        
+		},
+		"default_title": "API",
+		"default_popup": "popup.html" 
+	}
+}
