@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản Lý Tạp Hóa</title>
+    <!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="mt-5">
+
+        <div class="container">
+            <h1 class="mb-5">Thêm sản phẩm</h1>
+            <form method="post" action="/create/">
+                <input type="hidden" name="csrfmiddlewaretoken"
+                    value="NIQ5I2L5cBPBFwgkDZPWphw316Pt8hR7LSCg3gS3MoINMNRETN2VOLL3XafmHP36">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Tên hàng hóa:</label>
+                    <input type="text" class="form-control" name="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="purchase_price" class="form-label">Giá mua:</label>
+                    <input type="number" step="0.01" class="form-control" name="purchase_price" required>
+                </div>
+                <div class="mb-3">
+                    <label for="selling_price" class="form-label">Giá bán:</label>
+                    <input type="number" step="0.01" class="form-control" name="selling_price" required>
+                </div>
+                <div class="mb-3">
+                    <label for="quantity" class="form-label">Số lượng trong kho:</label>
+                    <input type="number" class="form-control" name="quantity" required>
+                </div>
+                <a href="/" class="btn btn-danger mr-1">Quay Lại</a>
+                <button type="submit" class="btn btn-info">Thêm sản phẩm</button>
+            </form>
+        </div>
+
+    </div>
+    <!-- Scripts for Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

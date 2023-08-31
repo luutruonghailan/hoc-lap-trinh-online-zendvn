@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản Lý Tạp Hóa</title>
+    <!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="mt-5">
+
+        <div class="container">
+            <div class="mb-5 d-flex justify-content-between align-items-end">
+                <h1>Danh sách sản phẩm</h1>
+                <a href="/create/" class="btn btn-info">Thêm mới</a>
+            </div>
+
+            <div class="alert alert-success">
+                <ul class="mb-0">
+
+                    <li>Số lượng bán đã được cập nhật.</li>
+
+                </ul>
+            </div>
+
+            <table class="table text-center">
+                <thead>
+                    <tr>
+                        <th>Tên hàng hóa</th>
+                        <th>Giá mua</th>
+                        <th>Giá bán</th>
+                        <th>Số lượng trong kho</th>
+                        <th>Số lượng đã bán</th>
+                        <th>Thao tác</th>
+                        <th>Bán sản phẩm</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td>Sting đỏ</td>
+                        <td>8,000</td>
+                        <td>10,000</td>
+                        <td>278</td>
+                        <td>45</td>
+                        <td>
+                            <a href="/update/1/" class="btn btn-info btn-sm">Sửa</a>
+                            <a href="/delete/1/" class="btn btn-danger btn-sm"
+                                onclick="return confirm('Bạn có chắc muốn xóa sản phẩm này?')">Xóa</a>
+                        </td>
+                        <td>
+                            <form method="get" action="/sell/1/" class="d-flex justify-content-center">
+                                <input type="number" name="quantity" class="form-control form-control-sm w-75"
+                                    placeholder="Nhập số lượng" required>
+                                <button type="submit" class="btn btn-success btn-sm ml-1"
+                                    onclick="return confirm('Xác nhận bán sản phẩm này?')">Bán</button>
+                            </form>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Pepsi</td>
+                        <td>7,000</td>
+                        <td>9,000</td>
+                        <td>333</td>
+                        <td>67</td>
+                        <td>
+                            <a href="/update/2/" class="btn btn-info btn-sm">Sửa</a>
+                            <a href="/delete/2/" class="btn btn-danger btn-sm"
+                                onclick="return confirm('Bạn có chắc muốn xóa sản phẩm này?')">Xóa</a>
+                        </td>
+                        <td>
+                            <form method="get" action="/sell/2/" class="d-flex justify-content-center">
+                                <input type="number" name="quantity" class="form-control form-control-sm w-75"
+                                    placeholder="Nhập số lượng" required>
+                                <button type="submit" class="btn btn-success btn-sm ml-1"
+                                    onclick="return confirm('Xác nhận bán sản phẩm này?')">Bán</button>
+                            </form>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Mì hảo hảo</td>
+                        <td>3,800</td>
+                        <td>4,500</td>
+                        <td>542</td>
+                        <td>23</td>
+                        <td>
+                            <a href="/update/3/" class="btn btn-info btn-sm">Sửa</a>
+                            <a href="/delete/3/" class="btn btn-danger btn-sm"
+                                onclick="return confirm('Bạn có chắc muốn xóa sản phẩm này?')">Xóa</a>
+                        </td>
+                        <td>
+                            <form method="get" action="/sell/3/" class="d-flex justify-content-center">
+                                <input type="number" name="quantity" class="form-control form-control-sm w-75"
+                                    placeholder="Nhập số lượng" required>
+                                <button type="submit" class="btn btn-success btn-sm ml-1"
+                                    onclick="return confirm('Xác nhận bán sản phẩm này?')">Bán</button>
+                            </form>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Mì ba miền</td>
+                        <td>2,900</td>
+                        <td>3,500</td>
+                        <td>223</td>
+                        <td>7</td>
+                        <td>
+                            <a href="/update/4/" class="btn btn-info btn-sm">Sửa</a>
+                            <a href="/delete/4/" class="btn btn-danger btn-sm"
+                                onclick="return confirm('Bạn có chắc muốn xóa sản phẩm này?')">Xóa</a>
+                        </td>
+                        <td>
+                            <form method="get" action="/sell/4/" class="d-flex justify-content-center">
+                                <input type="number" name="quantity" class="form-control form-control-sm w-75"
+                                    placeholder="Nhập số lượng" required>
+                                <button type="submit" class="btn btn-success btn-sm ml-1"
+                                    onclick="return confirm('Xác nhận bán sản phẩm này?')">Bán</button>
+                            </form>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Bò húc</td>
+                        <td>13,000</td>
+                        <td>15,000</td>
+                        <td>434</td>
+                        <td>65</td>
+                        <td>
+                            <a href="/update/5/" class="btn btn-info btn-sm">Sửa</a>
+                            <a href="/delete/5/" class="btn btn-danger btn-sm"
+                                onclick="return confirm('Bạn có chắc muốn xóa sản phẩm này?')">Xóa</a>
+                        </td>
+                        <td>
+                            <form method="get" action="/sell/5/" class="d-flex justify-content-center">
+                                <input type="number" name="quantity" class="form-control form-control-sm w-75"
+                                    placeholder="Nhập số lượng" required>
+                                <button type="submit" class="btn btn-success btn-sm ml-1"
+                                    onclick="return confirm('Xác nhận bán sản phẩm này?')">Bán</button>
+                            </form>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+            <div class="text-right mt-4">
+                <h5>Tổng doanh thu: 2,156,000</h5>
+                <h5>Tổng lợi nhuận: 374,300</h5>
+            </div>
+        </div>
+
+    </div>
+    <!-- Scripts for Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

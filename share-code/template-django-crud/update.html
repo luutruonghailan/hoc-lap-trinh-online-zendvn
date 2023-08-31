@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản Lý Tạp Hóa</title>
+    <!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="mt-5">
+
+        <div class="container">
+            <h1 class="mb-5">Cập nhật sản phẩm</h1>
+            <form method="post" action="/update/1/">
+                <input type="hidden" name="csrfmiddlewaretoken"
+                    value="jSR6Lvb8acYSLulM1K4ab9eBEHCGvMfjj60s7QTBJScqtVC1yhJcEVJwhXQkutTi">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Tên hàng hóa:</label>
+                    <input type="text" class="form-control" name="name" value="Sting đỏ" required>
+                </div>
+                <div class="mb-3">
+                    <label for="purchase_price" class="form-label">Giá mua:</label>
+                    <input type="number" step="0.01" class="form-control" name="purchase_price" value="8000" required>
+                </div>
+                <div class="mb-3">
+                    <label for="selling_price" class="form-label">Giá bán:</label>
+                    <input type="number" step="0.01" class="form-control" name="selling_price" value="10000" required>
+                </div>
+                <div class="mb-3">
+                    <label for="quantity" class="form-label">Số lượng trong kho:</label>
+                    <input type="number" class="form-control" name="quantity" value="278" required>
+                </div>
+                <div class="mb-3">
+                    <label for="sold_quantity" class="form-label">Số lượng đã bán:</label>
+                    <input type="number" class="form-control" name="sold_quantity" value="45" required>
+                </div>
+                <a href="/" class="btn btn-danger mr-1">Quay Lại</a>
+                <button type="submit" class="btn btn-info">Cập nhật</button>
+            </form>
+        </div>
+
+    </div>
+    <!-- Scripts for Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
