@@ -1,0 +1,738 @@
+{
+	"info": {
+		"_postman_id": "3cda15a2-40f9-4c33-9935-1eeb67cd0bc7",
+		"name": "API For Learning",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7622801"
+	},
+	"item": [
+		{
+			"name": "ARTICLES",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/articles?limit=7",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"articles"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "7"
+								},
+								{
+									"key": "page",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "ids",
+									"value": "3854,3853",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/articles/3312",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"articles",
+								"3312"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Related",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/articles/3312/related?limit=10",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"articles",
+								"3312",
+								"related"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Popular",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/articles/popular?limit=3",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"articles",
+								"popular"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Article",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer  {{access_token}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "artice test 01",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "artice test 01",
+									"type": "text"
+								},
+								{
+									"key": "content",
+									"value": "artice test 01",
+									"type": "text"
+								},
+								{
+									"key": "thumb",
+									"value": "articetest01",
+									"type": "text"
+								},
+								{
+									"key": "category_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/articles/create",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"articles",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Partial Update Article",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer  {{access_token}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "status",
+									"value": "0",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "category_id",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/articles/3791",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"articles",
+								"3791"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Article",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer  {{access_token}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{base_url}}/articles/3455",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"articles",
+								"3455"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "My Articles",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer  {{access_token}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{base_url}}/articles/my-articles",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"articles",
+								"my-articles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/articles/search?q=Neymar&limit=10&page=1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"articles",
+								"search"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "Neymar"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "USERS",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "linh02@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "234234",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/auth/login",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Văn Linh",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "linh11@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0336405077",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "Thủ Đức",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/users/register",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"users",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Current User Info",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer  {{access_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Văn Linh",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0336405077",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "Thủ Đức",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/auth/update",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"auth",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change password Current User",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer  {{access_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "password_current",
+									"value": "122",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "123456",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/auth/change-password",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"auth",
+								"change-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer  {{access_token}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpZm9ybGVhcm5pbmcuemVuZHZuLmNvbVwvYXBpXC92MlwvYXV0aFwvbG9naW4iLCJpYXQiOjE2ODQ4NDk4MTIsImV4cCI6MTY4NDg1MzQxMiwibmJmIjoxNjg0ODQ5ODEyLCJqdGkiOiJ3cXJaeWRUaXBRRGQ5S0FxIiwic3ViIjo4NiwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSJ9.bZDYd1-0ua3HFfO9xnnB3jpDbHFxIsIwi5dKbt2LbwY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/auth/logout",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"auth",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Current User Info",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer  {{access_token}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpZm9ybGVhcm5pbmcuemVuZHZuLmNvbVwvYXBpXC92MlwvYXV0aFwvbG9naW4iLCJpYXQiOjE2ODk1ODU5MjAsImV4cCI6MTY4OTU4OTUyMCwibmJmIjoxNjg5NTg1OTIwLCJqdGkiOiI4TUhJRlZDZ295VmtSenEzIiwic3ViIjo4NiwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSJ9.D3tCnme5rf9cR6OIjVmyztacXWKjd6K6wyq56o4YVCw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/auth/me",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"auth",
+								"me"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CATEGORIES",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/categories_news",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"categories_news"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "100",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All with Articles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/categories_news/articles?limit_cate=5&limit=3",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"categories_news",
+								"articles"
+							],
+							"query": [
+								{
+									"key": "limit_cate",
+									"value": "5",
+									"description": "default 5"
+								},
+								{
+									"key": "limit",
+									"value": "3",
+									"description": "default 10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/categories_news/2",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"categories_news",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Articles By Category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/categories_news/2/articles?limit=10&page=2",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"categories_news",
+								"2",
+								"articles"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "page",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Featured",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/categories_news/featured?limit=5",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"categories_news",
+								"featured"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "https://apiforlearning.zendvn.com/api/v2"
+		},
+		{
+			"key": "access_token",
+			"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGlmb3JsZWFybmluZy50ZXN0XC9hcGlcL3YyXC9hdXRoXC9sb2dpbiIsImlhdCI6MTY5MDIyNDU2MiwiZXhwIjoxNjkwMjI4MTYyLCJuYmYiOjE2OTAyMjQ1NjIsImp0aSI6IjB5aE9Tb0thVUViOW5ESVEiLCJzdWIiOjg2LCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.-Ram_4ARGDj328F5aLG68SNCCrSsj2REVoR1cWEkXC8"
+		}
+	]
+}

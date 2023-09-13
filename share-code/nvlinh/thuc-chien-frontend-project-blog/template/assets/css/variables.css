@@ -1,0 +1,207 @@
+/**
+* Template Name: ZenBlog
+* File: variables.css
+* Description: Easily customize colors, typography, and other repetitive properties used in the template main stylesheet file main.css
+* 
+* Template URL: https://bootstrapmade.com/zenblog-bootstrap-blog-template/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+* 
+* Contents:
+* 1. ZenBlog template variables 
+* 2. Override default Bootstrap variables
+* 3. Set color and background class names
+*
+* Learn more about CSS variables at https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
+*/
+
+/*--------------------------------------------------------------
+# 1. ZenBlog template variables 
+--------------------------------------------------------------*/
+:root {
+
+  /* Fonts */
+  --font-default: 'EB Garamond', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-primary: 'EB Garamond', serif; /*'Playfair Display', serif;*/
+  --font-secondary: 'Inter', sans-serif;
+
+  /* Colors */
+  /* The *-rgb color names are simply the RGB converted value of the corresponding color for use in the rgba() function */
+
+  /* Default text color */
+  --color-default: #212529;
+  --color-default-rgb: 33, 37, 41;
+
+  /* Defult links color */
+  --color-links: #212529;
+  --color-links-hover: #15171a;
+
+  /* Primay colors */
+  --color-primary: #212529;
+  --color-primary-light: #26282c;
+  --color-primary-dark: #0b0c0e;
+
+  --color-primary-rgb: 33, 37, 41;
+  --color-primary-light-rgb: 38, 40, 44;
+  --color-primary-dark-rgb: 11, 12, 14;
+
+  /* Secondary colors */
+  --color-secondary: #596d80;
+  --color-secondary-light: #8498aa;
+  --color-secondary-dark: #404f5c;
+
+  --color-secondary-rgb: 89, 109, 128;
+  --color-secondary-light-rgb: 132, 152, 170;
+  --color-secondary-dark-rgb: 64, 79, 92;
+
+  /* General colors */
+  --color-blue: #0d6efd;
+  --color-blue-rgb: 13, 110, 253;
+
+  --color-indigo: #6610f2;
+  --color-indigo-rgb: 102, 16, 242;
+
+  --color-purple: #6f42c1;
+  --color-purple-rgb: 111, 66, 193;
+  
+  --color-pink: #f3268c;
+  --color-pink-rgb: 243, 38, 140;
+
+  --color-red: #df1529;
+  --color-red-rgb: 223, 21, 4;
+
+  --color-orange: #fd7e14;
+  --color-orange-rgb: 253, 126, 20;
+
+  --color-yellow: #ffc107;
+  --color-yellow-rgb: 255, 193, 7;
+
+  --color-green: #059652;
+  --color-green-rgb: 5, 150, 82;
+
+  --color-teal: #20c997;
+  --color-teal-rgb: 32, 201, 151;
+
+  --color-cyan: #0dcaf0;
+  --color-cyan-rgb: 13, 202, 240;
+
+  --color-white: #ffffff;
+  --color-white-rgb: 255, 255, 255;
+
+  --color-gray: #6c757d;
+  --color-gray-rgb: 108, 117, 125;
+
+  --color-black: #000000;
+  --color-black-rgb: 0, 0, 0;
+}
+
+/*--------------------------------------------------------------
+# 2. Override default Bootstrap variables
+--------------------------------------------------------------*/
+:root {
+  --bs-blue: var(--color-blue);
+  --bs-indigo: var(--color-indigo);
+  --bs-purple: var(--color-purple);
+  --bs-pink: var(--color-pink);
+  --bs-red: var(--color-red);
+  --bs-orange: var(--color-orange);
+  --bs-yellow: var(--color-yellow);
+  --bs-green: var(--color-green);
+  --bs-teal: var(--color-teal);
+  --bs-cyan: var(--color-cyan);
+  --bs-white: var(--color-white);
+  --bs-gray: var(--color-gray);
+  --bs-gray-dark: #343a40;
+  --bs-gray-100: #f8f9fa;
+  --bs-gray-200: #e9ecef;
+  --bs-gray-300: #dee2e6;
+  --bs-gray-400: #ced4da;
+  --bs-gray-500: #adb5bd;
+  --bs-gray-600: #6c757d;
+  --bs-gray-700: #495057;
+  --bs-gray-800: #343a40;
+  --bs-gray-900: #212529;
+  --bs-primary: var(--color-blue);
+  --bs-secondary: var(--color-blue);
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-primary-rgb: var(--color-primary-rgb);
+  --bs-secondary-rgb: var(--color-secondary-rgb);
+  --bs-success-rgb: 25, 135, 84;
+  --bs-info-rgb: 13, 202, 240;
+  --bs-warning-rgb: 255, 193, 7;
+  --bs-danger-rgb: 220, 53, 69;
+  --bs-light-rgb: 248, 249, 250;
+  --bs-dark-rgb: 33, 37, 41;
+  --bs-white-rgb: var(--color-white-rgb);
+  --bs-black-rgb: var(--color-black-rgb);
+  --bs-body-color-rgb: var(--color-default-rgb);
+  --bs-body-bg-rgb: 255, 255, 255;
+  --bs-font-sans-serif: var(--font-default);
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  --bs-body-font-family: var(--font-default);
+  --bs-body-font-size: 1rem;
+  --bs-body-font-weight: 400;
+  --bs-body-line-height: 1.5;
+  --bs-body-color: var(--color-default);
+  --bs-body-bg: #fff;
+}
+
+/*--------------------------------------------------------------
+# 3. Set color and background class names
+--------------------------------------------------------------*/
+/* Fonts */
+.font-default { font-family: var(--font-default) !important; }
+.font-primary { font-family: var(--font-primary) !important;}
+.font-secondary { font-family: var(--font-secondary) !important; }
+
+/* Text Colors */
+.color-default { color: var(--color-default) !important; }
+.color-links { color: var(--color-links) !important; }
+.color-links:hover { color: var(--color-links-hover) !important; }
+.color-primary { color: var(--color-primary) !important; }
+.color-primary-light { color: var(--color-primary-light) !important; }
+.color-primary-dark { color: var(--color-primary-dark) !important; }
+.color-secondary { color: var(--color-secondary) !important; }
+.color-secondary-light { color: var(--color-secondary-light) !important; }
+.color-secondary-dark { color: var(--color-secondary-dark) !important; }
+.color-blue { color: var(--color-blue) !important; }
+.color-indigo { color: var(--color-indigo) !important; }
+.color-purple { color: var(--color-purple) !important; }
+.color-pink { color: var(--color-pink) !important; }
+.color-red { color: var(--color-red) !important; }
+.color-orange { color: var(--color-orange) !important; }
+.color-yellow { color: var(--color-yellow) !important; }
+.color-green { color: var(--color-green) !important; }
+.color-teal { color: var(--color-teal) !important; }
+.color-cyan { color: var(--color-cyan) !important; }
+.color-white { color: var(--color-white) !important; }
+.color-gray { color: var(--color-gray) !important; }
+.color-black { color: var(--color-black) !important; }
+
+/* Background Colors */
+.bg-default { background-color: var(--color-default) !important; }
+.bg-primary { background-color: var(--color-primary) !important; }
+.bg-primary-light { background-color: var(--color-primary-light) !important; }
+.bg-primary-dark { background-color: var(--color-primary-dark) !important; }
+.bg-secondary { background-color: var(--color-secondary) !important; }
+.bg-secondary-light { background-color: var(--color-secondary-light) !important; }
+.bg-secondary-dark { background-color: var(--color-secondary-dark) !important; }
+.bg-blue { background-color: var(--color-blue) !important; }
+.bg-indigo { background-color: var(--color-indigo) !important; }
+.bg-purple { background-color: var(--color-purple) !important; }
+.bg-pink { background-color: var(--color-pink) !important; }
+.bg-red { background-color: var(--color-red) !important; }
+.bg-orange { background-color: var(--color-orange) !important; }
+.bg-yellow { background-color: var(--color-yellow) !important; }
+.bg-green { background-color: var(--color-green) !important; }
+.bg-teal { background-color: var(--color-teal) !important; }
+.bg-cyan { background-color: var(--color-cyan) !important; }
+.bg-white { background-color: var(--color-white) !important; }
+.bg-gray { background-color: var(--color-gray) !important; }
+.bg-black { background-color: var(--color-black) !important; }
