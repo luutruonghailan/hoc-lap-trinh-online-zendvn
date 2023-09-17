@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trang Tỷ Giá</title>
+    <link href="https://zendvn.com/frontend/assets/images/favicon.ico" sizes="128x128" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .flex-grow-1 {
+            flex-grow: 1;
+            min-height: 0;
+        }
+    </style>
+</head>
+<body class="d-flex flex-column">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="/">ZendVN.com</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ml-2">
+                    <a class="nav-link" href="/">Giá Coin</a>
+                </li>
+                <li class="nav-item active ml-2">
+                    <a class="nav-link" href="/gold/">Giá Vàng</a>
+                </li>
+                <li class="nav-item ml-2">
+                  <a class="nav-link" href="#">Giới Thiệu</a>
+                </li>
+                <li class="nav-item ml-2">
+                  <a class="nav-link" href="#">Liên Hệ</a>
+                </li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="flex-grow-1 mb-5">
+      <div class="container">
+        <div class="mt-5 d-flex justify-content-between align-items-center">
+            <h1>Bảng Giá Vàng</h1>                   
+            <button class="btn btn-success" onclick="window.location.reload()">Làm mới</button>
+        </div>
+        <table class="table mt-3 text-center">
+          <thead>
+              <tr>
+                  <th>Loại</th>
+                  <th>Giá Mua</th>
+                  <th>Giá Bán</th>
+              </tr>
+          </thead>
+          <tbody>
+              
+                  <tr>
+                      <td>Vàng SJC 1L - 10L - 1KG</td>
+                      <td>68.250</td>
+                      <td>68.950</td>
+                  </tr>
+              
+                  <tr>
+                      <td>Vàng nhẫn SJC 99,99 1 chỉ, 2 chỉ, 5 chỉ</td>
+                      <td>56.500</td>
+                      <td>57.500</td>
+                  </tr>
+              
+                  <tr>
+                      <td>Vàng nhẫn SJC 99,99 0,5 chỉ</td>
+                      <td>56.500</td>
+                      <td>57.600</td>
+                  </tr>
+              
+                  <tr>
+                      <td>Vàng nữ trang 99,99%</td>
+                      <td>56.450</td>
+                      <td>57.200</td>
+                  </tr>
+              
+                  <tr>
+                      <td>Vàng nữ trang 99%</td>
+                      <td>55.434</td>
+                      <td>56.634</td>
+                  </tr>
+              
+                  <tr>
+                      <td>Vàng nữ trang 75%</td>
+                      <td>41.054</td>
+                      <td>43.054</td>
+                  </tr>
+              
+                  <tr>
+                      <td>Vàng nữ trang 58,3%</td>
+                      <td>31.501</td>
+                      <td>33.501</td>
+                  </tr>
+              
+                  <tr>
+                      <td>Vàng nữ trang 41,7%</td>
+                      <td>22.005</td>
+                      <td>24.005</td>
+                  </tr>
+              
+          </tbody>
+        </table>  
+      </div>
+    </div>
+    <footer class="bg-dark text-light text-center p-3">
+      <div class="container">
+        Copyright © 2023 ZendVN. All rights reserved.
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
