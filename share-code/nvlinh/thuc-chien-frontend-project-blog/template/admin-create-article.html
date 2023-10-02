@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Admin - Create Article</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Inter:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+
+    <!-- Template Main CSS Files -->
+    <link href="assets/css/variables.css" rel="stylesheet" />
+    <link href="assets/css/main.css" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./css/my-custom.css">
+
+    <!-- =======================================================
+  * Template Name: ZenBlog
+  * Updated: Jul 27 2023 with Bootstrap v5.3.1
+  * Template URL: https://bootstrapmade.com/zenblog-bootstrap-blog-template/
+  * Author: BootstrapMade.com
+  * License: https:///bootstrapmade.com/license/
+  ======================================================== -->
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <x-header></x-header>
+    <!-- End Header -->
+
+    <main id="main">
+      <section id="contact" class="contact mb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center mb-2">
+              <h1 class="page-title">Admin - Create Article</h1>
+            </div>
+          </div>
+
+          <div class="form mt-5">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div id="formMessage"></div>
+                <form action="#" method="post" id="auth-form" role="form" class="php-email-form">
+                  <div class="form-group">
+                    <img src="./images/default-thumb-preview.png" class="w-100 mb-1" alt="" id="thumbPreview">
+                    <input type="text" class="form-control" name="thumb" id="thumb" readonly placeholder="Thumb link" required />
+                    <button type="button" class="btn btn-success d-block w-100 mt-1" id="btnRandomThumb">Random Thumb</button>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="title" id="title" placeholder="Title" required />
+                  </div>
+                  <div class="form-group">
+                    <select class="form-select" id="category_id" name="category_id">
+                      <option selected>Chọn danh mục</option>
+                      <option value="1">Thế Giới</option>
+                      <option value="2">Thời Sự</option>
+                      <option value="3">Kinh Doanh</option>
+                      <option value="5">Giải Trí</option>
+                      <option value="6">Thể Thao</option>
+                      <option value="7">Pháp Luật</option>
+                      <option value="8">Giáo Dục</option>
+                      <option value="9">Sức Khỏe</option>
+                      <option value="10">Đời Sống</option>
+                      <option value="11">Du Lịch</option>
+                      <option value="12">Khoa Học</option>
+                      <option value="13">Số Hóa</option>
+                      <option value="14">Xe</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <textarea
+                      name="description"
+                      id="description"
+                      rows="5"
+                      class="form-control"
+                      placeholder="Description"
+                    ></textarea>
+                  </div>
+                  <div class="form-group">
+                    <textarea
+                      name="content"
+                      id="content"
+                      rows="8"
+                      class="form-control"
+                      placeholder="Content"
+                    ></textarea>
+                  </div>
+                  <div class="text-center"><button type="submit">Submit</button></div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- End Contact Form -->
+        </div>
+      </section>
+    </main>
+    <!-- End #main -->
+
+    <x-footer></x-footer>
+
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+    <script src="./components/Header.js"></script>
+    <script src="./components/Footer.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.9/plugin/relativeTime.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.9/locale/vi.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/39.0.2/classic/ckeditor.js"></script>
+    <script src="./js/general.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/admin-create-article.js"></script>
+  </body>
+</html>
