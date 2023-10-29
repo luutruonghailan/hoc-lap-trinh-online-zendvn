@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "3cda15a2-40f9-4c33-9935-1eeb67cd0bc7",
+		"_postman_id": "220a157a-2785-41c9-a703-56872d681f03",
 		"name": "API For Learning",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "7622801"
@@ -15,7 +15,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base_url}}/articles?limit=7",
+							"raw": "{{base_url}}/articles?limit=4&page=1",
 							"host": [
 								"{{base_url}}"
 							],
@@ -25,12 +25,11 @@
 							"query": [
 								{
 									"key": "limit",
-									"value": "7"
+									"value": "4"
 								},
 								{
 									"key": "page",
-									"value": "1",
-									"disabled": true
+									"value": "1"
 								},
 								{
 									"key": "ids",
@@ -163,6 +162,65 @@
 							"path": [
 								"articles",
 								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Article",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer  {{access_token}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "artice test 01",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "artice test 01",
+									"type": "text"
+								},
+								{
+									"key": "content",
+									"value": "artice test 01",
+									"type": "text"
+								},
+								{
+									"key": "thumb",
+									"value": "articetest01",
+									"type": "text"
+								},
+								{
+									"key": "category_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/articles/3791",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"articles",
+								"3791"
 							]
 						}
 					},
@@ -335,12 +393,12 @@
 							"formdata": [
 								{
 									"key": "email",
-									"value": "linh02@gmail.com",
+									"value": "student@gmail.com",
 									"type": "text"
 								},
 								{
 									"key": "password",
-									"value": "234234",
+									"value": "123456",
 									"type": "text"
 								}
 							]
@@ -374,22 +432,22 @@
 							"formdata": [
 								{
 									"key": "name",
-									"value": "Văn Linh",
+									"value": "Student2",
 									"type": "text"
 								},
 								{
 									"key": "email",
-									"value": "linh11@gmail.com",
+									"value": "student2@gmail.com",
 									"type": "text"
 								},
 								{
 									"key": "password",
-									"value": "1",
+									"value": "123",
 									"type": "text"
 								},
 								{
 									"key": "phone",
-									"value": "0336405077",
+									"value": "123456789",
 									"type": "text"
 								},
 								{
@@ -475,7 +533,7 @@
 							},
 							{
 								"key": "Authorization",
-								"value": "Bearer  {{access_token}}",
+								"value": "Bearer  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpZm9ybGVhcm5pbmcuemVuZHZuLmNvbVwvYXBpXC92MlwvYXV0aFwvbG9naW4iLCJpYXQiOjE2OTU0OTc2ODIsImV4cCI6MTY5NTUwMTI4MiwibmJmIjoxNjk1NDk3NjgyLCJqdGkiOiJjeHNvd0FRaE54aXZDVGJmIiwic3ViIjoyMTEsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.yIucIJSJrnyvfdA9Y8_DIGQUScXlj2feORKcdk8LHKw",
 								"type": "text"
 							}
 						],
@@ -484,7 +542,7 @@
 							"urlencoded": [
 								{
 									"key": "password_current",
-									"value": "122",
+									"value": "123123",
 									"type": "text"
 								},
 								{
@@ -555,7 +613,7 @@
 							},
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpZm9ybGVhcm5pbmcuemVuZHZuLmNvbVwvYXBpXC92MlwvYXV0aFwvbG9naW4iLCJpYXQiOjE2ODk1ODU5MjAsImV4cCI6MTY4OTU4OTUyMCwibmJmIjoxNjg5NTg1OTIwLCJqdGkiOiI4TUhJRlZDZ295VmtSenEzIiwic3ViIjo4NiwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSJ9.D3tCnme5rf9cR6OIjVmyztacXWKjd6K6wyq56o4YVCw",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpZm9ybGVhcm5pbmcuemVuZHZuLmNvbVwvYXBpXC92MlwvYXV0aFwvbG9naW4iLCJpYXQiOjE2OTU0OTU0MzcsImV4cCI6MTY5NTQ5OTAzNywibmJmIjoxNjk1NDk1NDM3LCJqdGkiOiJ5ckZzVXRtbnhSYmNxZDc5Iiwic3ViIjoyMTEsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.ab-DvT3Zg2jPMtow709U26nX7tznXpPKMqjuUa0MZ84",
 								"type": "text"
 							}
 						],
@@ -607,7 +665,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base_url}}/categories_news/articles?limit_cate=5&limit=3",
+							"raw": "{{base_url}}/categories_news/articles?limit_cate=2&limit=2",
 							"host": [
 								"{{base_url}}"
 							],
@@ -618,12 +676,12 @@
 							"query": [
 								{
 									"key": "limit_cate",
-									"value": "5",
+									"value": "2",
 									"description": "default 5"
 								},
 								{
 									"key": "limit",
-									"value": "3",
+									"value": "2",
 									"description": "default 10"
 								}
 							]
@@ -655,7 +713,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base_url}}/categories_news/2/articles?limit=10&page=2",
+							"raw": "{{base_url}}/categories_news/2/articles?limit=5",
 							"host": [
 								"{{base_url}}"
 							],
@@ -667,11 +725,12 @@
 							"query": [
 								{
 									"key": "limit",
-									"value": "10"
+									"value": "5"
 								},
 								{
 									"key": "page",
-									"value": "2"
+									"value": "1",
+									"disabled": true
 								}
 							]
 						}
