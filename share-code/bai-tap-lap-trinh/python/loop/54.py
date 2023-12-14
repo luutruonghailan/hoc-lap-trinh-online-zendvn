@@ -1,6 +1,6 @@
-yourNumber = int(input("Nhập số nguyên: "))
+your_number = int(input("Nhập số nguyên: "))
 
-num_str = str(yourNumber)
+num_str = str(your_number)
 
 is_increasing = "Yes"
 

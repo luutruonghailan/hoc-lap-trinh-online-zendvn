@@ -1,8 +1,8 @@
 arr         = [1, 2, 3]
-yourNumber  = 4
+your_number  = 4
 result      = "Không tồn tại"
 
-if yourNumber in arr:
+if your_number in arr:
     result = "Tồn tại"
 
 print(result)

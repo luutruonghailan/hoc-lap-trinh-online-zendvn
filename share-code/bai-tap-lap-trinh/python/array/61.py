@@ -1,17 +1,17 @@
 arr     = [1, 2, 3, 2]
 
 # Cách 1:
-arrOdd  = []
-arrEven = []
+arr_odd  = []
+arr_even = []
 
 for item in arr:
     if item % 2 == 0:
-        arrEven.append(item)
+        arr_even.append(item)
     else:
-        arrOdd.append(item)
+        arr_odd.append(item)
 
-arrOdd  = list(set(arrOdd))
-arrEven = list(set(arrEven))
+arr_odd  = list(set(arr_odd))
+arr_even = list(set(arr_even))
 
 # Cách 2:
 # arrOdd = set(item for item in arr if item % 2 != 0)
@@ -27,5 +27,5 @@ arrEven = list(set(arrEven))
 #     else:
 #         arrOdd.add(item)
 
-print("arrOdd =", arrOdd)
-print("arrEven =", arrEven)
+print("arrOdd =", arr_odd)
+print("arrEven =", arr_even)

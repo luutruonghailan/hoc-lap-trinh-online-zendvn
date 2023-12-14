@@ -1,13 +1,13 @@
 arr     = [1, 2, 3, 2]
 
 # Cách 1:
-arrNew  = []
+arr_new  = []
 
 for item in arr:
-    if item not in arrNew:
-        arrNew.append(item)
+    if item not in arr_new:
+        arr_new.append(item)
 
 # Cách 2:
 # arrNew  = list(set(arr))
 
-print("arrNew =", arrNew)
+print("arrNew =", arr_new)
