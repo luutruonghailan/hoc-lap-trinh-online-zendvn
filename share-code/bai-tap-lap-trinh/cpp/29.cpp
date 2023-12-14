@@ -1,45 +1,47 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
-#include <string>
-
 int main()
 {
-    // // nhập số thứ 1
+    // nhập số thứ 1
     int numberOne;
-    cout << "Enter numberOne: ";
+    cout << "Nhập số thứ 1: ";
     cin >> numberOne;
 
-    // nhập phép tính
-    string math;
-    cout << "Enter math: ";
-    cin >> math;
-
-    // // nhập số thứ 2
+    // nhập số thứ 2
     int numberTwo;
-    cout << "Enter numberTwo: ";
+    cout << "Nhập số thứ 2: ";
     cin >> numberTwo;
 
-    int result;
+     // nhập phép tính
+    string math;
+    cout << "Nhập vào phép tính của bạn: ";
+    cin >> math;
+
+    int result      = 0;
+    
     if (math == "+")
     {
         result = numberOne + numberTwo;
-    }
-    else if (math == "-")
+    }else if (math == "-")
     {
         result = numberOne - numberTwo;
-    }
-    else if (math == "x" || math == "X" || math == "*")
+    }else if (math == "x" || math == "*")
     {
         result = numberOne * numberTwo;
-    }
-    else if (math == "/" || math == ":")
+    }else if (math == "/" || math == ":" )
     {
         result = numberOne / numberTwo;
+    }
+    
+    if (result != 0)
+    {
+        cout << numberOne << " " << math << " " << numberTwo << " = " << result;
     }
     else
     {
         cout << "Không thực hiện được, chỉ chấp nhận các phép tính + - x :";
     }
-    cout << "Kết quả: " << result;
-    return 0;
+    
+    
+    
 }

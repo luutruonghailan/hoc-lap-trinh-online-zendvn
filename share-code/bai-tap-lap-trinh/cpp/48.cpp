@@ -1,25 +1,25 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
-#include <string>
-
 int main()
 {
-    char character = 'a';
-    string result = "Không là nguyên âm";
-    switch (character) {
-    case 'u':
-    case 'e':
-    case 'o':
-    case 'a':
-    case 'i':
-    case 'U':
-    case 'E':
-    case 'O':
-    case 'A':
-    case 'I':
-        result = "Nguyên âm";
-    break;
-    }
-cout << result;
+    // a e i o u
+    char charater       = 'b';
+    string notice       = "Không là nguyên âm";
 
+    switch (charater)
+    {
+        case 'a':
+        case 'e':
+        case 'i':
+        case 'o':
+        case 'u':
+        case 'A':
+        case 'E':
+        case 'I':
+        case 'O':
+        case 'U':
+            notice = "Nguyên âm";
+            break;
+    }
+    cout << notice;
 }

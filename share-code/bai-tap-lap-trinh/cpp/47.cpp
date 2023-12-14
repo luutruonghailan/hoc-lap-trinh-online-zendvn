@@ -1,17 +1,18 @@
 #include <iostream>
 using namespace std;
-#include <string>
-
 int main()
 {
-    int yourAge = 20;
-    const int LIMIT_AGE_VIEW_FILM = 18;
-    string filmName = "Thế giới lập trình";
-    string result = "Bạn KHÔNG được xem phim";
+    // Kiểm tra tuổi có phù hợp để xem phim 
+    // >15
+    int yourAge             = 16;
+    string result           = "Bạn KHÔNG được xem phim ";
+    const int LIMIT_AGE     = 15;
+    const string FILM_NAME  = "Thế giới lập trình";
 
-    if (yourAge >= LIMIT_AGE_VIEW_FILM) {
-        result = "Bạn được xem phim"; 
+    if (yourAge > LIMIT_AGE)
+    {
+        result = "Bạn được xem phim ";
     }
-cout << result << " " << filmName;
-
+    cout << result << FILM_NAME;
+    
 }

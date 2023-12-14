@@ -1,21 +1,27 @@
-#include <iostream>
+#include<iostream>
+#include<string>
 using namespace std;
-#include <string>
-
 int main()
 {
-    int start = 1;
-    int end = 30;
+    int start       = 1;
+    int end         = 30;
     string result;
-    for (int i = start; i < end; i++) {
-        if (i % 13 == 0) {
-            result += to_string(i) + "\n" ;
-        }
-        
+    string notice   = "Không có";
+    //  tìm giá trị chia hết cho 13 trong khoảng 1 đến 30
+    //  13 26 
+    // 2,3,4...29
+    for (int i = start + 1; i < end; i++)
+    {
+        if (i % 13 == 0)
+        {
+            result += to_string(i) + "\n";
+        }  
     }
-    if(result.length() == 0) {
-        result = "Không có";
-    }
-    cout << result << endl;
 
+    if (result.length() != 0)
+    {
+        notice = result;
+    }
+
+    cout << notice;
 }
