@@ -1,4 +1,4 @@
-height = int(input("Nhập chiều cao: "))
+height = 5
 result = ""
 
 for i in range(1, height + 1):
