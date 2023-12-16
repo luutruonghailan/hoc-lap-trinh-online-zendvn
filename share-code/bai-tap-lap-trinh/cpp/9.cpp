@@ -7,8 +7,9 @@ int main()
     2xx
     3+++
     */
-    int number = 1;
-    while (number <= 3)
+    int number      = 1;
+    const HEIGHT    = 3;
+    while (number <= HEIGHT)
     {
         string charater      = "";
         string shape         = "";
@@ -27,10 +28,10 @@ int main()
                 charater += "+";
             }
         }
-        
+        number++;
+
         record = to_string(number) + charater;
         shape += record;
         cout << shape << "\n";
-        number++;
     }
 }

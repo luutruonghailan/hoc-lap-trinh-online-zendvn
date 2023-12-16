@@ -7,19 +7,21 @@ int main()
     + +
     + + +
     */
-    int number       = 1;
-    string record    = "";
-    string shape     = "";
-    const int HEIGH  = 3;
+    int number        = 1;
+    string record     = "";
+    string shape      = "";
+    const int HEIGHT  = 3;
 
-    while (number <= HEIGH)
+    while (number <= HEIGHT)
     {
         for (int i = 1; i <= number; i++)
         {
             record = "+ ";
         }
+        number++;
+
         shape += record ; 
         cout <<  shape << "\n";
-        number++;
+        
     }
 }

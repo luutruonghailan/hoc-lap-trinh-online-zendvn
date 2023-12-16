@@ -9,19 +9,27 @@ int main()
     =++++
     +++++
     */
-    int number = 5;
+    const int HEIGH      = 5;
+    int number           = HEIGH;
     while (number >= 1)
     {
+        string charater      = "";
+        string mark          = "";
+        string shape         = "";
+        string record        = "";
+
         for (int i = 1; i <= number - 1; i++)
         {
-            cout << "=";
+            charater += "=";
         }
-        for (int j = 1; j <= 6 - number; j++)
+        for (int j = 1; j <= HEIGH - number +1; j++)
         {
-            cout << "+";
+            mark += "+";
         }
-        cout << "\n";
-
         number--;
+
+        record = charater + mark;
+        shape  += record;
+        cout << shape << "\n";
     }
 }
