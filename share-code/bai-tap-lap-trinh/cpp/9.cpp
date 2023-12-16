@@ -10,20 +10,27 @@ int main()
     int number = 1;
     while (number <= 3)
     {
-        cout << number;
-        for (int i = 1; i <= number; i++)
+        string charater      = "";
+        string shape         = "";
+        string record        = "";
+        if (number % 2 == 0)
         {
-            if (number % 2 == 0)
+            for (int i = 1; i <= number; i++)
             {
-                cout << "x";
+                charater += "x";
             }
-            else
+        }
+        else
+        {
+            for (int i = 1; i <= number; i++)
             {
-                cout << "+";
+                charater += "+";
             }
-                }
-        cout << "\n";
-
+        }
+        
+        record = to_string(number) + charater;
+        shape += record;
+        cout << shape << "\n";
         number++;
     }
 }
