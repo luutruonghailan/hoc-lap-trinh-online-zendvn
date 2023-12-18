@@ -32,6 +32,7 @@ int main()
         {
             right += to_string(r) ;
         }
+        
         recode = charater + left + "1" + right + charater;
         shape += recode;
         cout << shape << "\n";
