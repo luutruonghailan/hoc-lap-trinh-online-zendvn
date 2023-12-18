@@ -13,7 +13,9 @@ int main()
         if (number < yourNumber)
         {
             cout << number << "+";
-        }else{
+        }
+        else
+        {
             cout << number << "=" << sum;
         }
         number++;
