@@ -2,12 +2,15 @@
 using namespace std;
 int main()
 {
-    // nhập số thứ 1
     int numberOne   = 3;
-    int numberTwo   = 5;
-    string math     = "+";
-    int result = 0;
-    if (numberTwo == 0) return;
+    int numberTwo   = 0;
+    string math     = "/";
+    int result      = 0;
+    if(math != "+"  && math != "-" && math != "x" && math != "*" && math != "/" && math != ":")
+    {
+        cout << "Không thực hiện được, chỉ chấp nhận các phép tính + - x :";
+    }
+    
     if (math == "+")
     {
         result = numberOne + numberTwo;
@@ -22,16 +25,16 @@ int main()
     }
     else if (math == "/" || math == ":")
     {
-        result = numberOne / numberTwo;
+        if (numberTwo == 0)
+        {
+            cout << "không thể chia cho 0" << endl;
+            return 0; 
+        }else
+        {
+            result = numberOne / numberTwo;
+        }
     }
 
-    if (result != 0)
-    {
-        cout << numberOne << " " << math << " " << numberTwo << " = " << result;
-    }
-    else
-    {
-        cout << "Không thực hiện được, chỉ chấp nhận các phép tính + - x :";
-    }
-    return 0;
+    cout << numberOne << " " << math << " " << numberTwo << " = " << result;
+    
 }
