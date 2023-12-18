@@ -10,23 +10,22 @@ int main()
     +++++
     */
     const int HEIGH      = 5;
-    int number           = HEIGH;
-    while (number >= 1)
+    int number           = 1;
+
+    for (int i = HEIGH; i >= number; i--)
     {
         string charater      = "";
         string mark          = "";
         string shape         = "";
         string record        = "";
-
-        for (int i = 1; i <= number - 1; i++)
+        for (int j = 1; j <= i - 1; j++)
         {
             charater += "=";
         }
-        for (int j = 1; j <= HEIGH - number +1; j++)
+        for (int k = 1; k <= HEIGH - i +1; k++)
         {
             mark += "+";
         }
-        number--;
 
         record = charater + mark;
         shape  += record;
