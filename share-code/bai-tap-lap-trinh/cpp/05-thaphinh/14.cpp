@@ -3,38 +3,38 @@ using namespace std;
 int main()
 {
     /*
-     1 
-    212
-   32123
+       1        1
+      212       2
+     32123      32
+    4321234
+   543212345
     */
-    int number = 1;
-    string recode = "";
-    string result = "";
-    string space = "";
-    string  left = "";
-    string  right = "";
+    int number          = 1;
+    const int HEIGHT    = 5;
 
-    while (number <= 3)
-    {
-        string space = "";
-        string  left = "";
-        string  right = "";
-        for (int s = 1; s <= 3- number; s++)
+
+for (int i = number; i <= HEIGHT; i++)
+{
+    string space        = "";
+    string  left        = "";
+    string  right       = "";
+    string recode       = "";
+    string shape        = "";
+
+    for (int s = 1; s <= HEIGHT - i; s++)
         {
-            space += s;
+            space += " ";
         }
-        for (int l = 2; l <= number; l++)
+        for (int l = i; l >= 2; l--)
         {
-            left += l;
+            left += to_string(l);
         }
-         for (int r = 2; r <= number; r++)
+        for (int r = 2; r <= i; r++)
         {
-            right += r;
-        }
+            right += to_string(r);
+        } 
         recode = space + left + "1" + right;
-        result = result + recode;
-        cout << result << "\n";
-
-        number++;
+        shape += recode;
+        cout << shape << "\n";
     }
 }
