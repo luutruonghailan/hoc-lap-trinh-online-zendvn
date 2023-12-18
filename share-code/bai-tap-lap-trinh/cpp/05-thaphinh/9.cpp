@@ -9,28 +9,20 @@ int main()
     */
     int number      = 1;
     const int HEIGHT    = 3;
-    while (number <= HEIGHT)
+    for (int i = number; i <= HEIGHT; i++)
     {
         string charater      = "";
         string shape         = "";
         string record        = "";
-        if (number % 2 == 0)
+        if (i % 2 == 0)
         {
-            for (int i = 1; i <= number; i++)
-            {
-                charater += "x";
-            }
+            for (int j = 1; j <= i; j++) charater += "x";
         }
         else
         {
-            for (int i = 1; i <= number; i++)
-            {
-                charater += "+";
-            }
+            for (int j = 1; j <= i; j++) charater += "+";
         }
-        number++;
-
-        record = to_string(number) + charater;
+        record = to_string(i) + charater;
         shape += record;
         cout << shape << "\n";
     }

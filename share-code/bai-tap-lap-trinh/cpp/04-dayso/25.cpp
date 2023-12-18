@@ -4,10 +4,10 @@
 using namespace std;
 int main()
 {
-    int number = 1;
-    int yourNumber = 4;
-    int multi = 1;
-    string result = "";
+    int number      = 1;
+    int yourNumber  = 4;
+    int multi       = 1;
+    string result   = "";
 
     while (number <= yourNumber)
     {

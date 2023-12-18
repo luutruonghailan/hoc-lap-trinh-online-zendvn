@@ -2,10 +2,10 @@
 using namespace std;
 int main()
 {
-    int number = 1;
-    int yourNumber = 4;
-    int sum = 0;
-    string result = "";
+    int number      = 1;
+    int yourNumber  = 4;
+    int sum         = 0;
+    string result   = "";
 
     while (number <= yourNumber)
     {
