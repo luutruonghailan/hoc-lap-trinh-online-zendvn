@@ -11,7 +11,7 @@ int main()
     {
         string charater    = "";
         string space      = "";
-        string recode      = "";
+        string record      = "";
         string shape       = "";
         for (int j = end * -1; j <= end; j++)
         {
@@ -25,8 +25,8 @@ int main()
                 space += " ";
             }
         }
-        recode = space + charater;
-        shape += recode;
+        record = space + charater;
+        shape += record;
         cout << shape << "\n";  
     }
 }
