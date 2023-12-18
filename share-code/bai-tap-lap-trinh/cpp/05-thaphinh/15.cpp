@@ -15,7 +15,7 @@ int main()
     {
       string charater    = "";
       string number      = "";
-      string recode      = "";
+      string record      = "";
       string shape       = "";
 
       for (int c = 1; c <= HEIGHT - i ; c++)
@@ -26,8 +26,8 @@ int main()
         {
             number += to_string(i);
         }
-      recode = charater + number + to_string(i) + number + charater;
-      shape += recode;
+      record = charater + number + to_string(i) + number + charater;
+      shape += record;
       cout << shape << "\n";  
     }
 }
