@@ -3,6 +3,10 @@
         "valarray": "cpp",
         "iostream": "cpp",
         "chrono": "cpp",
-        "functional": "cpp"
+        "functional": "cpp",
+        "bitset": "cpp",
+        "algorithm": "cpp",
+        "format": "cpp",
+        "ratio": "cpp"
     }
 }
