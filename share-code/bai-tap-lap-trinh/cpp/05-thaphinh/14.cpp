@@ -15,11 +15,11 @@ int main()
 
 for (int i = number; i <= HEIGHT; i++)
 {
-    string space        = "";
-    string  left        = "";
-    string  right       = "";
-    string recode       = "";
-    string shape        = "";
+    string space       = "";
+    string left        = "";
+    string right       = "";
+    string record      = "";
+    string shape       = "";
 
     for (int s = 1; s <= HEIGHT - i; s++)
         {
@@ -33,8 +33,8 @@ for (int i = number; i <= HEIGHT; i++)
         {
             right += to_string(r);
         } 
-        recode = space + left + "1" + right;
-        shape += recode;
+        record = space + left + "1" + right;
+        shape += record;
         cout << shape << "\n";
     }
 }
