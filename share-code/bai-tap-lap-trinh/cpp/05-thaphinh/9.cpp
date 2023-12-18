@@ -8,7 +8,7 @@ int main()
     3+++
     */
     int number      = 1;
-    const HEIGHT    = 3;
+    const int HEIGHT    = 3;
     while (number <= HEIGHT)
     {
         string charater      = "";

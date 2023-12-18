@@ -10,18 +10,15 @@ int main()
     int number        = 1;
     string record     = "";
     string shape      = "";
-    const int HEIGHT  = 3;
+    const int HEIGHT  = 5;
 
-    while (number <= HEIGHT)
+    for (int i = number; i <= HEIGHT; i++)
     {
-        for (int i = 1; i <= number; i++)
+        for (int j = 1; j <= i; j++)
         {
             record = "+ ";
         }
-        number++;
-
         shape += record ; 
         cout <<  shape << "\n";
-        
     }
 }
