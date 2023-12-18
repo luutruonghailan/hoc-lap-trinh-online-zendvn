@@ -15,7 +15,7 @@ int main()
     {
         string charater    = "";
         string number      = "";
-        string recode      = "";
+        string record      = "";
         string shape       = "";
         string left        = "";
         string right       = "";
@@ -32,8 +32,8 @@ int main()
         {
             right += to_string(r);
         }
-        recode = charater + left + right + charater;
-        shape += recode;
+        record = charater + left + right + charater;
+        shape += record;
         cout << shape << "\n";
     }
 }
