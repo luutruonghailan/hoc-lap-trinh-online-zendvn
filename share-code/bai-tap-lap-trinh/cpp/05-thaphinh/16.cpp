@@ -18,7 +18,7 @@ int main()
         string number      = "";
         string recode      = "";
         string shape       = "";
-        string left       = "";
+        string left        = "";
         string right       = "";
         for (int c = 1; c <= HEIGHT - i; c++)
         {

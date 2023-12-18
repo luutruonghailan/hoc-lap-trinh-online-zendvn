@@ -10,31 +10,30 @@ int main()
     1234321
     */
     int number = 1;
-    // string space = "";
-    // string center = "";
-
-    while (number <= 5)
+    const int HEIGHT = 5;
+    for (int i = number; i <= HEIGHT; i++)
     {
-        for (int i = 1; i <= 5 - number; i++)
+        string charater    = "";
+        string number      = "";
+        string recode      = "";
+        string shape       = "";
+        string left        = "";
+        string right       = "";
+        for (int c = 1; c <= HEIGHT - i; c++)
         {
-            cout << "=" ;
+            charater += "=" ;
         }
-        for (int i = 1; i <= number; i++)
+        for (int l = 1; l < i; l++)
         {
-            cout << i ;
+            left += to_string(l);
         }
-        for (int j = number; j > 1; j--)
-        {
-            cout << j - 1 ;
-        }
-         for (int i = 1; i <= 5 - number; i++)
-        {
-            cout << "=" ;
-        }
-        
-    cout  << "\n";
-        // cout <<space << number<< space << "\n";
 
-        number++;
+        for (int r = i; r >= 1; r--)
+        {
+            right += to_string(r);
+        }
+        recode = charater + left + right + charater;
+        shape += recode;
+        cout << shape << "\n";
     }
 }
