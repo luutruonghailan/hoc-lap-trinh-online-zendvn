@@ -7,6 +7,8 @@
         "bitset": "cpp",
         "algorithm": "cpp",
         "format": "cpp",
-        "ratio": "cpp"
+        "ratio": "cpp",
+        "limits": "cpp",
+        "ostream": "cpp"
     }
 }
