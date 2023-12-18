@@ -14,7 +14,7 @@ int main()
     {
         if (i % 13 == 0)
         {
-            result += to_string(i) + "\n";
+            result += to_string(i) + "\t";
         }  
     }
 

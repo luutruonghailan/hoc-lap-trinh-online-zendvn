@@ -3,22 +3,11 @@ using namespace std;
 int main()
 {
     // nhập số thứ 1
-    int numberOne;
-    cout << "Nhập số thứ 1: ";
-    cin >> numberOne;
-
-    // nhập số thứ 2
-    int numberTwo;
-    cout << "Nhập số thứ 2: ";
-    cin >> numberTwo;
-
-    // nhập phép tính
-    string math;
-    cout << "Nhập vào phép tính của bạn: ";
-    cin >> math;
-
+    int numberOne   = 3;
+    int numberTwo   = 5;
+    string math     = "+";
     int result = 0;
-
+    if (numberTwo == 0) return;
     if (math == "+")
     {
         result = numberOne + numberTwo;
@@ -44,4 +33,5 @@ int main()
     {
         cout << "Không thực hiện được, chỉ chấp nhận các phép tính + - x :";
     }
+    return 0;
 }

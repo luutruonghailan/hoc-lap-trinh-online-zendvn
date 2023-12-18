@@ -14,7 +14,7 @@ int main()
     {
         priceReview = PRICE_REVIEW_LEVEL_ONE;
     }
-    else if (totalLine >= 10 && totalLine < 20) // [10 , 20)
+    else if (totalLine < 20) // [10 , 20)
     {
         priceReview = PRICE_REVIEW_LEVEL_TWO;
     }
