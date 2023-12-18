@@ -12,17 +12,15 @@ int main()
 
     int number          = 1;
     const int HEIGHT    = 5;
-    while (number <= HEIGHT)
+    for (int i = number; i <= HEIGHT; i++)
     {
         string charater      = "";
         string shape         = "";
-        for (int i = 1; i <= number; i++)
+        for (int j = 1; j <= i; j++)
         {
-            charater += to_string(i);
+            charater += to_string(j);
         }
-        number++;
-
         shape += charater;
-        cout << shape << "\n";       
+        cout << shape << "\n";
     }
 }
