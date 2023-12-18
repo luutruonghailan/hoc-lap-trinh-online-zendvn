@@ -32,38 +32,9 @@ int main()
         {
             right += to_string(r) ;
         }
-        
+
         recode = charater + left + "1" + right + charater;
         shape += recode;
         cout << shape << "\n";
     }
-    
-
-    // while (number <= 5)
-    // {
-        
-    //     for (int i = 1; i <= 5 - number; i++)
-    //     {
-    //         cout << "=" ;
-    //     }
-
-    //     for (int i = number; i >= 1; i--)
-    //     {
-    //         cout << i ;
-    //     }
-    //     for (int i = 2; i <= number; i++)
-    //     {
-    //         cout << i ;
-    //     }
-    //     for (int i = 1; i <= 5 - number; i++)
-    //     {
-    //         cout << "=" ;
-    //     }
-    // cout  << "\n";
-    //     // cout <<space << number<< space << "\n";
-
-    //     number++;
-    // }
-
-      
 }
