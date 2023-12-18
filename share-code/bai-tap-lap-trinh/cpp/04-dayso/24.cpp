@@ -3,24 +3,17 @@ using namespace std;
 int main()
 {
 
-    int number = 1;
-    int yourNumber;
-    cout << "Nhập số bất kì: ";
-    cin >> yourNumber;
+    int number      = 1;
+    int yourNumber  = 4;
+    int multi       = 0;
+    string result   = "";
 
-    int multi = 1;
-    int result = 0;
     while (number <= yourNumber)
     {
-        result += (number * number);
-        if (number < yourNumber)
-        {
-            cout << number << "^2 +";
-        }
-        else
-        {
-            cout << number << "^2 =" << result;
-        }
+        multi       += (number * number);
+        string sign  = (number < yourNumber) ? " ^ 2 + " : " ^ 2 = ";
+        result      +=  to_string(number) + sign;
         number++;
     }
+    cout << result << multi;
 }

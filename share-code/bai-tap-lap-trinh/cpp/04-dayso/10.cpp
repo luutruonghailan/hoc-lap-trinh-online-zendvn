@@ -10,7 +10,7 @@ int main()
     while (number <= yourNumber)
     {
         sum         += number;
-        string sign  = number < yourNumber ? " + " : " = ";
+        string sign  = (number < yourNumber) ? " + " : " = ";
         result      +=  to_string(number) + sign;
         number++;
     }

@@ -4,22 +4,17 @@
 using namespace std;
 int main()
 {
-    int number = 1;
-    int yourNumber = 4;
-    cout << "Nhập số bất kì: ";
-    cin >> yourNumber;
-    int multi = 1;
+    int number      = 1;
+    int yourNumber  = 4;
+    int multi       = 1;
+    string result   = "";
+
     while (number <= yourNumber)
     {
         multi *= number;
-        if (number < yourNumber)
-        {
-            cout << number << "x";
-        }
-        else
-        {
-            cout << number << "=" << multi;
-        }
+        string sign  = (number < yourNumber) ? " * " : " = ";
+        result      +=  to_string(number) + sign;
         number++;
     }
+    cout << result << multi;
 }

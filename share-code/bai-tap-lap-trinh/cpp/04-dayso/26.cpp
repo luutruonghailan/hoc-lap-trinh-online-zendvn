@@ -3,29 +3,23 @@ using namespace std;
 int main()
 {
 
-    int number = 1;
-    int yourNumber;
-    cout << "Nhập số bất kì: ";
-    cin >> yourNumber;
+    int number      = 1;
+    int yourNumber  = 4;
+    int multi       = 1;
+    int sum         = 0;
+    string result   = "";
 
-
-    int multi = 1;
-    int result = 0;
     while (number <= yourNumber)
     {
-        for (int i = 1; i < number; i++)
-        {
-            cout << i << "x";
-           
-        }
+        string charater = "";
         multi *= number;
-        result += multi;
-        if (number < yourNumber)
-        {
-            cout << number << "+";
-        }else{
-            cout << number << "=" << result;
-        }
+        sum += multi;
+        for (int i = 1; i < number; i++) charater += to_string(i) + " x ";
+        string sign  = (number < yourNumber) ? " + " : " = ";
+        result      += charater + to_string(number) + sign;
         number++;
     }
+     cout << result << sum;
+    
+
 }
