@@ -16,5 +16,5 @@ int main()
         result      +=  to_string(number) + sign;
         number++;
     }
-    cout << result << multi;
+    cout << result << multi;  
 }

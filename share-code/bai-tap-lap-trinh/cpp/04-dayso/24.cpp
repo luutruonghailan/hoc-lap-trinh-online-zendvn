@@ -16,4 +16,5 @@ int main()
         number++;
     }
     cout << result << multi;
+    
 }

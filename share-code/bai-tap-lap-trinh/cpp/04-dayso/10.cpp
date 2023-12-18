@@ -15,4 +15,5 @@ int main()
         number++;
     }
     cout << result << sum;
+    
 }

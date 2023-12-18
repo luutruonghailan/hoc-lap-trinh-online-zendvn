@@ -14,6 +14,7 @@ int main()
         string charater = "";
         multi *= number;
         sum += multi;
+        
         for (int i = 1; i < number; i++) charater += to_string(i) + " x ";
         string sign  = (number < yourNumber) ? " + " : " = ";
         result      += charater + to_string(number) + sign;
