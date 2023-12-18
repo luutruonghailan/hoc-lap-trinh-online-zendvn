@@ -4,25 +4,30 @@ using namespace std;
 int main()
 {
     /*              i
-    * * * * *       1       
-          *         2
-        *           3
-      *             4
-    * * * * *       5
+    ===1===         1   3
+    ==222==         2   2
+    =33333=         3   33
+    4444444
     */
-    int number = 1;
-    while (number <=5)
+    int number        = 1;
+    const int HEIGHT  = 4;
+    for (int i = number; i <= HEIGHT; i++)
     {
-        
-        for (int i = 1; i <= number; i++)
+      string charater    = "";
+      string number      = "";
+      string recode      = "";
+      string shape       = "";
+
+      for (int c = 1; c <= HEIGHT - i ; c++)
+      {
+           charater += "=";
+      }
+      for (int j = 2; j <= i; j++)
         {
-            cout << " * " ;
+            number += to_string(i);
         }
-        // for (int i = 5; i >= number; i--)
-        // {
-        //     cout << " * " ;
-        // }
-         cout  << "\n";
-        number++;
+      recode = charater + number + to_string(i) + number + charater;
+      shape += recode;
+      cout << shape << "\n";  
     }
 }
