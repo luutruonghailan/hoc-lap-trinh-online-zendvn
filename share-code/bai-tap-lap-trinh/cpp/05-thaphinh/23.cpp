@@ -9,18 +9,24 @@ int main()
 
     for (int i = end * -1; i <= end; i++)
     {
+        string charater    = "";
+        string space      = "";
+        string recode      = "";
+        string shape       = "";
         for (int j = end * -1; j <= end; j++)
         {
 
             if ((j >= (end - abs(i)) * -1) && (j <= end - abs(i)))
             {
-                cout << "*";
+                charater += " *";
             }
             else
             {
-                cout << " ";
+                space += " ";
             }
         }
-        printf("\n");
+        recode = space + charater;
+        shape += recode;
+        cout << shape << "\n";  
     }
 }
