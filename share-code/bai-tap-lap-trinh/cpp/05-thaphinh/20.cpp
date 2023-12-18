@@ -10,24 +10,26 @@ int main()
            1 2
               1
     */
-    int number = 5;
-    
+    int number = 1;
+    const int HEIGHT = 5;
 
-    while (number >= 1)
+    for (int i = HEIGHT; i >= number; i--)
     {
-        
-        for (int i = 1; i <= 5 - number; i++)
+        string space    = "";
+        string number     = "";
+        string record      = "";
+        string shape       = "";
+        for (int j = 1; j <= HEIGHT - i; j++)
         {
-            cout << " " ;
+            space += " " ;
         }
-        for (int i = 1; i <= number; i++)
+        for (int n = 1; n <= i; n++)
         {
-            cout << i ;
+            number += to_string(n);
         }
 
-    cout  << "\n";
-        // cout <<space << number<< space << "\n";
-
-        number--;
+        record = space  + number;
+        shape += record;
+        cout << shape << "\n";
     }
 }
