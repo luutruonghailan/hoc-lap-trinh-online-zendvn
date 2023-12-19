@@ -5,22 +5,21 @@ int main()
 {
     // in số chữ số của 1 số nguyên dương
     // tính tổng của các chữ số
-    int yourNumber  = 162;
-    int sum         = 0;
-    int number      = 1;
-    string result   = "";
-    int length      = to_string(yourNumber).length();
-    int divided     =  pow(10, length -1);
+    int yourNumber = 162;
+    int sum = 0;
+    int number = 1;
+    string result = "";
+    int count = 0;
 
-    while (divided > 0)
+    while (yourNumber > 0)
     {
-        int firtNumber  = yourNumber/divided;
-            yourNumber  = yourNumber%divided;
-            sum         += firtNumber;
-            divided     = divided/10;
-        string sign     = (divided != 0) ? " + " : " = ";
-        result          += to_string(firtNumber)  + sign;
+        int lastNumber = yourNumber % 10;
+        yourNumber /= 10;
+        sum += lastNumber;
+        string sign = (yourNumber != 0) ? " + " : "";
+        result = sign + to_string(lastNumber) + result;
+        count++;
     }
-    cout << "sum: " << result << sum << endl;
-    cout << "Total: " << length << " digits" << endl;
+    cout << "sum: " << result << " = " << sum << endl;
+    cout << "Total: " << count << " digits" << endl;
 }
