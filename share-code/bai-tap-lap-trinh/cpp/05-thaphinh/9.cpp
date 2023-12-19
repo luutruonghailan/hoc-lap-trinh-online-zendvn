@@ -1,6 +1,16 @@
 #include <iostream>
 using namespace std;
 
+string myRepeat(string character, int length)
+{
+    string record = "";
+    for (int i = 1; i <= length; i++)
+    {
+        record += character;
+    }
+    return record;
+}
+
 int main()
 {
     /*
@@ -10,23 +20,18 @@ int main()
     */
     int number = 1;
     const int HEIGHT = 3;
+    string shape = "";
     for (int i = number; i <= HEIGHT; i++)
     {
-        string charater = "";
-        string shape = "";
-        string record = "";
+        string character = "+";
+
         if (i % 2 == 0)
         {
-            for (int j = 1; j <= i; j++)
-                charater += "x";
+            character = "x";
         }
-        else
-        {
-            for (int j = 1; j <= i; j++)
-                charater += "+";
-        }
-        record = to_string(i) + charater;
-        shape += record;
-        cout << shape << "\n";
+
+        string record = to_string(i) + myRepeat(character, i);
+        shape += record + "\n";
     }
+    cout << shape << "\n";
 }
