@@ -11,22 +11,23 @@ int main()
   5 4 3 2 1
     */
     int number = 1;
-    
-
-    while (number <= 5)
+    const int HEIGHT = 5;
+    for (int i = number; i <= HEIGHT; i++)
     {
-          for (int i = 1; i <= 5 - number; i++)
+        string space    = "";
+        string number     = "";
+        string record      = "";
+        string shape       = "";
+      for (int j = 1; j <= HEIGHT - i; j++)
         {
-            cout << " " ;
+           space += " " ;
         }
-        
-        for (int i = number; i >=1; i--)
+        for (int k = i; k >=1; k--)
         {
-            cout << i ;
+            number += to_string(k) ;
         }
-    cout  << "\n";
-        // cout <<space << number<< space << "\n";
-
-        number++;
+        record = space  + number;
+        shape += record;
+        cout << shape << "\n";
     }
 }
