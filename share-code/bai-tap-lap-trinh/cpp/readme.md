@@ -2,3 +2,4 @@ Tất cả những bài nào có vấn đề anh sẽ sửa luôn, anh sẽ note
 - Bài 52: không cần pow, không cần chuyển số sang string để tính length, làm như cách thông thường vẫn ra được mà.
 - Bài 6: Những bài tháp hình sẽ cần xử lý vòng lặp để tạo ký tự khá nhiều, nên lúc này mình sẽ tạo ra function `myRepeat` để tái sử dụng về sau. Code xử lý trong bài này của em cũng chưa đúng, nó ra kết quả đúng chỉ là trùng hợp
 - Tất cả các bài tháp hình về sau, một số bài anh sẽ sử dụng hàm `myRepeat`
+- Bài 16: giống hệt bài 14 chỉ là thay khoảng trắng thành dấu =, bỏ bài này k đưa vào sách
