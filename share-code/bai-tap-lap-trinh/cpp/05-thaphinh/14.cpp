@@ -1,5 +1,36 @@
 #include <iostream>
 using namespace std;
+
+string myRepeat(string character, int length)
+{
+    string record = "";
+    for (int i = 1; i <= length; i++)
+    {
+        record += character;
+    }
+    return record;
+}
+
+string createListNumber(int start, int end)
+{
+    string record = "";
+    for (int i = start; i <= end; i++)
+    {
+        record += to_string(i);
+    }
+    return record;
+}
+
+string createListNumberReverse(int end, int start)
+{
+    string record = "";
+    for (int i = end; i >= start; i--)
+    {
+        record += to_string(i);
+    }
+    return record;
+}
+
 int main()
 {
     /*
@@ -9,32 +40,17 @@ int main()
     4321234
    543212345
     */
-    int number          = 1;
-    const int HEIGHT    = 5;
+    int number = 1;
+    const int HEIGHT = 5;
+    string shape = "";
 
-
-for (int i = number; i <= HEIGHT; i++)
-{
-    string space       = "";
-    string left        = "";
-    string right       = "";
-    string record      = "";
-    string shape       = "";
-
-    for (int s = 1; s <= HEIGHT - i; s++)
-        {
-            space += " ";
-        }
-        for (int l = i; l >= 2; l--)
-        {
-            left += to_string(l);
-        }
-        for (int r = 2; r <= i; r++)
-        {
-            right += to_string(r);
-        } 
-        record = space + left + "1" + right;
-        shape += record;
-        cout << shape << "\n";
+    for (int i = number; i <= HEIGHT; i++)
+    {
+        string space = myRepeat(" ", HEIGHT - i);
+        string left = createListNumberReverse(i, 2);
+        string right = createListNumber(2, i);
+        string record = space + left + "1" + right + space;
+        shape += record + "\n";
     }
+    cout << shape << "\n";
 }

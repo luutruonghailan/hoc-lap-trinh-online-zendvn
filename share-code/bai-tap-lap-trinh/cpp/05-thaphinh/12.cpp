@@ -1,5 +1,16 @@
 #include <iostream>
 using namespace std;
+
+string createListNumber(int start, int end)
+{
+    string record = "";
+    for (int i = start; i <= end; i++)
+    {
+        record += to_string(i);
+    }
+    return record;
+}
+
 int main()
 {
     /*
@@ -15,12 +26,7 @@ int main()
     string shape = "";
     for (int i = number; i <= HEIGHT; i++)
     {
-        string charater = "";
-        for (int j = 1; j <= i; j++)
-        {
-            charater += to_string(j);
-        }
-        shape += charater + "\n";
+        shape += createListNumber(1, i) + "\n";
     }
     cout << shape << "\n";
 }
