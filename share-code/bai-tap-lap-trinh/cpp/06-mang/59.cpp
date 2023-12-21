@@ -1,7 +1,6 @@
 
 #include <iostream>
 using namespace std;
-#include <bits/stdc++.h>
 
 int main()
 {
@@ -15,11 +14,16 @@ int main()
         if (yourNumber == arrInt[i])
         {
             found = true;
-            cout << "Tồn tại";
+            break;
         }
     }
+
     if (found != true)
     {
         cout << "Không tồn tại";
+    }
+    else
+    {
+        cout << "Tồn tại";
     }
 }

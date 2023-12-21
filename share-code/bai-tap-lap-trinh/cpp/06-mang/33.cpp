@@ -14,6 +14,7 @@ int main()
         if (arrNumber[i] == arrNumber[i - 1] + arrNumber[i + 1])
         {
             found = true;
+            break;
         }
     }
 
