@@ -1,47 +1,52 @@
 #include <iostream>
-#include <vector>
-#include <unordered_set>
+#include <set>
 using namespace std;
 
-int main() {
-    int arrInt[] = {1, 2, 3, 2};
+int main()
+{
+    int arrInt[] = {1, 2, 3, 2, 1, 4, 5};
     int n = sizeof(arrInt) / sizeof(arrInt[0]);
-    
-    vector<int> arrOdd;
-    vector<int> arrEven;
-    unordered_set<int> uniqueNumbers;
-    
-    for (int i = 0; i < n; ++i) {
-        int num = arrInt[i];
-        // Kiểm tra xem số đã xuất hiện chưa
-        if (uniqueNumbers.find(num) == uniqueNumbers.end()) {
-            uniqueNumbers.insert(num);
-            // Kiểm tra số chẵn hoặc lẻ và thêm vào mảng tương ứng
-            if (num % 2 == 0) {
-                arrEven.push_back(num);
-            } else {
-                arrOdd.push_back(num);
-            }
+
+    set<int> evenSet;
+    set<int> oddSet;
+
+    for (int number : arrInt)
+    {
+        if (number % 2 == 0)
+        {
+            evenSet.insert(number);
+        }
+        else
+        {
+            oddSet.insert(number);
         }
     }
-    
-  cout << "arrOdd = [";
-    for (int i = 0; i < arrOdd.size(); ++i) {
-        cout << arrOdd[i];
-        if (i < arrOdd.size() - 1) {
-            cout << ",";
-        }
+
+    int arrEven[evenSet.size()];
+    int arrOdd[oddSet.size()];
+
+    int idx = 0;
+    string resultEven = "";
+    for (auto it = evenSet.begin(); it != evenSet.end(); it++)
+    {
+        string number = to_string(*it);
+        string sign = idx == 0 ? "" : ",";
+        resultEven += sign + number;
+        arrEven[idx++] = *it;
     }
-    cout << "]" << endl;
-    
-    cout << "arrEven = [";
-    for (int i = 0; i < arrEven.size(); ++i) {
-        cout << arrEven[i];
-        if (i < arrEven.size() - 1) {
-            cout << ",";
-        }
+
+    idx = 0;
+    string resultOdd = "";
+    for (auto it = oddSet.begin(); it != oddSet.end(); it++)
+    {
+        string number = to_string(*it);
+        string sign = idx == 0 ? "" : ",";
+        resultOdd += sign + number;
+        arrOdd[idx++] = *it;
     }
-    cout << "]" << endl;
-    
+
+    cout << "arrOdd = [" << resultOdd << "]" << endl;
+    cout << "arrEven = [" << resultEven << "]" << endl;
+
     return 0;
 }
