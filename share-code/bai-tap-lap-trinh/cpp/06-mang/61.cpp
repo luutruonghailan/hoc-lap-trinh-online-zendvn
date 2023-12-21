@@ -1,4 +1,6 @@
 #include <iostream>
+#include <vector>
+#include <set>
 using namespace std;
 
 int removeDuplicates(int arr[], int n)
@@ -38,23 +40,33 @@ int main()
     int arrInt[] = {1, 2, 3, 2, 1, 4, 5};
     int n = sizeof(arrInt) / sizeof(arrInt[0]);
 
-    int arrEven[n];
-    int arrOdd[n];
+    vector<int> vectorEven;
+    vector<int> vectorOdd;
+    set<int> sNumber;
 
-    for (int i = 0; i < n; i++)
+    for (int number : arrInt)
     {
-        if (arrInt[i] % 2 == 0)
+        if (sNumber.find(number) == sNumber.end())
         {
-            arrEven[i] = arrInt[i];
-        }
-        else
-        {
-            arrOdd[i] = arrInt[i];
+            sNumber.insert(number);
+            if (number % 2 == 0)
+            {
+                vectorEven.push_back(number);
+            }
+            else
+            {
+                vectorOdd.push_back(number);
+            }
         }
     }
 
-    int lengthEven = removeDuplicates(arrEven, n);
-    int lengthOdd = removeDuplicates(arrOdd, n);
+    int lengthEven = vectorEven.size();
+    int lengthOdd = vectorOdd.size();
+    int arrEven[lengthEven];
+    int arrOdd[lengthOdd];
+
+    copy(vectorEven.begin(), vectorEven.end(), arrEven);
+    copy(vectorOdd.begin(), vectorOdd.end(), arrOdd);
 
     cout << "arrOdd = " << printArray(arrEven, lengthEven) << endl;
     cout << "arrEven = " << printArray(arrOdd, lengthOdd) << endl;
