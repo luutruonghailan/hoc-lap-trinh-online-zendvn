@@ -4,12 +4,12 @@ using namespace std;
 
 string myRepeat(string character, int length)
 {
-  string record = "";
-  for (int i = 1; i <= length; i++)
-  {
-    record += character;
-  }
-  return record;
+    string record = "";
+    for (int i = 1; i <= length; i++)
+    {
+        record += character;
+    }
+    return record;
 }
 
 int main()
@@ -21,11 +21,12 @@ int main()
     */
     int number = 1;
     string shape = "";
+    string character = "+";
     const int HEIGHT = 5;
 
     for (int i = number; i <= HEIGHT; i++)
     {
-        shape += myRepeat("+", i) + "\n";
+        shape += myRepeat(character, i) + "\n";
     }
     cout << shape << "\n";
 }

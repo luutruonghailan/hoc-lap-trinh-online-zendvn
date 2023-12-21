@@ -23,6 +23,8 @@ int main()
 
     int height = 6;
     string shape = "";
+    string character = "* ";
+    string space = "  ";
 
     for (int i = 1; i <= height; i++)
     {
@@ -30,11 +32,11 @@ int main()
 
         if (i == 1 || i == height)
         {
-            record = myRepeat("* ", height);
+            record = myRepeat(character, height);
         }
         else
         {
-            record = myRepeat("  ", height - i) + "* ";
+            record = myRepeat(space, height - i) + character;
         }
 
         shape += record + "\n";

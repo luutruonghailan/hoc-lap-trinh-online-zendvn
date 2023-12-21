@@ -24,7 +24,7 @@ int main()
     //  * * * * * * *
 
     //  6
-    //  * * * * * * 
+    //  * * * * * *
     //  * *     * *
     //  *   * *   *
     //  *   * *   *
@@ -33,6 +33,8 @@ int main()
 
     int height = 7;
     string shape = "";
+    string character = "* ";
+    string space = "  ";
 
     for (int i = 1; i <= height; i++)
     {
@@ -40,7 +42,7 @@ int main()
 
         if (i == 1 || i == height)
         {
-            record = myRepeat("* ", height);
+            record = myRepeat(character, height);
         }
         else
         {
@@ -48,11 +50,11 @@ int main()
             {
                 if (j == 1 || j == i || j == height - i + 1 || j == height)
                 {
-                    record += "* ";
+                    record += character;
                 }
                 else
                 {
-                    record += "  ";
+                    record += space;
                 }
             }
         }
