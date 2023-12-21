@@ -1,37 +1,45 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 int removeDuplicates(int arr[], int n)
 {
-
-    int j = 0;
-    for (int i = 0; i < n - 1; i++)
-    {
-        if (arr[i] != arr[i + 1])
-        {
-            arr[j++] = arr[i];
-        }
-    }
-
-    arr[j++] = arr[n - 1];
-    return j;
-}
-
-int main()
-{
-    int arrInt[] = {1, 2, 3, 1, 2, 3, 4};
-    int n = sizeof(arrInt) / sizeof(arrInt[0]);
-    string result = "";
-    sort(arrInt, arrInt + n);
-
-    n = removeDuplicates(arrInt, n);
-
     for (int i = 0; i < n; i++)
     {
-        string number = to_string(arrInt[i]);
+        for (int j = i + 1; j < n; j++)
+        {
+            if (arr[i] == arr[j])
+            {
+                for (int k = j; k < n - 1; k++)
+                {
+                    arr[k] = arr[k + 1];
+                }
+                n--;
+            }
+        }
+    }
+    return n;
+}
+
+string printArray(int arr[], int length)
+{
+    string result = "";
+    for (int i = 0; i < length; i++)
+    {
+        string number = to_string(arr[i]);
         string sign = i == 0 ? "" : ",";
         result += sign + number;
     }
 
-    cout << "arrNew = [" << result << "]" << endl;
+    return "[" + result + "]";
+}
+
+int main()
+{
+    int arrInt[] = {5, 2, 3, 1, 2, 3, 4};
+    string result = "";
+    int arrLength = sizeof(arrInt) / sizeof(int);
+
+    int newLength = removeDuplicates(arrInt, arrLength);
+
+    cout << "arrNew = " << printArray(arrInt, newLength) << endl;
 }

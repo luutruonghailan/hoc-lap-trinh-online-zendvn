@@ -19,6 +19,7 @@
     "unordered_set": "cpp",
     "vector": "cpp",
     "format": "cpp",
-    "chrono": "cpp"
+    "chrono": "cpp",
+    "numbers": "cpp"
   }
 }

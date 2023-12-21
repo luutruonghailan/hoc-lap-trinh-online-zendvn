@@ -1,52 +1,63 @@
 #include <iostream>
-#include <set>
 using namespace std;
+
+int removeDuplicates(int arr[], int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = i + 1; j < n; j++)
+        {
+            if (arr[i] == arr[j])
+            {
+                for (int k = j; k < n - 1; k++)
+                {
+                    arr[k] = arr[k + 1];
+                }
+                n--;
+            }
+        }
+    }
+    return n;
+}
+
+string printArray(int arr[], int length)
+{
+    string result = "";
+    for (int i = 0; i < length; i++)
+    {
+        string number = to_string(arr[i]);
+        string sign = i == 0 ? "" : ",";
+        result += sign + number;
+    }
+
+    return "[" + result + "]";
+}
 
 int main()
 {
     int arrInt[] = {1, 2, 3, 2, 1, 4, 5};
     int n = sizeof(arrInt) / sizeof(arrInt[0]);
 
-    set<int> evenSet;
-    set<int> oddSet;
+    int arrEven[n];
+    int arrOdd[n];
 
-    for (int number : arrInt)
+    for (int i = 0; i < n; i++)
     {
-        if (number % 2 == 0)
+        if (arrInt[i] % 2 == 0)
         {
-            evenSet.insert(number);
+            arrEven[i] = arrInt[i];
         }
         else
         {
-            oddSet.insert(number);
+            arrOdd[i] = arrInt[i];
         }
     }
 
-    int arrEven[evenSet.size()];
-    int arrOdd[oddSet.size()];
+    int lengthEven = removeDuplicates(arrEven, n);
+    int lengthOdd = removeDuplicates(arrOdd, n);
 
-    int idx = 0;
-    string resultEven = "";
-    for (auto it = evenSet.begin(); it != evenSet.end(); it++)
-    {
-        string number = to_string(*it);
-        string sign = idx == 0 ? "" : ",";
-        resultEven += sign + number;
-        arrEven[idx++] = *it;
-    }
-
-    idx = 0;
-    string resultOdd = "";
-    for (auto it = oddSet.begin(); it != oddSet.end(); it++)
-    {
-        string number = to_string(*it);
-        string sign = idx == 0 ? "" : ",";
-        resultOdd += sign + number;
-        arrOdd[idx++] = *it;
-    }
-
-    cout << "arrOdd = [" << resultOdd << "]" << endl;
-    cout << "arrEven = [" << resultEven << "]" << endl;
+    cout << "arrOdd = " << printArray(arrEven, lengthEven) << endl;
+    cout << "arrEven = " << printArray(arrOdd, lengthOdd) << endl;
 
     return 0;
 }
