@@ -12,16 +12,6 @@ string myRepeat(string character, int length)
     return record;
 }
 
-string createListNumber(int start, int end)
-{
-    string record = "";
-    for (int i = start; i <= end; i++)
-    {
-        record += to_string(i);
-    }
-    return record;
-}
-
 int main()
 {
 
@@ -36,9 +26,14 @@ int main()
 
     for (int i = height; i >= 1; i--)
     {
-        string record = "";
+        string record = myRepeat("  ", height - i);
 
-        
+        for (int j = 1; j <= i; j++)
+        {
+            record += to_string(j) + " ";
+        }
+
+        shape += record + "\n";
     }
 
     cout << shape << endl;
