@@ -1,35 +1,45 @@
 #include <iostream>
 
 using namespace std;
+
+string myRepeat(string character, int length)
+{
+    string record = "";
+    for (int i = 1; i <= length; i++)
+    {
+        record += character;
+    }
+    return record;
+}
+
+string createListNumber(int start, int end)
+{
+    string record = "";
+    for (int i = start; i <= end; i++)
+    {
+        record += to_string(i);
+    }
+    return record;
+}
+
 int main()
 {
-    /*
-     1 2 3 4 5
-       1 2 3 4
-         1 2 3
-           1 2
-              1
-    */
-    int number = 1;
-    const int HEIGHT = 5;
 
-    for (int i = HEIGHT; i >= number; i--)
+    // 1 2 3 4 5
+    //   1 2 3 4
+    //     1 2 3
+    //       1 2
+    //         1
+
+    int height = 5;
+    string shape = "";
+
+    for (int i = height; i >= 1; i--)
     {
-        string space    = "";
-        string number     = "";
-        string record      = "";
-        string shape       = "";
-        for (int j = 1; j <= HEIGHT - i; j++)
-        {
-            space += " " ;
-        }
-        for (int n = 1; n <= i; n++)
-        {
-            number += to_string(n);
-        }
+        string record = "";
 
-        record = space  + number;
-        shape += record;
-        cout << shape << "\n";
+        
     }
+
+    cout << shape << endl;
 }
