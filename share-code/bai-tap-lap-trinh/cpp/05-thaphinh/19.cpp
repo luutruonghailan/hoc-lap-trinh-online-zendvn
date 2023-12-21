@@ -1,68 +1,65 @@
 #include <iostream>
 
 using namespace std;
-int main()
+
+string myRepeat(string character, int length)
 {
-    /*
-      * * * * * * *
-        *       *
-          *   *
-            *
-          *   *
-        *       *
-      * * * * * * *
-    */
-    int number = 1;
-    
-
-    while (number <= 7)
+    string record = "";
+    for (int i = 1; i <= length; i++)
     {
-        
-        for (int i = 1; i <= 7; i++)
-        {
-            if (number == 1  || number == 7 ) 
-            {
-                cout << "*" ;
-            }
-            if (number == 2 && i == 1) 
-            {
-                cout << " *   *" ;
-            }
-            if (number == 3 && i == 1) 
-            {
-                cout << "  * *" ;
-            }
-            if (number == 4 && i == 1) 
-            {
-                cout << "   * " ;
-            }
-            if (number == 5 && i == 1) 
-            {
-                cout << "  * * " ;
-            }
-            if (number == 6 && i == 1) 
-            {
-                cout << " *   *" ;
-            }
-        }
-       
-    cout  << "\n";
-        // cout <<space << number<< space << "\n";
-
-        number++;
+        record += character;
     }
+    return record;
 }
 
-//  if i == 0 or i == height - 1 or j == 0 or j == height - 1 or i == j or j == height - 1 - i:
-//             result += "*"
-//         else:
-//             result += " "
-/*
-*****
+int main()
+{
 
+    // 6
+    //  * * * * * *
+    //    *     *
+    //      * *
+    //      * *
+    //    *     *
+    //  * * * * * *
 
+    // 7
+    //  * * * * * * *
+    //    *       *
+    //      *   *
+    //        *
+    //      *   *
+    //    *       *
+    //  * * * * * * *
 
-*****
+    int height = 7;
+    string shape = "";
 
+    for (int i = 1; i <= height; i++)
+    {
+        string record = "";
 
-*/
+        if (i == 1 || i == height)
+        {
+            record = myRepeat("* ", height);
+        }
+        else
+        {
+            for (int j = 1; j <= height; j++)
+            {
+                if (j == i || j == height - i + 1)
+                {
+                    record += "* ";
+                }
+                else
+                {
+                    record += "  ";
+                }
+            }
+        }
+
+        shape += record + "\n";
+    }
+
+    cout << shape << endl;
+}
