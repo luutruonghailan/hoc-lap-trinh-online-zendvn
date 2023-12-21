@@ -1,49 +1,64 @@
 #include <iostream>
 
 using namespace std;
+
+string myRepeat(string character, int length)
+{
+    string record = "";
+    for (int i = 1; i <= length; i++)
+    {
+        record += character;
+    }
+    return record;
+}
+
 int main()
 {
-    /*
-      * * * * * * *
-      * *       * *
-      *   *    *  *
-      *     *     *
-      *   *   *   *
-      * *      *  *
-      * * * * * * *
-    */
-    int number = 1;
-    while (number <= 7)
+    //  7
+    //  * * * * * * *
+    //  * *       * *
+    //  *   *   *   *
+    //  *     *     *
+    //  *   *   *   *
+    //  * *       * *
+    //  * * * * * * *
+
+    //  6
+    //  * * * * * * 
+    //  * *     * *
+    //  *   * *   *
+    //  *   * *   *
+    //  * *     * *
+    //  * * * * * *
+
+    int height = 7;
+    string shape = "";
+
+    for (int i = 1; i <= height; i++)
     {
-        
-        for (int i = 1; i <= 7; i++)
+        string record = "";
+
+        if (i == 1 || i == height)
         {
-            if (number == 1  || number == 7 || i== 1 || i== 7) 
+            record = myRepeat("* ", height);
+        }
+        else
+        {
+            for (int j = 1; j <= height; j++)
             {
-                cout << "*" ;
+                if (j == 1 || j == i || j == height - i + 1 || j == height)
+                {
+                    record += "* ";
+                }
+                else
+                {
+                    record += "  ";
+                }
             }
-            if (number == 2 && i == 1) 
-            {
-                cout << "*   *" ;
-            }
-            if (number == 3 && i == 1) 
-            {
-                cout << " * * " ;
-            }
-            if (number == 4 && i == 1) 
-            {
-                cout << "  *  " ;
-            }
-            if (number == 5 && i == 1) 
-            {
-                cout << " * * " ;
-            }
-            if (number == 6 && i == 1) 
-            {
-                cout << "*   *" ;
-            }
-        }      
-    cout  << "\n";
-        number++;
+        }
+
+        shape += record + "\n";
     }
+
+    cout << shape << endl;
 }
