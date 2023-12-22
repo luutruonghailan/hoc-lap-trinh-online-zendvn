@@ -1,15 +1,7 @@
 #include <iostream>
-using namespace std;
+#include "zvn.h"
 
-string createListNumber(int start, int end)
-{
-    string record = "";
-    for (int i = start; i <= end; i++)
-    {
-        record += to_string(i);
-    }
-    return record;
-}
+using namespace std;
 
 int main()
 {
