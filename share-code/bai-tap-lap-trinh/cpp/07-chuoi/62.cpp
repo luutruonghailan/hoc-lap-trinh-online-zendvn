@@ -11,9 +11,9 @@ int main()
     {
         if (isdigit(c))
         {
-            isCheck = true; // Nếu có ít nhất một ký tự là chữ số, trả về true
+            isCheck = true; 
         }
     }
-    cout << boolalpha << isCheck; // In ra "true" hoặc "false" thay vì 1 hoặc 0
+    cout << boolalpha << isCheck; 
     return 0;
 }
