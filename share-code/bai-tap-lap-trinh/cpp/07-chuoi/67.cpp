@@ -2,14 +2,19 @@
 #include <cctype>
 using namespace std;
 
-int main() {
+int main()
+{
     string str1 = "hai lan";
     // string str2 = "HAI LAN";
     // string str3 = "HaI Lan";
-    for (char &c : str1) {
-        if (isupper(c)) {
+    for (char &c : str1)
+    {
+        if (isupper(c))
+        {
             c = tolower(c);
-        } else if (islower(c)) {
+        }
+        else if (islower(c))
+        {
             c = toupper(c);
         }
     }

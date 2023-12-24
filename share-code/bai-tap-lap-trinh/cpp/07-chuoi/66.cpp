@@ -1,24 +1,26 @@
 #include <iostream>
-#include <string>
-#include <sstream>
 using namespace std;
 
-int main() {
-    string str1 = "D:/hailan.doc";
-    //string str2 = "D:/Data/Doing/psd/hailan.doc";
+int main()
+{
+    string str = "D:/Data/Doing/psd/hailan.doc";
+    int length = str.length();
+    string breadcrumbs = "";
 
-    stringstream ss(str1);
-    string part;
-    string filePath = "";
-
-    while (getline(ss, part, '/')) {
-        filePath += part + " > ";
+    for (int i = 0; i < length; i++)
+    {
+        if (str[i] == '/')
+        {
+            breadcrumbs += " > ";
+            continue;
+        }
+        else
+        {
+            breadcrumbs += str[i];
+        }
     }
 
-    if (!filePath.empty()) {
-        filePath = filePath.substr(0, filePath.size() - 3);
-    }
-    cout << filePath <<endl;
+    cout << breadcrumbs << endl;
 
     return 0;
 }
