@@ -2,22 +2,29 @@
 #include <string>
 using namespace std;
 
+int main()
+{
+    int number = 23;
+    string result = "Không giải mã được";
+    string dateVi[] = {"", "", "Thứ hai", "Thứ ba", "Thứ tư", "Thứ năm", "Thứ sáu", "Thứ bảy", "Chủ nhật"};
+    string dateEn[] = {"", "", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
+    int lang = number / 10;
+    int day = number % 10;
 
-int main() {
-    int number = 13;
-		string result = "";
-		string dateVi[] = {"","","Thứ hai", "Thứ ba", "Thứ tư", "Thứ năm", "Thứ sáu", "Thứ bảy", "Chủ nhật"};
-		string dateEn[] = {"","","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
+    if (day >= 2 && day <= 8)
+    {
+        switch (lang)
+        {
+        case 1:
+            result = dateEn[day];
+            break;
+        case 2:
+            result = dateVi[day];
+            break;
+        }
+    }
 
-		if (number/10 == 1 && number % 10 >= 2 && number % 10 <=8) {
-			result = dateEn[number%10];
-		}else if (number/10 == 2 && number % 10 >= 2 && number % 10 <=8) {
-			result = dateVi[number%10 ];
-		}else {
-			result = "Không giải mã được";
-		}
-
-    cout << "Output: " << result << endl;
+    cout << result << endl;
 
     return 0;
 }
