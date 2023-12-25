@@ -1,20 +1,8 @@
 #include <iostream>
 #include <vector>
+#include "zvn.h"
 
 using namespace std;
-
-bool isNumber(string inputStr)
-{
-    try
-    {
-        stoi(inputStr);
-        return true;
-    }
-    catch (const std::exception &e)
-    {
-        return false;
-    }
-}
 
 int main()
 {

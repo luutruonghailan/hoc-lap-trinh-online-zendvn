@@ -1,56 +1,88 @@
 #include <iostream>
 #include <sstream>
 #include <unordered_map>
+#include <vector>
+#include "zvn.h"
+
 using namespace std;
 
-void findLongestCourse(const string &inputName, const std::string &inputTime) {
-    unordered_map<string, string> courseNameMap;
-    unordered_map<string, int> courseTimeMap;
+vector<string> splitString(string inputStr)
+{
+    vector<string> vector;
+    int length = inputStr.length();
+    bool isDelimiter = false;
+    string item = "";
 
-    istringstream nameStream(inputName);
-    string namePair;
-    while (getline(nameStream, namePair, ';')) {
-        istringstream pairStream(namePair);
-        string courseId, courseName;
-        getline(pairStream, courseId, '=');
-        getline(pairStream, courseName, '=');
-        courseNameMap[courseId] = courseName;
-    }
+    for (int i = 0; i < length; i++)
+    {
+        char character = inputStr[i];
+        if (character == '=' || character == ';')
+        {
+            isDelimiter = true;
+        }
+        else
+        {
+            item += character;
+        }
 
-    istringstream timeStream(inputTime);
-    string timePair;
-    while (getline(timeStream, timePair, ';')) {
-        istringstream pairStream(timePair);
-        string courseId, courseTime;
-        getline(pairStream, courseId, '=');
-        getline(pairStream, courseTime, '=');
-        courseTimeMap[courseId] = stoi(courseTime);
-    }
-
-    int longestTime = 0;
-    string longestCourseId, longestCourseName;
-
-    for (const auto &pair : courseTimeMap) {
-        if (pair.second > longestTime) {
-            longestTime = pair.second;
-            longestCourseId = pair.first;
-            if (courseNameMap.find(pair.first) != courseNameMap.end()) {
-                longestCourseName = courseNameMap[pair.first];
-            }
+        if (isDelimiter || i == length - 1)
+        {
+            vector.push_back(item);
+            isDelimiter = false;
+            item = "";
         }
     }
 
-    cout << "Course Id: " << longestCourseId << " - Course Name: " << longestCourseName
-              << " - Course Time: " << longestTime << endl;
+    return vector;
 }
 
-int main() {
-    // string inputName = "abw=java;def=android;nfv=php;";
-    // string inputTime = "abw=20;nfv=40;def=90";
+int main()
+{
     string inputName = "abw=java;def=android;nfv=php;";
     string inputTime = "abw=9920;nfv=240;def=1990";
+    int lengthInputName = inputName.length();
+    int lengthInputTime = inputTime.length();
+    vector<string> vName = splitString(inputName);
+    vector<string> vTime = splitString(inputTime);
+    vector<string> vCourseId;
+    int sizeVTime = vTime.size();
+    string item = "";
+    bool isDelimiter = false;
+    int maxTime = -1;
+    int maxTimeIdx = -1;
 
-    findLongestCourse(inputName, inputTime);
+    // lấy thời gian lớn nhất
+    for (int i = 1; i < sizeVTime; i += 2)
+    {
+        int time = stoi(vTime[i]);
+        if (time > maxTime)
+        {
+            maxTime = time;
+        }
+    }
+
+    // lấy danh sách id khóa học có thời gian lớn nhất
+    for (int i = 0; i < sizeVTime; i += 2)
+    {
+        string courseId = vTime[i];
+        int time = stoi(vTime[i + 1]);
+
+        if (time == maxTime)
+        {
+            vCourseId.push_back(courseId);
+        }
+    }
+
+    // duyệt và in thông tin
+    for (int i = 0; i < vName.size(); i += 2)
+    {
+        string courseId = vName[i];
+        string courseName = vName[i + 1];
+        if (checkExistInVector(vCourseId, courseId))
+        {
+            cout << "Course Id: " << courseId << " - Course Name: " << courseName << " - Course Time: " << maxTime << endl;
+        }
+    }
 
     return 0;
 }
