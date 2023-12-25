@@ -19,7 +19,7 @@ int main()
         string upCase = word.substr(0, 1);
         for (char &c : upCase)
         {
-            c = std::toupper(c);
+            c = toupper(c);
         }
         word = upCase + word.substr(1);
         result += word;
@@ -27,7 +27,7 @@ int main()
         endIndex = startIndex + current;
     }
 
-    cout << "Output: " << result << endl;
+    cout << result << endl;
 
     return 0;
 }

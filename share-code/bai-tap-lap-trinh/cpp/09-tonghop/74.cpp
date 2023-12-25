@@ -5,11 +5,8 @@ using namespace std;
 
 
 int main() {
-    // Cách khác duyệt vòng lặp tại các vị trí lẻ
+   
     string str1 = "php/12";
-    // string str2 = "php/12/java/14";
-    // string str3 = "php/12/java/14/frontend/30";
-
     istringstream stream(str1);
     string courseName, timeStr;
 
