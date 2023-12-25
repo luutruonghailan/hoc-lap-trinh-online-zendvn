@@ -9,7 +9,6 @@ public class e83_shape_17 {
 	//    4		4
 
 	public static void main(String[] args) {
-		Library zendvnLibrary = new Library();
 		String shape = "";
 		int height = 5;
 		String record = "";

@@ -25,6 +25,18 @@ public class Library {
 		return result;
 	}
 
+	public String listNumberFromRangeAZ2Digit(int start, int end) {
+		String result 	= "";
+		for (int i = start; i <= end; i++) {
+			if (i < 10) {
+				result += "0" + i + " ";
+			}else{
+				result += i + " " ;
+			}
+		}
+		return result;
+	}
+
 	public String listNumberFromRangeZA(int start, int end) {
 		String result 	= "";
 		for (int i = start; i >= end; i--) {
