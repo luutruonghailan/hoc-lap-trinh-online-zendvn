@@ -2,41 +2,35 @@
 #include <string>
 using namespace std;
 
+int main()
+{
+    string input = "2c+)1o!@(*&!y@&chi&^c!@#o3co$23%%^nd$#$!uo5ng";
+    string str;
+    string key;
+    string result = "";
+    int startIndex = 0;
 
-int main() {
-    string input        = "!@x$3i*nc4*(hao";
-    string outString;
-    string outNumber;
-    string result       = "";
-    int startIndex      = 0;
-    int endIndex        = 0;
-
-    for (char ch : input) {
-        if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z')) {
-            outString += ch;
-        }
-    }
-     
-    for (char c : input) {
-        if (isdigit(c)) {
-            outNumber += c;
-        }
-    }
-    for (int i = 0; i < outNumber.length(); i++)
+    for (char c : input)
     {
-        string word = "";
-        int current = outNumber[i] - '0';
-        word = outString.substr(endIndex,current) + " ";
-        string upCase = word.substr(0, 1);
-        for (char &c : upCase)
+        if (isdigit(c))
         {
-            c = toupper(c);
+            key += c;
         }
-        word = upCase + word.substr(1);
-        result += word;
-        startIndex = endIndex;
-        endIndex = startIndex + current;
+        else if (isalpha(c))
+        {
+            str += c;
+        }
     }
+
+    for (int i = 0; i < key.length(); i++)
+    {
+        int size = key[i] - '0';
+        string word = str.substr(startIndex, size) + " ";
+        word[0] = toupper(word[0]);
+        result += word;
+        startIndex += size;
+    }
+
     cout << result << endl;
     return 0;
 }
