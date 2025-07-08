@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Password Generator</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background: linear-gradient(to right, #dbeafe, #e0f2fe);
+    }
+
+    .card {
+      background-color: #0f172a;
+      color: white;
+      border-radius: 16px;
+    }
+
+    input[type="text"] {
+      background-color: #1e293b;
+      color: #f8fafc;
+      border: none;
+    }
+
+    input[type=range] {
+      -webkit-appearance: none;
+      width: 100%;
+      height: 6px;
+      background: transparent;
+    }
+
+    input[type=range]::-webkit-slider-runnable-track {
+      height: 6px;
+      background: linear-gradient(to right, #3b82f6 var(--value-percent), #e5e7eb var(--value-percent));
+      border-radius: 5px;
+    }
+
+    input[type=range]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      height: 18px;
+      width: 18px;
+      border-radius: 50%;
+      background: #3b82f6;
+      margin-top: -6px;
+      cursor: pointer;
+      border: none;
+    }
+
+    input[type=range]::-moz-range-track {
+      height: 6px;
+      background: #e5e7eb;
+      border-radius: 5px;
+    }
+
+    input[type=range]::-moz-range-progress {
+      background-color: #3b82f6;
+      height: 6px;
+      border-radius: 5px;
+    }
+
+    input[type=range]::-moz-range-thumb {
+      height: 18px;
+      width: 18px;
+      border-radius: 50%;
+      background: #3b82f6;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-outline-light {
+      border-color: #1e293b;
+      background-color: #1e293b;
+      color: #f8fafc;
+    }
+
+    .btn-outline-light:hover {
+      background-color: #3b82f6;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body class="bg-light">
+  <div class="container d-flex justify-content-center align-items-center vh-100">
+    <form method="POST" class="card p-4 shadow-lg w-100" style="max-width: 500px;">
+      <h2 class="mb-4 text-center">Password Generator</h2>
+
+      <div class="mb-3">
+        <label class="form-label">Generated Password</label>
+        <div class="input-group">
+          <input id="passwordField" type="text" class="form-control" readonly value="">
+          <button class="btn btn-outline-light" type="button" id="copyBtn" onclick="copyPassword()"
+            data-bs-toggle="tooltip" data-bs-placement="left" title="Copy">
+            &#128203;
+          </button>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="lengthRange" class="form-label">
+          Length: <span id="lengthValue">16</span>
+        </label>
+        <input type="range" class="form-range" min="4" max="32" id="lengthRange" name="length" value="16"
+          oninput="lengthValue.innerText = this.value">
+      </div>
+
+      <div class="form-check mb-2">
+        <input class="form-check-input" type="checkbox" name="numbers" id="numbersCheck" checked>
+        <label class="form-check-label" for="numbersCheck">Include numbers</label>
+      </div>
+
+      <div class="form-check mb-2">
+        <input class="form-check-input" type="checkbox" name="letters" id="lettersCheck" checked>
+        <label class="form-check-label" for="lettersCheck">Include letters</label>
+      </div>
+
+      <div class="form-check mb-4">
+        <input class="form-check-input" type="checkbox" name="symbols" id="symbolsCheck">
+        <label class="form-check-label" for="symbolsCheck">Include symbols</label>
+      </div>
+
+      <button type="submit" class="btn btn-primary w-100">Generate Password</button>
+    </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+  <script>
+    // Tô màu thanh range
+    const rangeInput = document.getElementById('lengthRange');
+    const updateRangeStyle = () => {
+      const percent = ((rangeInput.value - rangeInput.min) / (rangeInput.max - rangeInput.min)) * 100;
+      rangeInput.style.setProperty('--value-percent', `${percent}%`);
+    };
+    rangeInput.addEventListener('input', updateRangeStyle);
+    updateRangeStyle();
+
+    // Copy to clipboard + tooltip
+    function copyPassword() {
+      const passField = document.getElementById('passwordField');
+      const copyBtn = document.getElementById('copyBtn');
+      if (!passField.value) return;
+
+      navigator.clipboard.writeText(passField.value)
+        .then(() => {
+          copyBtn.setAttribute('data-bs-original-title', 'Copied!');
+          bootstrap.Tooltip.getOrCreateInstance(copyBtn).show();
+          setTimeout(() => {
+            copyBtn.setAttribute('data-bs-original-title', 'Copy');
+          }, 1500);
+        })
+        .catch(err => console.error('Copy failed', err));
+    }
+
+    // Kích hoạt tooltip bootstrap
+    document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach(el => {
+      new bootstrap.Tooltip(el);
+    });
+  </script>
+</body>
+
+</html>
